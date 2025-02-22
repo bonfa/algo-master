@@ -4,8 +4,7 @@ import it.fbonfadelli.arrays.MajorityElement
 import it.fbonfadelli.arrays.MoveZeroes
 import kotlin.system.exitProcess
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 fun main() {
     println("WELCOME TO MY ALGO MASTER SOLUTIONS")
     println("For the moment I have only exercises for arrays but I hope to add more sections very soon")
