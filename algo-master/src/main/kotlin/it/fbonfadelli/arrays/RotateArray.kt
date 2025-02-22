@@ -1,10 +1,13 @@
 package it.fbonfadelli.arrays
 
+import it.fbonfadelli.print
+
 class RotateArray {
 
     companion object {
-        fun main() {
+        private val rotateArray = RotateArray()
 
+        fun main() {
             println("ROTATE ARRAY")
 
             val inputs = listOf(
@@ -78,9 +81,9 @@ class RotateArray {
 
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: [" + input.array.joinToString((",")) + "]" + "   k=${input.k}")
-            RotateArray().rotate(input.array, input.k)
-            println("Output: [" + input.array.joinToString((",")) + "]")
+            println("Input: " + input.array.print() + "   k=${input.k}")
+            rotateArray.rotate(input.array, input.k)
+            println("Output: " + input.array.print())
             println()
         }
     }
