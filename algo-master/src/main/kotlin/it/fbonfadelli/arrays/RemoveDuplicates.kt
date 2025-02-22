@@ -1,26 +1,29 @@
 package it.fbonfadelli.arrays
 
+import it.fbonfadelli.print
+
 class RemoveDuplicates {
 
     companion object {
+        private val removeDuplicates = RemoveDuplicates()
+
         fun main() {
-            val removeDuplicates = RemoveDuplicates()
-            val input1 = intArrayOf(1,1,2)
-            val input2 = intArrayOf(0,0,1,1,1,2,2,3,3,4)
+            println("REMOVE DUPLICATES")
 
-            println("MOVE ZEROES")
+            val inputs = listOf(
+                intArrayOf(1, 1, 2),
+                intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)
+            )
 
-            println("CASE 1:")
-            println("Input: [" + input1.joinToString((",")) + "]")
-            val length1 = removeDuplicates.removeDuplicates(input1)
-            println("Output: [" + input1.take(length1).joinToString((",")) + "]")
+            inputs.forEachIndexed { index, input -> execute(index, input) }
+        }
 
+        private fun execute(index: Int, input: IntArray) {
+            println("CASE ${index+1}:")
+            println("Input: " + input.print())
+            val length = removeDuplicates.removeDuplicates(input)
+            println("Output: " + input.take(length).print())
             println()
-
-            println("CASE 2:")
-            println("Input: [" + input2.joinToString((",")) + "]")
-            val length2 = removeDuplicates.removeDuplicates(input2)
-            println("Output: [" + input2.take(length2).joinToString((",")) + "]")
         }
     }
 
