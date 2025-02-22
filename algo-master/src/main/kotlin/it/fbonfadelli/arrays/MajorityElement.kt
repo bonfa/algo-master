@@ -1,26 +1,29 @@
 package it.fbonfadelli.arrays
 
+import it.fbonfadelli.print
+
 class MajorityElement {
 
     companion object {
-        fun main() {
-            val solution = MajorityElement()
-            val input1 = intArrayOf(3,2,3)
-            val input2 = intArrayOf(2,2,1,1,1,2,2)
+        private val majorityElement = MajorityElement()
 
+        fun main() {
             println("MAJORITY ELEMENT")
 
-            println("CASE 1:")
-            println("Input: [" + input1.joinToString((",")) + "]")
-            val majorityElement1 = solution.majorityElement(input1)
-            println("Output: [" + majorityElement1 + "]")
+            val inputs = listOf(
+                intArrayOf(3,2,3),
+                intArrayOf(2,2,1,1,1,2,2),
+            )
 
+            inputs.forEachIndexed { index, input -> execute(index, input) }
+        }
+
+        private fun execute(index: Int, input: IntArray) {
+            println("CASE ${index+1}:")
+            println("Input: " + input.print())
+            val me = majorityElement.majorityElement(input)
+            println("Output: $me")
             println()
-
-            println("CASE 2:")
-            println("Input: [" + input2.joinToString((",")) + "]")
-            val majorityElement2 = solution.majorityElement(input2)
-            println("Output: [" + majorityElement2 + "]")
         }
     }
 
