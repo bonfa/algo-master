@@ -7,8 +7,10 @@
 - arrays - move zeroes (solved with brute force)
 - arrays - remove duplicates from sorted array (solved with brute force)
 - arrays - max profit (solved with brute force)
+- arrays - rotate array (solved with a support linked list)
 
 # Exercises Solved Perfectly
+
 
 
 
