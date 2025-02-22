@@ -1,26 +1,29 @@
 package it.fbonfadelli.arrays
 
+import it.fbonfadelli.print
+
 class MoveZeroes {
 
     companion object {
-        fun main() {
-            val moveZeroes = MoveZeroes()
-            val input1 = intArrayOf(0, 1, 0, 3, 12)
-            val input2 = intArrayOf(0)
+        private val moveZeroes = MoveZeroes()
 
+        fun main() {
             println("MOVE ZEROES")
 
-            println("CASE 1:")
-            println("Input: [" + input1.joinToString((",")) + "]")
-            moveZeroes.moveZeroes(input1)
-            println("Output: [" + input1.joinToString((",")) + "]")
+            val inputs = listOf(
+                intArrayOf(0, 1, 0, 3, 12),
+                intArrayOf(0)
+            )
 
+            inputs.forEachIndexed { index, input -> execute(index, input) }
+        }
+
+        private fun execute(index: Int, input: IntArray) {
+            println("CASE ${index+1}:")
+            println("Input: " + input.print())
+            moveZeroes.moveZeroes(input)
+            println("Output: " + input.print())
             println()
-
-            println("CASE 2:")
-            println("Input: [" + input2.joinToString((",")) + "]")
-            moveZeroes.moveZeroes(input2)
-            println("Output: [" + input2.joinToString((",")) + "]")
         }
     }
 
