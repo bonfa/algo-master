@@ -1,6 +1,7 @@
 package it.fbonfadelli
 
 import it.fbonfadelli.arrays.MajorityElement
+import it.fbonfadelli.arrays.MaxProfit
 import it.fbonfadelli.arrays.MoveZeroes
 import it.fbonfadelli.arrays.RemoveDuplicates
 import kotlin.system.exitProcess
@@ -14,6 +15,7 @@ fun main() {
     println("[1] - Move Zeroes")
     println("[2] - Majority Element")
     println("[3] - Remove Duplicates")
+    println("[4] - Max Profit")
     println("You can always terminate the program by writing EXIT")
     println("For which exercise do you want to see the solution? (Choose between the above options)")
 
@@ -23,6 +25,7 @@ fun main() {
         "1" -> MoveZeroes.main()
         "2" -> MajorityElement.main()
         "3" -> RemoveDuplicates.main()
+        "4" -> MaxProfit.main()
         "EXIT" -> exitProcess(0)
         else -> println("Unfortunately, I do not recognize the command. Please try again:")
     }
