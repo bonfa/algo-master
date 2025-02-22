@@ -1,26 +1,29 @@
 package it.fbonfadelli.arrays
 
+import it.fbonfadelli.print
+
 class MaxProfit {
 
     companion object {
-        fun main() {
-            val maxProfit = MaxProfit()
-            val input1 = intArrayOf(7,1,5,3,6,4)
-            val input2 = intArrayOf(7,6,4,3,1)
+        private val maxProfit = MaxProfit()
 
+        fun main() {
             println("MOVE ZEROES")
 
-            println("CASE 1:")
-            println("Input: [" + input1.joinToString((",")) + "]")
-            val output1 = maxProfit.maxProfit(input1)
-            println("Output: [" + output1 + "]")
+            val inputs = listOf(
+                intArrayOf(7,1,5,3,6,4),
+                intArrayOf(7,6,4,3,1),
+            )
 
+            inputs.forEachIndexed { index, input -> execute(index, input) }
+        }
+
+        private fun execute(index: Int, input: IntArray) {
+            println("CASE ${index+1}:")
+            println("Input: " + input.print())
+            val output = maxProfit.maxProfit(input)
+            println("Output: $output")
             println()
-
-            println("CASE 2:")
-            println("Input: [" + input2.joinToString((",")) + "]")
-            val output2 = maxProfit.maxProfit(input2)
-            println("Output: [" + output2 + "]")
         }
     }
 
