@@ -14,6 +14,7 @@ fun main() {
     println("[3] - Remove Duplicates")
     println("[4] - Max Profit")
     println("[5] - Rotate Array")
+    println("[6] - Max Profit II")
     println("You can always terminate the program by writing EXIT")
     println("For which exercise do you want to see the solution? (Choose between the above options)")
 
@@ -25,6 +26,7 @@ fun main() {
         "3" -> RemoveDuplicates.main()
         "4" -> MaxProfit.main()
         "5" -> RotateArray.main()
+        "6" -> MaxProfitII.main()
         "EXIT" -> exitProcess(0)
         else -> println("Unfortunately, I do not recognize the command. Please try again:")
     }
