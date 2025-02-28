@@ -8,7 +8,7 @@
 - arrays - remove duplicates from sorted array (solved with brute force)
 - arrays - max profit (solved with brute force)
 - arrays - rotate array (solved with a support linked list)
-- arrays - max profit (solved with heavy suggestions by ChatGPT)
+- arrays - max profit II (solved with heavy suggestions by ChatGPT)
 
 # Exercises Solved Perfectly
 
