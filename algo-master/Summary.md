@@ -12,6 +12,7 @@
 
 # Exercises Solved Perfectly
 - arrays - number of zero filled subArrays
+- arrays - increasing triplet
 
 
 
