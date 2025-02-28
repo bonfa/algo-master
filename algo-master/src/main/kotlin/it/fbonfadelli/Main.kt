@@ -16,6 +16,7 @@ fun main() {
     println("[5] - Rotate Array")
     println("[6] - Max Profit II")
     println("[7] - NumberOfZeroFilledSubArrays")
+    println("[8] - Increasing Triplet")
     println("You can always terminate the program by writing EXIT")
     println("For which exercise do you want to see the solution? (Choose between the above options)")
 
@@ -29,6 +30,7 @@ fun main() {
         "5" -> RotateArray.main()
         "6" -> MaxProfitII.main()
         "7" -> NumberOfZeroFilledSubArrays.main()
+        "8" -> IncreasingTriplet.main()
         "EXIT" -> exitProcess(0)
         else -> println("Unfortunately, I do not recognize the command. Please try again:")
     }
