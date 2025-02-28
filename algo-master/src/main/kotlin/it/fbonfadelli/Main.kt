@@ -15,7 +15,7 @@ fun main() {
     println("[4] - Max Profit")
     println("[5] - Rotate Array")
     println("[6] - Max Profit II")
-    println("[7] - NumberOfZeroFilledSubArrays")
+    println("[7] - Number Of Zero Filled Sub Arrays")
     println("[8] - Increasing Triplet")
     println("You can always terminate the program by writing EXIT")
     println("For which exercise do you want to see the solution? (Choose between the above options)")
