@@ -11,7 +11,7 @@
 - arrays - max profit II (solved with heavy suggestions by ChatGPT)
 
 # Exercises Solved Perfectly
-
+- arrays - number of zero filled subArrays
 
 
 
