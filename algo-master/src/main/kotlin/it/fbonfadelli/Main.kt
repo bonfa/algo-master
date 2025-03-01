@@ -1,6 +1,7 @@
 package it.fbonfadelli
 
 import it.fbonfadelli.arrays.*
+import it.fbonfadelli.strings.IsPalindrome
 import it.fbonfadelli.strings.IsSubsequence
 import kotlin.system.exitProcess
 
@@ -19,7 +20,8 @@ fun main() {
     println("[7] - Number Of Zero Filled Sub Arrays")
     println("[8] - Increasing Triplet")
     println("[9] - WIP")
-    println("[10] - IsSubsequence")
+    println("[10] - Is Subsequence")
+    println("[11] - Is Palindrome")
     println("You can always terminate the program by writing EXIT")
     println("For which exercise do you want to see the solution? (Choose between the above options)")
 
@@ -35,6 +37,7 @@ fun main() {
         "7" -> NumberOfZeroFilledSubArrays.main()
         "8" -> IncreasingTriplet.main()
         "10" -> IsSubsequence.main()
+        "11" -> IsPalindrome.main()
         "EXIT" -> exitProcess(0)
         else -> println("Unfortunately, I do not recognize the command. Please try again:")
     }
