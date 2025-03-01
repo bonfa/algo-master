@@ -6,7 +6,7 @@ class IsPalindrome {
         private val isPalindrome = IsPalindrome()
 
         fun main() {
-            println("IS SUBSEQUENCE")
+            println("IS PALINDROME")
 
             val inputs = listOf(
                 Input("A man, a plan, a canal: Panama"),
