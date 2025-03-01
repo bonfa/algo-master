@@ -1,6 +1,6 @@
-package it.fbonfadelli.arrays
+package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.print
+import it.fbonfadelli.algo.master.utils.print
 
 class MajorityElement {
 

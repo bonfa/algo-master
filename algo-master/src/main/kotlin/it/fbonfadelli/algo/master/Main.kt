@@ -1,31 +1,29 @@
-package it.fbonfadelli
+package it.fbonfadelli.algo.master
 
-import it.fbonfadelli.arrays.*
-import it.fbonfadelli.strings.IsPalindrome
-import it.fbonfadelli.strings.IsSubsequence
-import it.fbonfadelli.strings.LongestCommonPrefix
+import it.fbonfadelli.algo.master.exercises.arrays.*
+import it.fbonfadelli.algo.master.exercises.strings.IsPalindrome
+import it.fbonfadelli.algo.master.exercises.strings.IsSubsequence
+import it.fbonfadelli.algo.master.exercises.strings.LongestCommonPrefix
 import kotlin.system.exitProcess
 
+private val categories = arrayOf("Arrays", "Strings")
 
 fun main() {
     println("WELCOME TO MY ALGO MASTER SOLUTIONS")
-
     printMainMenu()
 }
 
 private fun printMainMenu() {
     println("Choose the category of exercise:")
-    println("[1] - Arrays")
-    println("[2] - Strings")
+    categories.forEachIndexed { index, category -> println("[${index + 1}] - $category") }
+
     val input = readlnOrNull()
     when (input?.trim()) {
         "1" -> printArrayExercises()
         "2" -> printStringsExercises()
         "EXIT" -> println("Bye bye!").also { exitProcess(0) }
         else -> println("Unfortunately, I do not recognize the command. I am quitting because I am lazy and I do not want to give you a second chance to decide what to do. Anyway, you can run me again :)").also {
-            exitProcess(
-                0
-            )
+            exitProcess(0)
         }
     }
 }

@@ -1,4 +1,4 @@
-package it.fbonfadelli.strings
+package it.fbonfadelli.algo.master.exercises.strings
 
 class IsSubsequence {
 

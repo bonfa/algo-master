@@ -1,6 +1,6 @@
-package it.fbonfadelli.arrays
+package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.print
+import it.fbonfadelli.algo.master.utils.print
 
 class RotateArray {
 
@@ -124,7 +124,7 @@ class RotateArray {
             val newHead = rotate(head, gap)
 
             // linked list to array
-            var node:Node? = newHead
+            var node: Node? = newHead
             var i = 0
             while(i < nums.size) {
                 nums[i] = node!!.value

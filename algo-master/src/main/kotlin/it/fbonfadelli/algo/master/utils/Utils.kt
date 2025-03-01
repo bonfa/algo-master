@@ -1,4 +1,4 @@
-package it.fbonfadelli
+package it.fbonfadelli.algo.master.utils
 
 fun IntArray.print() =
     "[" + this.joinToString((",")) + "]"
