@@ -9,10 +9,13 @@
 - arrays - max profit (solved with brute force)
 - arrays - rotate array (solved with a support linked list)
 - arrays - max profit II (solved with heavy suggestions by ChatGPT)
+- string - isPalindrome (the solution is good, I forgot the numeric case when reading the requirements. moreover, I am not super fluent in kotlin operators for strings)
 
 # Exercises Solved Perfectly
 - arrays - number of zero filled subArrays
 - arrays - increasing triplet
+- string - isSubsequence
+
 
 
 
