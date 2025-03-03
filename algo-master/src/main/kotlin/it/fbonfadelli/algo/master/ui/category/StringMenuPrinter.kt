@@ -3,6 +3,7 @@ package it.fbonfadelli.algo.master.ui.category
 import it.fbonfadelli.algo.master.exercises.strings.IsPalindrome
 import it.fbonfadelli.algo.master.exercises.strings.IsSubsequence
 import it.fbonfadelli.algo.master.exercises.strings.LongestCommonPrefix
+import it.fbonfadelli.algo.master.exercises.strings.ZigZagConversion
 import it.fbonfadelli.algo.master.ui.Common
 
 object StringMenuPrinter {
@@ -12,6 +13,7 @@ object StringMenuPrinter {
         println("[1] - Is Subsequence")
         println("[2] - Is Palindrome")
         println("[3] - Longest Common Prefix")
+        println("[4] - Zig Zag Conversion")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -23,6 +25,7 @@ object StringMenuPrinter {
             "1" -> IsSubsequence.main()
             "2" -> IsPalindrome.main()
             "3" -> LongestCommonPrefix.main()
+            "4" -> ZigZagConversion.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
