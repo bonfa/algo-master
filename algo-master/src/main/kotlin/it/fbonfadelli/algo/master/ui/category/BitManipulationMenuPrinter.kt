@@ -3,7 +3,7 @@ package it.fbonfadelli.algo.master.ui.category
 import it.fbonfadelli.algo.master.exercises.bits.CountingBits
 import it.fbonfadelli.algo.master.ui.Common
 
-object BitsMenuPrinter {
+object BitManipulationMenuPrinter {
 
     fun execute() {
         println("BIT MANIPULATION OPTIONS:")
