@@ -1,5 +1,6 @@
 # Exercises Not Solved
 - arrays - First Missing Positive in O(n) - the intuition was correct - I just was not able to complete the solution within reasonable time
+- strings - Guess the Word - I sorted the words related to their similarity, but it was not enough. I needed to cluster them instead.
 
 
 # Exercises Solved But Not In The Best Way
