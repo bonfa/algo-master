@@ -3,6 +3,7 @@
 - strings - Guess the Word - I sorted the words related to their similarity, but it was not enough. I needed to cluster them instead.
 - bit manipulation - single number (in O(1) space and O(n) time)
 - bit manipulation - number of 1 bits
+- bit manipulation - reverse bits - the solution was ok (even if not optimal), but I was using pow that was causing errors on even numbers. Changing it to shift left, solved the issue.
 
 
 # Exercises Solved But Not In The Best Way
