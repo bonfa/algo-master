@@ -1,7 +1,7 @@
 package it.fbonfadelli.algo.master.utils
 
-fun IntArray.print() =
+fun IntArray.printable() =
     "[" + this.joinToString((",")) + "]"
 
-fun <T> List<T>.print() =
+fun <T> List<T>.printable() =
     "[" + this.joinToString((",")) + "]"

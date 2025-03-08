@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class MoveZeroes {
 
@@ -20,9 +20,9 @@ class MoveZeroes {
 
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
-            println("Input: " + input.print())
+            println("Input: " + input.printable())
             moveZeroes.moveZeroes(input)
-            println("Output: " + input.print())
+            println("Output: " + input.printable())
             println()
         }
     }

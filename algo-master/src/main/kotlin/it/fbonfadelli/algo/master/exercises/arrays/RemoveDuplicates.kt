@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class RemoveDuplicates {
 
@@ -20,9 +20,9 @@ class RemoveDuplicates {
 
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
-            println("Input: " + input.print())
+            println("Input: " + input.printable())
             val length = removeDuplicates.removeDuplicates(input)
-            println("Output: " + input.take(length).print())
+            println("Output: " + input.take(length).printable())
             println()
         }
     }

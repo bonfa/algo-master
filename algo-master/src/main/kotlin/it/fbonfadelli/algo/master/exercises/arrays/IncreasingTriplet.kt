@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class IncreasingTriplet {
 
@@ -26,7 +26,7 @@ class IncreasingTriplet {
 
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
-            println("Input: " + input.print())
+            println("Input: " + input.printable())
             val output = increasingTriplet.increasingTriplet(input)
             println("Output: $output")
             println()

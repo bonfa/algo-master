@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.bits
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class CountingBits {
 
@@ -22,7 +22,7 @@ class CountingBits {
             println("CASE ${index+1}:")
             println("Input: $input")
             val output = countingBits.countBits(input)
-            println("Output: ${output.print()}")
+            println("Output: ${output.printable()}")
             println()
         }
     }

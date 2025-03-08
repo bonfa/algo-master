@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class RotateArray {
 
@@ -81,9 +81,9 @@ class RotateArray {
 
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: " + input.array.print() + "   k=${input.k}")
+            println("Input: " + input.array.printable() + "   k=${input.k}")
             rotateArray.rotate(input.array, input.k)
-            println("Output: " + input.array.print())
+            println("Output: " + input.array.printable())
             println()
         }
     }

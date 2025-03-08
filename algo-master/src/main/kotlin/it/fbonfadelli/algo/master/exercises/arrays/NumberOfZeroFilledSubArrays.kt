@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.arrays
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class NumberOfZeroFilledSubArrays {
 
@@ -24,7 +24,7 @@ class NumberOfZeroFilledSubArrays {
 
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
-            println("Input: " + input.print())
+            println("Input: " + input.printable())
             val me = numberOfZeroFilledSubArrays.numberOfZeroFilledSubArrays(input)
             println("Output: $me")
             println()

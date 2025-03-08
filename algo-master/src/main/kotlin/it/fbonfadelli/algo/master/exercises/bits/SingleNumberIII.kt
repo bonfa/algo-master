@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.exercises.bits
 
-import it.fbonfadelli.algo.master.utils.print
+import it.fbonfadelli.algo.master.utils.printable
 
 class SingleNumberIII {
     companion object {
@@ -20,9 +20,9 @@ class SingleNumberIII {
 
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
-            println("Input: ${input.print()}")
+            println("Input: ${input.printable()}")
             val output = singleNumberIII.singleNumber(input)
-            println("Output: ${output.print()}")
+            println("Output: ${output.printable()}")
             println()
         }
     }
