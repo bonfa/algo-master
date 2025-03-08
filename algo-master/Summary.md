@@ -18,6 +18,7 @@
 - strings - Zig Zag conversion (solved in the proper way. The only thing I did not use the string builder but I created new string at each iteration, which is a bit more costly that using a string builder).
 - strings - Reverse words (if the string was mutable, I would not have thought about the multiple reverse in place that could be done to reduce space).
 - bit manipulation - Counting Bits (solved with brute force).
+- bit manipulation - Bitwise AND of number range (I got close to the ideal solution but instead of shifting the actual numbers I calculated separately the highest bit set to 1, which is less efficient).
 
 # Exercises Solved Perfectly
 - arrays - number of zero filled subArrays

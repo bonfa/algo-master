@@ -1,5 +1,6 @@
 package it.fbonfadelli.algo.master.ui.category
 
+import it.fbonfadelli.algo.master.exercises.bits.BitwiseAndOfRange
 import it.fbonfadelli.algo.master.exercises.bits.CountingBits
 import it.fbonfadelli.algo.master.exercises.bits.ReverseBits
 import it.fbonfadelli.algo.master.ui.Common
@@ -10,6 +11,7 @@ object BitManipulationMenuPrinter {
         println("BIT MANIPULATION OPTIONS:")
         println("[3] - Counting Bits")
         println("[4] - Reverse Bits")
+        println("[5] - Bitwise AND of number range")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -20,6 +22,7 @@ object BitManipulationMenuPrinter {
         when (input) {
             "3" -> CountingBits.main()
             "4" -> ReverseBits.main()
+            "5" -> BitwiseAndOfRange.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
