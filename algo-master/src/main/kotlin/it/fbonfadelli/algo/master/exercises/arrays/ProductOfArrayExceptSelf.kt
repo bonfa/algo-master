@@ -23,7 +23,7 @@ class ProductOfArrayExceptSelf {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
             val output = productOfArrayExceptSelf.productExceptSelf(input)
-            println("Output: $output")
+            println("Output: ${output.printable()}")
             println()
         }
     }
