@@ -18,8 +18,7 @@ Skipping the solutions where I do not remember the optimal algorithm
 * Remove Duplicates from Sorted Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
 * Best Time to Buy and Sell Stock (SOLVED_PERFECTLY)
 * Rotate Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
-
-* Product of Array Except Self
+* Product of Array Except Self (SOLVED_SUB_OPTIMAL --> used the first hint of leetcode)
 * Best Time to Buy and Sell Stock II
 * First Missing Positive
 
