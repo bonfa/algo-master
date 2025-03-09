@@ -22,10 +22,28 @@ class ProductOfArrayExceptSelf {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
-            val output = productOfArrayExceptSelf.productExceptSelf(input)
+            val output = productOfArrayExceptSelf.productExceptSelfBest(input)
             println("Output: ${output.printable()}")
             println()
         }
+    }
+
+    fun productExceptSelfBest(nums: IntArray): IntArray {
+        val products = IntArray(nums.size)
+
+        //products contains prefix
+        products[0] = 1
+        for (i in 1..nums.size - 1) {
+            products[i] = products[i-1] * nums[i-1]
+        }
+
+        var suffix = 1
+        for (i in (nums.size - 2).downTo(0)) {
+            suffix = suffix * nums[i+1]
+            products[i] = products[i] * suffix
+        }
+
+        return products
     }
 
     fun productExceptSelf(nums: IntArray): IntArray {
