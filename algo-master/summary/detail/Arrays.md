@@ -16,8 +16,8 @@ Skipping the solutions where I do not remember the optimal algorithm
 * Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)
 * Majority Element (NOT_SOLVED)
 * Remove Duplicates from Sorted Array (SOLVED_PERFECTLY --> but took too much time)
+* Best Time to Buy and Sell Stock (SOLVED_PERFECTLY)
 
-* Best Time to Buy and Sell Stock
 * Rotate Array
 * Product of Array Except Self
 * Best Time to Buy and Sell Stock II
