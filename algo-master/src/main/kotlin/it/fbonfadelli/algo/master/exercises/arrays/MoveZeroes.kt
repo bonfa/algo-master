@@ -28,10 +28,33 @@ class MoveZeroes {
     }
 
     fun moveZeroes(nums: IntArray): Unit {
-        twoPointersBest(nums)
+        latestSolution(nums)
     }
 
-    private fun twoPointersBest(nums: IntArray): Unit {
+    private fun latestSolution(nums: IntArray): Unit {
+        var zeroIdx = -1
+
+        for (i in 0..nums.size - 1) {
+            if (nums[i] == 0 && zeroIdx == -1)
+                zeroIdx = i
+
+            if (nums[i] != 0 && zeroIdx != -1) {
+                //swap
+                nums[zeroIdx] = nums[i]
+                nums[i] = 0
+
+                //update properly zero index
+                for (j in zeroIdx..i) {
+                    if (nums[j] == 0) {
+                        zeroIdx = j
+                        break
+                    }
+                }
+            }
+        }
+    }
+
+    private fun algoMasterTwoPointersBest(nums: IntArray): Unit {
         var lastZeroPosition = 0;
 
         for (i in 0..nums.size-1) {
@@ -46,7 +69,7 @@ class MoveZeroes {
     }
 
     //old implementation
-    private fun twoPointers(nums: IntArray): Unit {
+    private fun algoMasterTwoPointers(nums: IntArray): Unit {
         var indexOfValueToChange: Int = 0;
 
         for (i in 0..nums.size-1) {
