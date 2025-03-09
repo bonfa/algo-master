@@ -1,6 +1,11 @@
 # Current solution
+Skipping the solutions where I do not remember the optimal algorithm
+
 ## Exercises Solved But Not In The Best Way
 - move zeroes (solved with 2 pointers, but added useless internal loop)
+
+## Exercises Not Solved
+- majority element
 
 # Version 1
 ## Exercises Not Solved
