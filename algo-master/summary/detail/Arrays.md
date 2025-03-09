@@ -19,7 +19,7 @@ Skipping the solutions where I do not remember the optimal algorithm
 * Best Time to Buy and Sell Stock (SOLVED_PERFECTLY)
 * Rotate Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
 * Product of Array Except Self (SOLVED_SUB_OPTIMAL --> used the first hint of leetcode)
-* Best Time to Buy and Sell Stock II
+* Best Time to Buy and Sell Stock II (SOLVED_PERFECTLY)
 * First Missing Positive
 
 # Attempt 1

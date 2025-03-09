@@ -22,13 +22,28 @@ class MaxProfitII {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
-            val output = maxProfitII.maxProfit(input)
+            val output = maxProfitII.version2(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun maxProfit(prices: IntArray): Int {
+    fun version2(prices: IntArray): Int {
+        var profit = 0
+        var prevPrice = prices[0]
+        for(i in 1..prices.size-1) {
+            if (prices[i] > prevPrice) {
+                val gain = prices[i] - prevPrice
+                profit = profit + gain
+            }
+
+            prevPrice = prices[i]
+        }
+
+        return profit
+    }
+
+    fun version1(prices: IntArray): Int {
         if (prices.size < 2)
             return 0
 
