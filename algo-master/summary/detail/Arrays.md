@@ -48,4 +48,9 @@ Skipping the solutions where I do not remember the optimal algorithm
 * First Missing Positive
 
 ## After Attempt 2
-TBC
+* Move Zeroes
+* Majority Element
+* Remove Duplicates from Sorted Array
+* Rotate Array
+* Product of Array Except Self
+* First Missing Positive
