@@ -21,6 +21,7 @@ Skipping the solutions where I do not remember the optimal algorithm
 6. Product of Array Except Self (SOLVED_ALMOST_PERFECTLY --> used the first hint of leetcode)
 7. Best Time to Buy and Sell Stock II (SOLVED_PERFECTLY)
 8. Number of Zero-Filled Subarrays (SOLVED_PERFECTLY)
+9. Increasing Triplet Subsequence (SOLVED_PERFECTLY)
 * First Missing Positive
 
 # Attempt 1
