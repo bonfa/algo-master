@@ -32,6 +32,27 @@ class NumberOfZeroFilledSubArrays {
     }
 
     fun numberOfZeroFilledSubArrays(nums: IntArray): Long {
+        return version2(nums)
+    }
+
+    private fun version2(nums: IntArray): Long {
+        var count = 0L
+        var numOfPreviousZeros = 0L
+        for (num in nums) {
+            if (num != 0) {
+                count += (numOfPreviousZeros * (numOfPreviousZeros+1) / 2)
+                numOfPreviousZeros = 0
+            } else {
+                numOfPreviousZeros++
+            }
+        }
+
+        count += (numOfPreviousZeros * (numOfPreviousZeros+1) / 2)
+
+        return count
+    }
+
+    private fun version1(nums: IntArray): Long {
         var occurrences = 0L
         var lengthOfZeroSequence = 0L
 

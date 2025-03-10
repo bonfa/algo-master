@@ -13,13 +13,14 @@
 # Latest Attempt
 Skipping the solutions where I do not remember the optimal algorithm
 
-* Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)
-* Majority Element (NOT_SOLVED)
-* Remove Duplicates from Sorted Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
-* Best Time to Buy and Sell Stock (SOLVED_PERFECTLY)
-* Rotate Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
-* Product of Array Except Self (SOLVED_ALMOST_PERFECTLY --> used the first hint of leetcode)
-* Best Time to Buy and Sell Stock II (SOLVED_PERFECTLY)
+1. Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)
+2. Majority Element (NOT_SOLVED)
+3. Remove Duplicates from Sorted Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
+4. Best Time to Buy and Sell Stock (SOLVED_PERFECTLY)
+5. Rotate Array (SOLVED_ALMOST_PERFECTLY --> took too much time)
+6. Product of Array Except Self (SOLVED_ALMOST_PERFECTLY --> used the first hint of leetcode)
+7. Best Time to Buy and Sell Stock II (SOLVED_PERFECTLY)
+8. Number of Zero-Filled Subarrays (SOLVED_PERFECTLY)
 * First Missing Positive
 
 # Attempt 1
@@ -43,7 +44,7 @@ Skipping the solutions where I do not remember the optimal algorithm
 * Rotate Array 
 * Product of Array Except Self 
 * Best Time to Buy and Sell Stock II 
-*  First Missing Positive
+* First Missing Positive
 
 ## After Attempt 2
 TBC
