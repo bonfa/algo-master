@@ -22,7 +22,7 @@ Skipping the solutions where I do not remember the optimal algorithm
 7. Best Time to Buy and Sell Stock II (SOLVED_PERFECTLY)
 8. Number of Zero-Filled Subarrays (SOLVED_PERFECTLY)
 9. Increasing Triplet Subsequence (SOLVED_PERFECTLY)
-* First Missing Positive
+10. First Missing Positive (SOLVED_ALMOST_PERFECTLY --> the solution is similar to the one of AlgoMaster, however it took me a bit more time tha 45m and the code is a bit messy)
 
 # Attempt 1
 1. Move Zeroes (SOLVED_SUB_OPTIMAL -> used brute force)
