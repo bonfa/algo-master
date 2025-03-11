@@ -9,7 +9,7 @@
 
 # Attempt 2
 1. Is subsequence (SOLVED_PERFECTLY)
-2. Valid palindrome
+2. Valid palindrome (SOLVED_PERFECTLY)
 3. Longest Common Prefix
 4. Zigzag conversion
 5. Reverse words in a String
