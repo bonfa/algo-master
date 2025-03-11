@@ -6,6 +6,15 @@
 5. Reverse words in a String
 6. Guess the word
 
+
+# Attempt 2
+1. Is subsequence (SOLVED_PERFECTLY)
+2. Valid palindrome
+3. Longest Common Prefix
+4. Zigzag conversion
+5. Reverse words in a String
+6. Guess the word
+
 # Attempt 1
 ## Exercises Not Solved
 - Guess the Word - I sorted the words related to their similarity, but it was not enough. I needed to cluster them instead.

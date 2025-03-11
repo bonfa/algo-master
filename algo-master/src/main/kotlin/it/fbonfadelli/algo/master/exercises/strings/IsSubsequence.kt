@@ -30,6 +30,35 @@ class IsSubsequence {
 
 
     fun isSubsequence(s: String, t: String): Boolean {
+        return version2(s, t)
+    }
+
+    private fun version2(s: String, t: String): Boolean {
+        if (s.length == 0)
+            return true
+        if (s.length > t.length)
+            return false
+        if (s.length == t.length)
+            return s == t
+
+        // s.length < t.length
+
+        var tIdx = 0
+        var sIdx = 0
+        while (tIdx < t.length) {
+            if (s[sIdx] == t[tIdx])
+                sIdx++
+
+            tIdx++
+
+            if (sIdx >= s.length)
+                return true
+        }
+
+        return false
+    }
+
+    private fun version1(s: String, t: String): Boolean {
         if (s.length == 0)
             return true
 
