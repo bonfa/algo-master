@@ -10,7 +10,7 @@
 9. Increasing Triplet Subsequence
 10. First Missing Positive
 
-# Latest Attempt
+# Attempt 2
 Skipping the solutions where I do not remember the optimal algorithm
 
 1. Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)

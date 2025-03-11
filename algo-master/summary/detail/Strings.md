@@ -1,5 +1,12 @@
-# Current solution
+# Exercise list
+1. Is subsequence
+2. Valid palindrome
+3. Longest Common Prefix
+4. Zigzag conversion
+5. Reverse words in a String
+6. Guess the word
 
+# Attempt 1
 ## Exercises Not Solved
 - Guess the Word - I sorted the words related to their similarity, but it was not enough. I needed to cluster them instead.
 
@@ -11,3 +18,11 @@
 
 ## Exercises Solved Perfectly
 - is subsequence
+
+# Revision List
+## After Attempt 1
+* Valid palindrome
+* Longest Common Prefix
+* Zigzag conversion
+* Reverse words in a String
+* Guess the word
