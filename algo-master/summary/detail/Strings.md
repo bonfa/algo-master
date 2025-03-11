@@ -10,8 +10,8 @@
 # Attempt 2
 1. Is subsequence (SOLVED_PERFECTLY)
 2. Valid palindrome (SOLVED_PERFECTLY)
-3. Longest Common Prefix
-4. Zigzag conversion
+3. Longest Common Prefix (solved vertically. I did not even think about binary search)
+4. Zigzag conversion (SOLVED_SUB_OPTIMAL - worse than version 1)
 5. Reverse words in a String
 6. Guess the word
 
