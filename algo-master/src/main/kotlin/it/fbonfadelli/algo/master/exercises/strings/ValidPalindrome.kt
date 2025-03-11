@@ -1,12 +1,12 @@
 package it.fbonfadelli.algo.master.exercises.strings
 
-class IsPalindrome {
+class ValidPalindrome {
 
     companion object {
-        private val isPalindrome = IsPalindrome()
+        private val validPalindrome = ValidPalindrome()
 
         fun main() {
-            println("IS PALINDROME")
+            println("VALID PALINDROME")
 
             val inputs = listOf(
                 Input("A man, a plan, a canal: Panama"),
@@ -20,7 +20,7 @@ class IsPalindrome {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: " + "s=${input.s}")
-            val output = isPalindrome.isPalindrome(input.s)
+            val output = validPalindrome.isPalindrome(input.s)
             println("Output: $output")
             println()
         }

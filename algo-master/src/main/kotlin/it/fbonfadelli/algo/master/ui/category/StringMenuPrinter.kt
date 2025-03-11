@@ -21,7 +21,7 @@ object StringMenuPrinter {
 
         when (input) {
             "1" -> IsSubsequence.main()
-            "2" -> IsPalindrome.main()
+            "2" -> ValidPalindrome.main()
             "3" -> LongestCommonPrefix.main()
             "4" -> ZigZagConversion.main()
             "5" -> ReverseWords.main()
