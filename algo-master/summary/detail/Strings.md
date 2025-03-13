@@ -12,7 +12,7 @@
 2. Valid palindrome (SOLVED_PERFECTLY)
 3. Longest Common Prefix (solved vertically. I did not even think about binary search)
 4. Zigzag conversion (SOLVED_SUB_OPTIMAL - worse than version 1)
-5. Reverse words in a String
+5. Reverse words in a String (SOLVED_PERFECTLY - I skipped built in functions but this case that solution would have been the perfect one, and also with same complexity as other more complex solutions)
 6. Guess the word
 
 # Attempt 1

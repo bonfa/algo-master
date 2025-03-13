@@ -29,9 +29,54 @@ class ReverseWords {
     }
 
     fun reverseWords(s: String): String {
+        return aBetterBuiltInFunction(s)
+    }
+
+    private fun aBetterBuiltInFunction(s: String): String =
+        s.split(" ").filter { it.isNotBlank() }.reversed().joinToString(" ")
+
+
+    private fun version3(s: String): String {
+        val words = Array(s.length) { "" }
+
+        var strBuilder = StringBuilder()
+        var wordsCount = 0
+        for (i in 0..s.length-1) {
+            if (s[i] != ' ') {
+                strBuilder.append(s[i])
+            } else {
+                // s[i] == ' '
+                val word = strBuilder.toString()
+                if (word.length > 0) {
+                    words[wordsCount] = word
+                    wordsCount++
+                    strBuilder = StringBuilder()
+                }
+            }
+        }
+
+        val word = strBuilder.toString()
+        if (word.length > 0) {
+            words[wordsCount] = word
+            wordsCount++
+            strBuilder = StringBuilder()
+        }
+
+        val sentenceBuilder = StringBuilder()
+        for (i in (wordsCount-1).downTo(0)) {
+            sentenceBuilder.append(words[i])
+            if (i != 0) {
+                sentenceBuilder.append(' ')
+            }
+        }
+
+        return sentenceBuilder.toString()
+    }
+
+    private fun version2(s: String): String {
         var word = ""
         var reversed = ""
-        for (i in 0..s.length-1) {
+        for (i in 0..s.length - 1) {
             if (s[i] == ' ') {
                 if (word.isNotBlank()) {
                     if (reversed.isBlank()) {
