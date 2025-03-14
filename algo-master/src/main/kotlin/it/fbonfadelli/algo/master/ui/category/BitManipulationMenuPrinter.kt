@@ -1,15 +1,13 @@
 package it.fbonfadelli.algo.master.ui.category
 
-import it.fbonfadelli.algo.master.exercises.bits.BitwiseAndOfRange
-import it.fbonfadelli.algo.master.exercises.bits.CountingBits
-import it.fbonfadelli.algo.master.exercises.bits.ReverseBits
-import it.fbonfadelli.algo.master.exercises.bits.SingleNumberIII
+import it.fbonfadelli.algo.master.exercises.bits.*
 import it.fbonfadelli.algo.master.ui.Common
 
 object BitManipulationMenuPrinter {
 
     fun execute() {
         println("BIT MANIPULATION OPTIONS:")
+        println("[1] - Single Number")
         println("[3] - Counting Bits")
         println("[4] - Reverse Bits")
         println("[5] - Bitwise AND of number range")
@@ -22,6 +20,7 @@ object BitManipulationMenuPrinter {
         val input = Common.Actions.readInputAndSanitizeIt()
 
         when (input) {
+            "1" -> SingleNumber.main()
             "3" -> CountingBits.main()
             "4" -> ReverseBits.main()
             "5" -> BitwiseAndOfRange.main()

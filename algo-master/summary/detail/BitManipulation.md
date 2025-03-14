@@ -1,5 +1,9 @@
 # Current solution
 
+## Iteration 2
+* Single Number (SOLVED_PERFECTLY)
+
+
 # Exercises Not Solved
 - single number (in O(1) space and O(n) time)
 - number of 1 bits
@@ -13,3 +17,6 @@
 
 # Exercises Solved Perfectly
 none
+
+
+
