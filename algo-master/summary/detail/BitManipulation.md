@@ -1,23 +1,34 @@
-# Current solution
+# Exercise list
+1. Single Number
+2. Number of 1 bits
+3. Counting bits
+4. Reverse bits
+5. Bitwise AND of number range
+6. Single number III
+7. Sum of two integers
 
-## Iteration 2
+## Attempt 2
 * Single Number (SOLVED_PERFECTLY)
 * Number of 1 bits (SOLVED_PERFECTLY)
+* Counting bits (SOLVED_SUB_OPTIMAL - calculated the number of 1 for each number)
+
+## Attempt 1
+1. Single Number (NOT_SOLVED)
+2. Number of 1 bits (NOT_SOLVED)
+3. Counting bits (SOLVED_SUB_OPTIMAL - with brute force)
+4. Reverse bits (NOT_SOLVED - issues with pow)
+5. Bitwise AND of number range (NOT_SOLVED - intuition was corret)
+6. Single number III (SOLVED_SUB_OPTIMAL - with map)
+7. Sum of two integers (NOT_SOLVED)
 
 
-# Exercises Not Solved
-- single number (in O(1) space and O(n) time)
-- number of 1 bits
-- reverse bits - the solution was ok (even if not optimal), but I was using pow that was causing errors on even numbers. Changing it to shift left, solved the issue.
-- sum of two integers without + and - (you need to know it)
-
-# Exercises Solved But Not In The Best Way
-- Counting Bits (solved with brute force).
-- Bitwise AND of number range (I got close to the ideal solution but instead of shifting the actual numbers I calculated separately the highest bit set to 1, which is less efficient).
-- Single number III (solved easily with map. I still miss some knowledge related to bit manipulation)
-
-# Exercises Solved Perfectly
-none
-
-
+# Revision List
+## After Attempt 1
+* Single Number
+* Number of 1 bits
+* Counting bits
+* Reverse bits 
+* Bitwise AND of number range
+* Single number III 
+* Sum of two integers
 
