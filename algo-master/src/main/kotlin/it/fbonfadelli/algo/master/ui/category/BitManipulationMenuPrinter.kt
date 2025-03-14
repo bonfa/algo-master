@@ -8,6 +8,7 @@ object BitManipulationMenuPrinter {
     fun execute() {
         println("BIT MANIPULATION OPTIONS:")
         println("[1] - Single Number")
+        println("[2] - Number of 1 Bits")
         println("[3] - Counting Bits")
         println("[4] - Reverse Bits")
         println("[5] - Bitwise AND of number range")
@@ -21,6 +22,7 @@ object BitManipulationMenuPrinter {
 
         when (input) {
             "1" -> SingleNumber.main()
+            "2" -> NumberOf1Bits.main()
             "3" -> CountingBits.main()
             "4" -> ReverseBits.main()
             "5" -> BitwiseAndOfRange.main()

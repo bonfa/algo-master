@@ -2,6 +2,7 @@
 
 ## Iteration 2
 * Single Number (SOLVED_PERFECTLY)
+* Number of 1 bits (SOLVED_PERFECTLY)
 
 
 # Exercises Not Solved
