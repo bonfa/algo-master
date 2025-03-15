@@ -28,6 +28,28 @@ class CountingBits {
     }
 
     fun countBits(n: Int): IntArray {
+        return optimalVersionWithDecentNames(n)
+    }
+
+    private fun optimalVersionWithDecentNames(n: Int): IntArray {
+        val res = IntArray(n + 1)
+        var nextPow = 1
+        var currPow = 1
+
+        for (i in 1..n) {
+            if (i == nextPow) {
+                nextPow = nextPow * 2
+                currPow = i
+            }
+
+            val k = i - currPow
+            res[i] = res[k] + 1
+        }
+
+        return res
+    }
+
+    fun version1(n: Int): IntArray {
         val ans = IntArray(n+1)
 
         for (i in 0..n) {
