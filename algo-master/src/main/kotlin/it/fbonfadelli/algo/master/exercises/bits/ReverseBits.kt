@@ -26,10 +26,31 @@ class ReverseBits {
     }
 
     fun reverseBits(n:UInt):UInt { //different from Leet-code as the signature there is Int and not UInt
+        return version2(n)
+    }
+
+    private fun version2(n: UInt): UInt {
+        var num: UInt = n.toUInt()
+        var res: UInt = 0u
+
+        for(i in 0..31) {
+
+            val leastSignificantBit = num and 1u
+
+            num = num shr 1
+
+            if (leastSignificantBit == 1u)
+                res = res + (leastSignificantBit shl 31-i)
+        }
+
+        return res
+    }
+
+    private fun version1(n: UInt): UInt {
         val arr = UIntArray(32)
         var num: UInt = n
         for (i in 0..31) {
-            arr[31-i] = num and 1u
+            arr[31 - i] = num and 1u
             num = num shr 1
         }
 

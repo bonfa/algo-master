@@ -11,6 +11,7 @@
 * Single Number (SOLVED_PERFECTLY)
 * Number of 1 bits (SOLVED_PERFECTLY)
 * Counting bits (SOLVED_SUB_OPTIMAL - calculated the number of 1 for each number)
+4. Reverse bits (SOLVED_OPTIMAL - small issue with shift)
 
 ## Attempt 1
 1. Single Number (NOT_SOLVED)
