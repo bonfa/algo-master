@@ -32,13 +32,35 @@ class BitwiseAndOfRange {
     }
 
     fun rangeBitwiseAnd(left: Int, right: Int): Int {
+        return version2(left, right)
+    }
+
+    private fun version2(left: Int, right: Int): Int {
+        val uLeft = left.toUInt()
+        val uRight = right.toUInt()
+
+        if (uLeft == uRight)
+            return left
+
+        if (uLeft * 2u < uRight) {
+            return 0
+        }
+
+        var res = uLeft
+        for (i in uLeft+1u..uRight) {
+            res = res and i
+        }
+        return res.toInt()
+    }
+
+    private fun version1(left: Int, right: Int): Int {
         if (left == right)
             return left
 
         var num = 0u
         var myLeft = left.toUInt()
         var myRight = right.toUInt()
-        while(true) {
+        while (true) {
             val mostSignificantBitInLeft: UInt = mostSignificantBitIn(myLeft.toUInt())
             val mostSignificantBitInRight: UInt = mostSignificantBitIn(myRight.toUInt())
 
