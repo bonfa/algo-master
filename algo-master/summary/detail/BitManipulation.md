@@ -37,4 +37,8 @@
 * Sum of two integers
 
 ## After Attempt 2
-TBC
+* Counting bits
+* Reverse bits
+* Bitwise AND of number range
+* Single number III
+* Sum of two integers
