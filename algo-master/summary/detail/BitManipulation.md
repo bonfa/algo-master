@@ -14,15 +14,16 @@
 * Reverse bits (SOLVED_OPTIMAL - small issue with shift)
 * Bitwise AND of number range (SOLVED_SUB_OPTIMAL - brute force only plus quick exit for obvious zero cases)
 * Single number III (SOLVED_SUB_OPTIMAL - with map - did not remember the optimal solution and why it worked)
+* Sum of two integers (NOT_SOLVED - did not remember the solution)
 
 ## Attempt 1
-1. Single Number (NOT_SOLVED)
-2. Number of 1 bits (NOT_SOLVED)
-3. Counting bits (SOLVED_SUB_OPTIMAL - with brute force)
-4. Reverse bits (NOT_SOLVED - issues with pow)
-5. Bitwise AND of number range (NOT_SOLVED - intuition was corret)
-6. Single number III (SOLVED_SUB_OPTIMAL - with map)
-7. Sum of two integers (NOT_SOLVED)
+* Single Number (NOT_SOLVED)
+* Number of 1 bits (NOT_SOLVED)
+* Counting bits (SOLVED_SUB_OPTIMAL - with brute force)
+* Reverse bits (NOT_SOLVED - issues with pow)
+* Bitwise AND of number range (NOT_SOLVED - intuition was corret)
+* Single number III (SOLVED_SUB_OPTIMAL - with map)
+* Sum of two integers (NOT_SOLVED)
 
 
 # Revision List
