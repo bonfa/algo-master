@@ -13,6 +13,7 @@
 * Counting bits (SOLVED_SUB_OPTIMAL - calculated the number of 1 for each number)
 * Reverse bits (SOLVED_OPTIMAL - small issue with shift)
 * Bitwise AND of number range (SOLVED_SUB_OPTIMAL - brute force only plus quick exit for obvious zero cases)
+* Single number III (SOLVED_SUB_OPTIMAL - with map - did not remember the optimal solution and why it worked)
 
 ## Attempt 1
 1. Single Number (NOT_SOLVED)
