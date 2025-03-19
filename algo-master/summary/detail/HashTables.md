@@ -18,6 +18,7 @@
 1. Design HashMap (SKIPPED -> I found the solution ready in leetcode)
 2. Maximum Number of Balloons (SOLVED_NOT_OPTIMAL -> Solved with map not with array)
 3. Number of Good Pairs (SOLVED_OPTIMAL -> better than Hashish solution)
+4. Isomorphic Strings (SOLVED_SUB_OPTIMAL -> very similar to best solution, just used one map rather than two)
 
 
 # Revision List
