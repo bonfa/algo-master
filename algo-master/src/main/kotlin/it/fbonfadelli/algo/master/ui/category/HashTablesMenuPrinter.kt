@@ -3,6 +3,7 @@ package it.fbonfadelli.algo.master.ui.category
 import it.fbonfadelli.algo.master.exercises.hash.tables.IsomorphicStrings
 import it.fbonfadelli.algo.master.exercises.hash.tables.MaxNumberOfBalloons
 import it.fbonfadelli.algo.master.exercises.hash.tables.NumberOfGoodPairs
+import it.fbonfadelli.algo.master.exercises.hash.tables.RansomNote
 import it.fbonfadelli.algo.master.ui.Common
 
 object HashTablesMenuPrinter {
@@ -12,6 +13,7 @@ object HashTablesMenuPrinter {
         println("[2] - Max Number Of Balloons")
         println("[3] - Number of good pairs")
         println("[4] - Isomorphic Strings")
+        println("[5] - Ransom note")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -23,6 +25,7 @@ object HashTablesMenuPrinter {
             "2" -> MaxNumberOfBalloons.main()
             "3" -> NumberOfGoodPairs.main()
             "4" -> IsomorphicStrings.main()
+            "5" -> RansomNote.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
