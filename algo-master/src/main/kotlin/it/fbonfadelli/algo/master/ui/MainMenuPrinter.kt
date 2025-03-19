@@ -2,6 +2,7 @@ package it.fbonfadelli.algo.master.ui
 
 import it.fbonfadelli.algo.master.ui.category.ArrayMenuPrinter
 import it.fbonfadelli.algo.master.ui.category.BitManipulationMenuPrinter
+import it.fbonfadelli.algo.master.ui.category.HashTablesMenuPrinter
 import it.fbonfadelli.algo.master.ui.category.StringMenuPrinter
 
 object MainMenuPrinter {
@@ -16,6 +17,7 @@ object MainMenuPrinter {
         println("[1] - Arrays")
         println("[2] - Strings")
         println("[3] - Bit Manipulation")
+        println("[4] - Hash Tables")
         println()
         println(Common.Messages.EXIT)
 
@@ -25,6 +27,7 @@ object MainMenuPrinter {
             "1" -> ArrayMenuPrinter.execute()
             "2" -> StringMenuPrinter.execute()
             "3" -> BitManipulationMenuPrinter.execute()
+            "4" -> HashTablesMenuPrinter.execute()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             else -> Common.Actions.exitWithError()
         }
