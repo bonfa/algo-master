@@ -20,6 +20,7 @@
 3. Number of Good Pairs (SOLVED_OPTIMAL -> better than Hashish solution)
 4. Isomorphic Strings (SOLVED_SUB_OPTIMAL -> very similar to best solution, just used one map rather than two)
 5. Ransom note (SOLVED_OPTIMAL)
+6. Contains duplicate II (SOLVED_SUB_OPTIMAL -> built a map and applied filter later, could have done it in place)
 
 
 # Revision List
