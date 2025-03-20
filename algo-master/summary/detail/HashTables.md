@@ -21,6 +21,7 @@
 4. Isomorphic Strings (SOLVED_SUB_OPTIMAL -> very similar to best solution, just used one map rather than two)
 5. Ransom note (SOLVED_OPTIMAL)
 6. Contains duplicate II (SOLVED_SUB_OPTIMAL -> built a map and applied filter later, could have done it in place)
+7. Group Anagrams (SOLVED_SUB_OPTIMAL -> the idea was correct. I just used less efficient data structures)
 
 
 # Revision List
