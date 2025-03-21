@@ -25,6 +25,7 @@
 8. Encode and Decode TinyURL  (SOLVED_SUB_OPTIMAL -> I skipped the incremental value. I did not use base64 as encoding. I used a custom solution)
 9. Reorganize String (SOLVED_SUB_OPTIMAL -> used a map, not a priority queue)
 10. Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL -> the solution fails with long inputs)
+11. Split Array into Consecutive Subsequences (NOT_SOLVED -> tried to solve it by reasoning on the frequency of the numbers but the solution was not working)
 
 
 # Revision List
