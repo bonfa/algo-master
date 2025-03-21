@@ -23,6 +23,7 @@
 6. Contains duplicate II (SOLVED_SUB_OPTIMAL -> built a map and applied filter later, could have done it in place)
 7. Group Anagrams (SOLVED_SUB_OPTIMAL -> the idea was correct. I just used less efficient data structures)
 8. Encode and Decode TinyURL  (SOLVED_SUB_OPTIMAL -> I skipped the incremental value. I did not use base64 as encoding. I used a custom solution)
+9. Reorganize String (SOLVED_SUB_OPTIMAL -> used a map, not a priority queue)
 
 
 # Revision List
