@@ -7,6 +7,7 @@ Currently, the following categories are present:
 1. [Arrays](detail/Arrays.md)
 2. [Strings](detail/Strings.md)
 3. [Bit Manipulation](detail/BitManipulation.md)
+4. [Hash Tables](detail/HashTables.md)
 
 # Reference
 https://algomaster.io/practice/dsa-patterns
