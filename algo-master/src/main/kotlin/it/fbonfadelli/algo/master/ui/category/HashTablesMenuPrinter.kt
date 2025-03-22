@@ -7,6 +7,7 @@ object HashTablesMenuPrinter {
 
     fun execute() {
         println("HASH TABLES:")
+        println("[1] - Design Hash Map")
         println("[2] - Max Number Of Balloons")
         println("[3] - Number of good pairs")
         println("[4] - Isomorphic Strings")
@@ -27,6 +28,7 @@ object HashTablesMenuPrinter {
         val input = readlnOrNull()?.trim()?.uppercase()
 
         when (input) {
+            "1" -> DesignHashMap.main()
             "2" -> MaxNumberOfBalloons.main()
             "3" -> NumberOfGoodPairs.main()
             "4" -> IsomorphicStrings.main()
