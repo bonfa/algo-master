@@ -1,17 +1,17 @@
 # Exercise list
-* Design HashMap
-* Maximum Number of Balloons
-* Number of Good Pairs
-* Isomorphic Strings
-* Ransom Note
-* Contains Duplicate II
-* Group Anagrams
-* Encode and Decode TinyURL
-* Reorganize String
-* Longest Consecutive Sequence
-* Split Array into Consecutive Subsequences
-* Number of Matching Subsequences
-* Number of Good Ways to Split a String
+1. Design HashMap
+2. Maximum Number of Balloons
+3. Number of Good Pairs
+4. Isomorphic Strings
+5. Ransom Note
+6. Contains Duplicate II
+7. Group Anagrams
+8. Encode and Decode TinyURL
+9. Reorganize String
+10. Longest Consecutive Sequence
+11. Split Array into Consecutive Subsequences
+12. Number of Matching Subsequences
+13. Number of Good Ways to Split a String
 
 
 ## Attempt 1
@@ -32,4 +32,14 @@
 
 # Revision List
 ## After Attempt 1
-TBD
+* Design HashMap (+ handle the collision)
+* Maximum Number of Balloons
+* Isomorphic Strings
+* Contains Duplicate II
+* Group Anagrams
+* Encode and Decode TinyURL
+* Reorganize String
+* Longest Consecutive Sequence
+* Split Array into Consecutive Subsequences
+* Number of Matching Subsequences
+* Number of Good Ways to Split a String
