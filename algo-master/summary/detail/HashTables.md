@@ -27,6 +27,7 @@
 10. Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL -> the solution fails with long inputs)
 11. Split Array into Consecutive Subsequences (NOT_SOLVED -> tried to solve it by reasoning on the frequency of the numbers but the solution was not working)
 12. Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> first solution "brute force", then improved. still not using binary search)
+13. Number of Good Ways to Split a String (SOLVED_SUB_OPTIMAL -> the idea was there, but I could have improved the implementation significantly)
 
 
 # Revision List
