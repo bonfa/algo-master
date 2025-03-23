@@ -1,5 +1,7 @@
 package it.fbonfadelli.algo.master.two.pointers.exercises
 
+import it.fbonfadelli.algo.master.utils.printable
+
 class MergeSortedArrays {
 
     companion object {
@@ -19,9 +21,9 @@ class MergeSortedArrays {
 
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: " + input)
-            val output = mergeSortedArrays.merge(input.nums1, input.m, input.nums2, input.n)
-            println("Output: $output")
+            println("Input: $input")
+            mergeSortedArrays.merge(input.nums1, input.m, input.nums2, input.n)
+            println("Output: ${input.nums1.printable()}")
             println()
         }
     }
