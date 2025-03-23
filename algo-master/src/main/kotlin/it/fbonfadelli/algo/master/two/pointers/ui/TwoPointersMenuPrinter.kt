@@ -2,13 +2,14 @@ package it.fbonfadelli.algo.master.two.pointers.ui
 
 import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.two.pointers.exercises.MergeSortedArrays
+import it.fbonfadelli.algo.master.two.pointers.exercises.TwoSumII
 
 object TwoPointersMenuPrinter {
 
     fun execute() {
         println("TWO POINTERS OPTIONS:")
         println("[1] - Merge Sorted Arrays")
-//        println("[2] - Majority Element")
+        println("[2] - Two Sum II - Input Array Is Sorted")
 //        println("[3] - Remove Duplicates")
 //        println("[4] - Max Profit")
 //        println("[5] - Rotate Array")
@@ -21,7 +22,7 @@ object TwoPointersMenuPrinter {
 
         when (input) {
             "1" -> MergeSortedArrays.main()
-//            "2" -> MajorityElement.main()
+            "2" -> TwoSumII.main()
 //            "3" -> RemoveDuplicates.main()
 //            "4" -> MaxProfit.main()
 //            "5" -> RotateArray.main()

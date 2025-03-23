@@ -7,6 +7,7 @@
 
 # Attempt 1
 1. Merge sorted arrays (SOLVED_SUB_OPTIMAL -> did not do in place substitution)
+2. Two Sum II - Input Array Is Sorted (SOLVED_OPTIMALLY)
 
 # Revision List
 ## After Attempt 1
