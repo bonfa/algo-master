@@ -1,6 +1,7 @@
 package it.fbonfadelli.algo.master.two.pointers.ui
 
 import it.fbonfadelli.algo.master.Common
+import it.fbonfadelli.algo.master.two.pointers.exercises.ContainerWithMostWater
 import it.fbonfadelli.algo.master.two.pointers.exercises.MergeSortedArrays
 import it.fbonfadelli.algo.master.two.pointers.exercises.TwoSumII
 
@@ -10,7 +11,7 @@ object TwoPointersMenuPrinter {
         println("TWO POINTERS OPTIONS:")
         println("[1] - Merge Sorted Arrays")
         println("[2] - Two Sum II - Input Array Is Sorted")
-//        println("[3] - Remove Duplicates")
+        println("[3] - Container With Most Water")
 //        println("[4] - Max Profit")
 //        println("[5] - Rotate Array")
         println()
@@ -23,7 +24,7 @@ object TwoPointersMenuPrinter {
         when (input) {
             "1" -> MergeSortedArrays.main()
             "2" -> TwoSumII.main()
-//            "3" -> RemoveDuplicates.main()
+            "3" -> ContainerWithMostWater.main()
 //            "4" -> MaxProfit.main()
 //            "5" -> RotateArray.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
