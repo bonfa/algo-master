@@ -8,7 +8,7 @@ class TwoSumII {
         private val twoSumII = TwoSumII()
 
         fun main() {
-            println("Two Sum II - Input Array Is Sorted")
+            println("TWO SUM II - INPUT ARRAY IS SORTED")
 
             val inputs = listOf(
                 Input(intArrayOf(2,7,11,15),3),
