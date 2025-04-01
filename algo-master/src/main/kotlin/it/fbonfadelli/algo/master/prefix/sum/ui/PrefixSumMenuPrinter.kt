@@ -2,20 +2,14 @@ package it.fbonfadelli.algo.master.prefix.sum.ui
 
 import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.prefix.sum.exercises.RangeSumQueryImmutable
-import it.fbonfadelli.algo.master.two.pointers.exercises.ContainerWithMostWater
-import it.fbonfadelli.algo.master.two.pointers.exercises.MergeSortedArrays
-import it.fbonfadelli.algo.master.two.pointers.exercises.ThreeSum
-import it.fbonfadelli.algo.master.two.pointers.exercises.TwoSumII
+import it.fbonfadelli.algo.master.prefix.sum.exercises.SubArraySumEqualsK
 
 object PrefixSumMenuPrinter {
 
     fun execute() {
         println("PREFIX SUM OPTIONS:")
         println("[1] - Range Sum Query - Immutable")
-        println("[2] - Subarray Sum Equals K")
-//        println("[3] - Container With Most Water")
-//        println("[4] - 3Sum")
-//        println("[5] - Trapping Rain Water")
+        println("[2] - SubArray Sum Equals K")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -25,10 +19,7 @@ object PrefixSumMenuPrinter {
 
         when (input) {
             "1" -> RangeSumQueryImmutable.main()
-//            "2" -> TwoSumII.main()
-//            "3" -> ContainerWithMostWater.main()
-//            "4" -> ThreeSum.main()
-//            "5" -> TrappingRainWater.main()
+            "2" -> SubArraySumEqualsK.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
