@@ -3,6 +3,7 @@ package it.fbonfadelli.algo.master
 import it.fbonfadelli.algo.master.arrays.ui.ArrayMenuPrinter
 import it.fbonfadelli.algo.master.bit.manipulation.ui.BitManipulationMenuPrinter
 import it.fbonfadelli.algo.master.hash.tables.ui.HashTablesMenuPrinter
+import it.fbonfadelli.algo.master.prefix.sum.ui.PrefixSumMenuPrinter
 import it.fbonfadelli.algo.master.strings.ui.StringMenuPrinter
 import it.fbonfadelli.algo.master.two.pointers.ui.TwoPointersMenuPrinter
 
@@ -20,6 +21,7 @@ object MainMenuPrinter {
         println("[3] - Bit Manipulation")
         println("[4] - Hash Tables")
         println("[5] - Two Pointers")
+        println("[6] - Prefix Sum")
         println()
         println(Common.Messages.EXIT)
 
@@ -31,6 +33,7 @@ object MainMenuPrinter {
             "3" -> BitManipulationMenuPrinter.execute()
             "4" -> HashTablesMenuPrinter.execute()
             "5" -> TwoPointersMenuPrinter.execute()
+            "6" -> PrefixSumMenuPrinter.execute()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             else -> Common.Actions.exitWithError()
         }
