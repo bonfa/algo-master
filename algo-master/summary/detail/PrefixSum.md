@@ -8,7 +8,7 @@
 # Attempt 1
 * Range Sum Query - Immutable (SOLVED PERFECTLY)
 * Subarray Sum Equals K  (SOLVED SUB_OPTIMAL)
-* Subarray Sums Divisible by K (NOT_SOLVED)
+* Subarray Sums Divisible by K (SOLVED SUB_OPTIMAL -> brute force)
 * Continuous Subarray Sum 
 * Contiguous Array
 
