@@ -11,6 +11,11 @@
 * Bit rotation
 * Great common divisor with Stein algorithm
 
+## Sum Prefix
+* The cumulative sum up to i is represented as sum[i], and the cumulative sum up to j is sum[j].
+** If the remainder of sum[i] and sum[j] with respect to K is the same, then: $$ (sum[j] - sum[i]) \mod K = 0 $$
+** This means that the difference between sum[j] and sum[i], that is, the sum of the subarray from i+1 to j, is divisible by K.
+
 ## Other Topics
 * Priority Queue (how it works in detail, when to use it, how to use it) --> see Hash Tables - Reorganize String
 * Union find algorithm (how it works in detail, when to use it, how to use it) --> see Hash Tables - Longest Consecutive Sequence
