@@ -1,10 +1,7 @@
 package it.fbonfadelli.algo.master.prefix.sum.ui
 
 import it.fbonfadelli.algo.master.Common
-import it.fbonfadelli.algo.master.prefix.sum.exercises.ContinuousSubArraySum
-import it.fbonfadelli.algo.master.prefix.sum.exercises.RangeSumQueryImmutable
-import it.fbonfadelli.algo.master.prefix.sum.exercises.SubArraySumDivisibleByK
-import it.fbonfadelli.algo.master.prefix.sum.exercises.SubArraySumEqualsK
+import it.fbonfadelli.algo.master.prefix.sum.exercises.*
 
 object PrefixSumMenuPrinter {
 
@@ -14,6 +11,7 @@ object PrefixSumMenuPrinter {
         println("[2] - SubArray Sum Equals K")
         println("[3] - SubArray Sum Divisible By K")
         println("[4] - Continuous SubArray Sum")
+        println("[5] - Contiguous Array")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -26,6 +24,7 @@ object PrefixSumMenuPrinter {
             "2" -> SubArraySumEqualsK.main()
             "3" -> SubArraySumDivisibleByK.main()
             "4" -> ContinuousSubArraySum.main()
+            "5" -> ContinguousArray.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
