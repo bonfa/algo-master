@@ -7,7 +7,7 @@
 
 # Attempt 1
 * Maximum Average Subarray I (SOLVED_PERFECTLY -> I saw the algorithm 2 minutes before)
-* Find All Anagrams in a String
+* Find All Anagrams in a String (SOLVED_SUB_OPTIMAL -> Used map)
 * Permutation in String
 * Maximum Sum of Distinct Subarrays With Length K
 * Substring with Concatenation of All Words
