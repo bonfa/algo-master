@@ -27,22 +27,43 @@ class SubArraySumEqualsK {
     }
 
     fun subArraySum(nums: IntArray, k: Int): Int {
-        var result = 0
+        var sum = 0
+        var count = 0
 
-        for (i in 1..nums.size-1) {
-            nums[i] = nums[i] + nums[i-1]
+        val counts = mutableMapOf<Int, Int>()
+        counts[0] = 1
+
+        nums.forEach { num ->
+            sum = sum + num
+
+            if (counts.containsKey(sum - k)) {
+                count += counts[sum - k]!!
+            }
+
+            counts[sum] = (counts[sum] ?: 0) + 1
         }
 
-        for (i in 0..nums.size-1) {
+        return count
+    }
+
+    private fun bruteForce(nums: IntArray, k: Int): Int {
+        for (i in 1 until nums.size) {
+            nums[i] = nums[i-1] + nums[i]
+        }
+        //nums now contains the cumulative sum
+
+        var count = 0
+        for (i in 0 until nums.size) {
             if (nums[i] == k)
-                result++
-            for (j in i+1..nums.size-1) {
+                count++
+
+            for (j in i+1 until nums.size) {
                 if (nums[j]-nums[i] == k)
-                    result++
+                    count++
             }
         }
 
-        return result
+        return count
     }
 
     private data class Input(val array: IntArray, val k: Int)
