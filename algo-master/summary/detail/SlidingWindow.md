@@ -10,7 +10,7 @@
 * Find All Anagrams in a String (SOLVED_SUB_OPTIMAL -> Used map)
 * Permutation in String (SOLVED_PERFECTLY)
 * Maximum Sum of Distinct Subarrays With Length K (SOLVED_SUB_OPTIMAL)
-* Substring with Concatenation of All Words
+* Substring with Concatenation of All Words (NOT_SOLVED)
 
 # Revision List
 ## After Attempt 1
