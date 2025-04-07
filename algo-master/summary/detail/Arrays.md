@@ -14,7 +14,7 @@
 1. Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)
 2. Majority Element (SOLVED_PERFECTLY)
 3. Remove Duplicates from Sorted Array (SOLVED_PERFECTLY)
-4. Rotate Array
+4. Rotate Array (SOLVED_SUB_OPTIMAL --> used built-in reverse function)
 5. Product of Array Except Self
 6. First Missing Positive
 
