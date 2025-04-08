@@ -29,7 +29,32 @@ class ZigZagConversion {
     }
 
     fun convert(s: String, numRows: Int): String {
-        return version2(s, numRows)
+        return version3(s, numRows)
+    }
+
+    private fun version3(s: String, numRows: Int): String {
+        if (numRows == 1)
+            return s
+
+        val strs = Array<StringBuilder>(numRows) { StringBuilder() }
+        var currentRow = 0
+        var increasing = true
+        for (i in s.indices) {
+            val char = s[i]
+            strs[currentRow].append(char)
+            if (currentRow == 0) {
+                increasing = true
+            } else if (currentRow == numRows - 1) {
+                increasing = false
+            }
+            if (increasing) currentRow++ else currentRow--
+        }
+
+        val builder = StringBuilder()
+        for (str in strs) {
+            builder.append(str.toString())
+        }
+        return builder.toString()
     }
 
     private fun version2(s: String, numRows: Int): String {

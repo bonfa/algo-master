@@ -8,7 +8,7 @@
 
 # Attempt 3
 * Longest Common Prefix (NOT_SOLVED -> I knew the proper algorithm, but I failed the implementation)
-* Zigzag conversion
+* Zigzag conversion (SOLVED_PERFECTLY)
 * Guess the word
 
 # Attempt 2
