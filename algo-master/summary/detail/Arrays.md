@@ -15,7 +15,7 @@
 2. Majority Element (SOLVED_PERFECTLY)
 3. Remove Duplicates from Sorted Array (SOLVED_PERFECTLY)
 4. Rotate Array (SOLVED_SUB_OPTIMAL --> used built-in reverse function)
-5. Product of Array Except Self
+5. Product of Array Except Self (SOLVED_PERFECTLY)
 6. First Missing Positive
 
 # Attempt 2
