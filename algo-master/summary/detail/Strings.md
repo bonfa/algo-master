@@ -9,7 +9,7 @@
 # Attempt 3
 * Longest Common Prefix (NOT_SOLVED -> I knew the proper algorithm, but I failed the implementation)
 * Zigzag conversion (SOLVED_PERFECTLY)
-* Guess the word
+* Guess the word (NOT_SOLVED -> the solution was not completely correct)
 
 # Attempt 2
 1. Is subsequence (SOLVED_PERFECTLY)
@@ -41,3 +41,5 @@
 * Guess the word
 
 ## After Attempt 3
+* Longest Common Prefix
+* Guess the word
