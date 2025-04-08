@@ -16,7 +16,7 @@
 3. Remove Duplicates from Sorted Array (SOLVED_PERFECTLY)
 4. Rotate Array (SOLVED_SUB_OPTIMAL --> used built-in reverse function)
 5. Product of Array Except Self (SOLVED_PERFECTLY)
-6. First Missing Positive
+6. First Missing Positive (SOLVED_ALMOST_PERFECTLY --> within 45 minutes, the solution is still a bit messy, could have been more elegant)
 
 # Attempt 2
 Skipping the solutions where I do not remember the optimal algorithm
@@ -61,4 +61,9 @@ Skipping the solutions where I do not remember the optimal algorithm
 * Remove Duplicates from Sorted Array
 * Rotate Array
 * Product of Array Except Self
+* First Missing Positive
+
+## After Attempt 3
+* Move Zeroes
+* Rotate Array
 * First Missing Positive
