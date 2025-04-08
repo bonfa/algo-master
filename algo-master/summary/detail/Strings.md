@@ -6,6 +6,10 @@
 5. Reverse words in a String
 6. Guess the word
 
+# Attempt 3
+* Longest Common Prefix (NOT_SOLVED -> I knew the proper algorithm, but I failed the implementation)
+* Zigzag conversion
+* Guess the word
 
 # Attempt 2
 1. Is subsequence (SOLVED_PERFECTLY)
@@ -35,3 +39,5 @@
 * Longest Common Prefix
 * Zigzag conversion
 * Guess the word
+
+## After Attempt 3
