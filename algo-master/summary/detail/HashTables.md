@@ -15,11 +15,11 @@
 
 
 ## Attempt 1
-1. Design HashMap (SOLVED_OPTIMAL (for time))
+1. Design HashMap (SOLVED_PERFECTLY (for time))
 2. Maximum Number of Balloons (SOLVED_NOT_OPTIMAL -> Solved with map not with array)
-3. Number of Good Pairs (SOLVED_OPTIMAL -> better than Hashish solution)
+3. Number of Good Pairs (SOLVED_PERFECTLY -> better than Hashish solution)
 4. Isomorphic Strings (SOLVED_SUB_OPTIMAL -> very similar to best solution, just used one map rather than two)
-5. Ransom note (SOLVED_OPTIMAL)
+5. Ransom note (SOLVED_PERFECTLY)
 6. Contains duplicate II (SOLVED_SUB_OPTIMAL -> built a map and applied filter later, could have done it in place)
 7. Group Anagrams (SOLVED_SUB_OPTIMAL -> the idea was correct. I just used less efficient data structures)
 8. Encode and Decode TinyURL  (SOLVED_SUB_OPTIMAL -> I skipped the incremental value. I did not use base64 as encoding. I used a custom solution)
@@ -30,8 +30,8 @@
 13. Number of Good Ways to Split a String (SOLVED_SUB_OPTIMAL -> the idea was there, but I could have improved the implementation significantly)
 
 ## Attempt 2
-* Design HashMap (SOLVED_OPTIMAL (for time))
-* Maximum Number of Balloons (SOLVED_OPTIMAL)
+* Design HashMap (SOLVED_PERFECTLY (for time))
+* Maximum Number of Balloons (SOLVED_PERFECTLY)
 * Isomorphic Strings
 * Contains Duplicate II
 * Group Anagrams
