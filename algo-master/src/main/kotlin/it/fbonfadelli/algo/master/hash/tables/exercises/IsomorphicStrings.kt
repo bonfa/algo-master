@@ -28,6 +28,33 @@ class IsomorphicStrings {
     }
 
     fun isIsomorphic(s: String, t: String): Boolean {
+        return withArrays(s, t)
+    }
+
+
+    private fun withArrays(s: String, t: String): Boolean {
+        val sToTMap = CharArray(128)
+        val tToSMap = CharArray(128)
+
+        for(i in s.indices){
+            val sc = s[i]
+            val tc = t[i]
+
+            if (sToTMap[sc.code] == '\u0000')
+                sToTMap[sc.code] = tc
+            else if (sToTMap[sc.code] != tc)
+                return false
+
+            if (tToSMap[tc.code] == '\u0000')
+                tToSMap[tc.code] = sc
+            else if (tToSMap[tc.code] != sc)
+                return false
+        }
+
+        return true
+    }
+
+    private fun withMap(s: String, t: String): Boolean {
         val map = mutableMapOf<Char, Char>()
 
         for (i in 0..s.length - 1) {
