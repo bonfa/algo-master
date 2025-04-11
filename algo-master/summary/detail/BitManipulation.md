@@ -7,6 +7,14 @@
 6. Single number III
 7. Sum of two integers
 
+
+## Attempt 3
+* Counting bits (SOLVED_SUB_OPTIMAL - close to perfect but not yet the perfect one)
+* Reverse bits (NOT_SOLVED)
+* Bitwise AND of number range (SOLVED_SUB_OPTIMAL)
+* Single number III (NOT_SOLVED)
+* Sum of two integers (NOT_SOLVED)
+
 ## Attempt 2
 * Single Number (SOLVED_PERFECTLY)
 * Number of 1 bits (SOLVED_PERFECTLY)
@@ -37,6 +45,13 @@
 * Sum of two integers
 
 ## After Attempt 2
+* Counting bits
+* Reverse bits
+* Bitwise AND of number range
+* Single number III
+* Sum of two integers
+
+## After Attempt 3
 * Counting bits
 * Reverse bits
 * Bitwise AND of number range
