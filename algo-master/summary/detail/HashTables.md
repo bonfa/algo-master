@@ -29,6 +29,18 @@
 12. Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> first solution "brute force", then improved. still not using binary search)
 13. Number of Good Ways to Split a String (SOLVED_SUB_OPTIMAL -> the idea was there, but I could have improved the implementation significantly)
 
+## Attempt 2
+* Design HashMap (SOLVED_OPTIMAL (for time))
+* Maximum Number of Balloons (SOLVED_OPTIMAL)
+* Isomorphic Strings
+* Contains Duplicate II
+* Group Anagrams
+* Encode and Decode TinyURL
+* Reorganize String
+* Longest Consecutive Sequence
+* Split Array into Consecutive Subsequences
+* Number of Matching Subsequences
+* Number of Good Ways to Split a String
 
 # Revision List
 ## After Attempt 1
