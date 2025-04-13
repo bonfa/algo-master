@@ -5,7 +5,7 @@ import java.util.Random
 class EncodeAndDecodeTinyUrl {
 
     companion object {
-        private val codec = Codec()
+        private val codec = CodecV2()
 
         fun main() {
             println("ENCODE AND DECODE TINY URL")
@@ -27,7 +27,33 @@ class EncodeAndDecodeTinyUrl {
         }
     }
 
-    private class Codec {
+    private class CodecV2 {
+        private val BASE = "http://tinyurl.com/"
+        private val CHARS = "ABCDEFGHIJKLMNOPQRSTUWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        private val urlMap = mutableMapOf<String, String>()
+
+        // Encodes a URL to a shortened URL.
+        fun encode(longUrl: String): String {
+            val key = randomStringOfLengthSix()
+            urlMap[key] = longUrl
+            return BASE + key
+        }
+
+        // Decodes a shortened URL to its original URL.
+        fun decode(shortUrl: String): String {
+            return urlMap[shortUrl.drop(BASE.length)]!!
+        }
+
+        private fun randomStringOfLengthSix(): String {
+            val builder = StringBuilder()
+            for (i in 0 until 6) {
+                builder.append(CHARS.random())
+            }
+            return builder.toString()
+        }
+    }
+
+    private class CodecV1 {
         private val map: MutableMap<String, String> = mutableMapOf()
 
         fun encode(longUrl: String): String {
