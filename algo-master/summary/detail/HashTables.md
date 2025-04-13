@@ -30,7 +30,7 @@
 13. Number of Good Ways to Split a String (SOLVED_SUB_OPTIMAL -> the idea was there, but I could have improved the implementation significantly)
 
 ## Attempt 2
-* Design HashMap (SOLVED_PERFECTLY (for time))
+* Design HashMap (SOLVED_PERFECTLY (for time) -> but I would like to implement the hash-map by myself)
 * Maximum Number of Balloons (SOLVED_PERFECTLY)
 * Isomorphic Strings (SOLVED_SUB_OPTIMAL -> perfect solution but with the help of chatGpt in order to check the NULL value in charArray)
 * Contains Duplicate II (SOLVED_PERFECTLY -> tried first with array, but it was too space consuming, so moved to map)
