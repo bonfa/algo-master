@@ -29,8 +29,30 @@ class ContainsDuplicateII {
     }
 
     fun containsNearbyDuplicate(nums: IntArray, k: Int): Boolean {
+        return version2(nums, k)
+    }
+
+    private fun version2(nums: IntArray, k: Int): Boolean {
+        val numsLastIndex = mutableMapOf<Int, Int>()
+
+        nums.forEachIndexed { index, num ->
+            if (numsLastIndex.containsKey(num)) {
+                if (index - numsLastIndex[num]!! <= k)
+                    return true
+                else
+                    numsLastIndex[num] = index
+            } else {
+                numsLastIndex[num] = index
+            }
+        }
+
+        return false
+    }
+
+
+    private fun version1(nums: IntArray, k: Int): Boolean {
         val positions: MutableMap<Int, MutableList<Int>> = mutableMapOf()
-        for (i in 0..nums.size-1) {
+        for (i in 0..nums.size - 1) {
             val num = nums[i]
             if (positions[num] == null)
                 positions[num] = mutableListOf(i)

@@ -33,7 +33,7 @@
 * Design HashMap (SOLVED_PERFECTLY (for time))
 * Maximum Number of Balloons (SOLVED_PERFECTLY)
 * Isomorphic Strings (SOLVED_SUB_OPTIMAL -> perfect solution but with the help of chatGpt in order to check the NULL value in charArray)
-* Contains Duplicate II
+* Contains Duplicate II (SOLVED_PERFECTLY -> tried first with array but it was too space consuming, so moved to map)
 * Group Anagrams
 * Encode and Decode TinyURL
 * Reorganize String
