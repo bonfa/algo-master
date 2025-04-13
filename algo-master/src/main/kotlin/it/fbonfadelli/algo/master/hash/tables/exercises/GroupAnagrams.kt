@@ -29,9 +29,35 @@ class GroupAnagrams {
     }
 
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
+        return version2(strs)
+    }
+
+    fun version2(strs: Array<String>): List<List<String>> {
+        val charFrequencies = mutableMapOf<List<Int>, MutableList<String>>()
+        strs.forEach { str ->
+            val charFrequency = charFrequency(str)
+            if (charFrequencies.containsKey(charFrequency)) {
+                charFrequencies[charFrequency]!!.add(str)
+            } else {
+                charFrequencies[charFrequency] = mutableListOf(str)
+            }
+        }
+
+        return charFrequencies.values.map { it.toList() }
+    }
+
+    private fun charFrequency(str: String): List<Int> {
+        val frequencies = IntArray(26)
+        for (i in str.indices) {
+            frequencies[str[i]-'a']++
+        }
+        return frequencies.toList()
+    }
+
+    private fun version1(strs: Array<String>): List<List<String>> {
         val map: MutableMap<CharacterMap, MutableList<String>> = mutableMapOf()
 
-        for(str in strs) {
+        for (str in strs) {
             val charMap = str.characterMap()
             if (map[charMap] == null) {
                 map[charMap] = mutableListOf(str)
