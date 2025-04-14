@@ -36,7 +36,7 @@
 * Contains Duplicate II (SOLVED_PERFECTLY -> tried first with array, but it was too space consuming, so moved to map)
 * Group Anagrams (SOLVED_SUB_OPTIMAL -> still can improve the key of the map)
 * Encode and Decode TinyURL (SOLVED_SUB_OPTIMAL -> did not handle collisions between random keys)
-* Reorganize String
+* Reorganize String (SOLVED_SUB_OPTIMAL -> I did not use the priority queue, I did not shortcut the worst-case scenario)
 * Longest Consecutive Sequence
 * Split Array into Consecutive Subsequences
 * Number of Matching Subsequences

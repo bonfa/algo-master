@@ -29,6 +29,43 @@ class ReorganizeString {
     }
 
     fun reorganizeString(s: String): String {
+        return version2(s)
+    }
+
+    private fun version2(s: String): String {
+        val freq = IntArray(26)
+        for (i in s.indices) {
+            freq[s[i] - 'a']++
+        }
+
+        if (freq.max() > s.length / 2 + 1)
+            return ""
+
+        val output = CharArray(s.length)
+        while (freq.max() > 0) {
+            val max = freq.max()
+            val idxOfMax = freq.indexOf(max)
+            val maxChar = ('a'.code + idxOfMax).toChar()
+
+            var freeCharIdx = -1
+            for (i in 0 until output.size) {
+                if (output[i] == 0x00.toChar() && (i == 0 || (i > 0 && output[i - 1] != maxChar))) {
+                    freeCharIdx = i
+                    break
+                }
+            }
+
+            if (freeCharIdx == -1)
+                return ""
+
+            output[freeCharIdx] = maxChar
+            freq[idxOfMax]--
+        }
+
+        return output.joinToString("")
+    }
+
+    fun version1(s: String): String {
         //fill map
         val charMap: MutableMap<Char, Int> = mutableMapOf<Char, Int>()
         for (c in s) {
