@@ -32,12 +32,71 @@ class LongestConsecutiveSequence {
     }
 
     fun longestConsecutive(nums: IntArray): Int {
+        return version2(nums)
+    }
+
+    private fun version2(nums: IntArray): Int {
+        if (nums.size <= 1)
+            return nums.size
+
+        val minToMax = mutableMapOf<Int, Int>()
+        val maxToMin = mutableMapOf<Int, Int>()
+
+        for (i in 0 until nums.size) {
+            val num = nums[i]
+            var inserted = false
+
+            if (minToMax.containsKey(num) || maxToMin.containsKey(num))
+                continue
+
+            if (minToMax.containsKey(num + 1)) {
+                maxToMin[minToMax[num+1]!!] = num
+                minToMax[num] = minToMax[num + 1]!!
+                minToMax.remove(num + 1)
+                inserted = true
+            }
+
+
+            if (maxToMin.containsKey(num-1)) {
+                minToMax[maxToMin[num-1]!!] = num
+                maxToMin[num] = maxToMin[num-1]!!
+                maxToMin.remove(num-1)
+                inserted = true
+            }
+
+
+            if (inserted && minToMax.containsKey(num) && maxToMin.containsKey(num)) { //merge two ranges
+                val min = maxToMin[num]!!
+                val max = minToMax[num]!!
+
+                minToMax[min] = max
+                maxToMin[max] = min
+
+                minToMax.remove(num)
+                maxToMin.remove(num)
+            }
+
+
+            if (!inserted) {
+                minToMax[num] = num
+                maxToMin[num] = num
+            }
+        }
+
+        var max = 0
+        for (entry in minToMax.entries) {
+            max = Math.max(max, entry.value-entry.key)
+        }
+        return max + 1
+    }
+
+    private fun version1(nums: IntArray): Int {
         if (nums.size <= 1)
             return nums.size
 
         val map = mutableMapOf<Int, Int>()
 
-        for (i in 0..nums.size-1) {
+        for (i in 0..nums.size - 1) {
             val num = nums[i]
 
             //num already present
@@ -45,22 +104,22 @@ class LongestConsecutiveSequence {
                 continue
 
             //num already inside range
-            if (map.entries.any { (k,v) -> k<= num && v>=num } )
+            if (map.entries.any { (k, v) -> k <= num && v >= num })
                 continue
 
             var addedAsValue = false
             var addedAsKey = false
             var keyWhereAddedAsValue = num
 
-            if (map.entries.any { (_,v) -> v == num - 1 }) {
-                val k = map.entries.first{ (_,v) -> v == num - 1 }!!.key
+            if (map.entries.any { (_, v) -> v == num - 1 }) {
+                val k = map.entries.first { (_, v) -> v == num - 1 }!!.key
                 map[k] = num
                 keyWhereAddedAsValue = k
                 addedAsValue = true
             }
 
-            if (map.entries.any { (k,_) -> k == num + 1 }) {
-                val (k,v) = map.entries.first{ (k,_) -> k == num + 1 }!!
+            if (map.entries.any { (k, _) -> k == num + 1 }) {
+                val (k, v) = map.entries.first { (k, _) -> k == num + 1 }!!
                 map.remove(k)
                 map[num] = v
                 addedAsKey = true
@@ -76,7 +135,7 @@ class LongestConsecutiveSequence {
             }
         }
 
-        return map.entries.map { (k,v) -> v-k }.max() + 1
+        return map.entries.map { (k, v) -> v - k }.max() + 1
     }
 }
 
