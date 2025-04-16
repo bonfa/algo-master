@@ -39,7 +39,7 @@
 * Reorganize String (SOLVED_SUB_OPTIMAL -> I did not use the priority queue, I did not shortcut the worst-case scenario)
 * Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL -> the solution fails with long inputs)
 * Split Array into Consecutive Subsequences (NOT_SOLVED)
-* Number of Matching Subsequences
+* Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> brute force)
 * Number of Good Ways to Split a String
 
 # Revision List
