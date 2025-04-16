@@ -38,7 +38,7 @@
 * Encode and Decode TinyURL (SOLVED_SUB_OPTIMAL -> did not handle collisions between random keys)
 * Reorganize String (SOLVED_SUB_OPTIMAL -> I did not use the priority queue, I did not shortcut the worst-case scenario)
 * Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL -> the solution fails with long inputs)
-* Split Array into Consecutive Subsequences
+* Split Array into Consecutive Subsequences (NOT_SOLVED)
 * Number of Matching Subsequences
 * Number of Good Ways to Split a String
 
