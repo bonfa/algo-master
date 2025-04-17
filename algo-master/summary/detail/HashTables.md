@@ -40,7 +40,7 @@
 * Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL -> the solution fails with long inputs)
 * Split Array into Consecutive Subsequences (NOT_SOLVED)
 * Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> brute force)
-* Number of Good Ways to Split a String
+* Number of Good Ways to Split a String (SOLVED_PERFECTLY)
 
 # Revision List
 ## After Attempt 1

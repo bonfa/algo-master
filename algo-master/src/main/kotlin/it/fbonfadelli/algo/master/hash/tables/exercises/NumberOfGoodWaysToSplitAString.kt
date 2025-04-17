@@ -30,17 +30,50 @@ class NumberOfGoodWaysToSplitAString {
     }
 
     fun numSplits(s: String): Int {
+        return version2(s)
+    }
+
+    private fun version2(s: String): Int {
+        val leftFreq = IntArray(26)
+        var leftDistinctChars = 0
+
+        val rightFreq = IntArray(26)
+        var rightDistinctChars = 0
+        for (i in s.indices) {
+            if (rightFreq[s[i]-'a'] == 0)
+                rightDistinctChars++
+            rightFreq[s[i]-'a']++
+        }
+
+        var goodSplits = 0
+        for (i in s.indices) {
+            if (leftFreq[s[i]-'a'] == 0)
+                leftDistinctChars++
+            leftFreq[s[i]-'a']++
+
+            rightFreq[s[i]-'a']--
+            if (rightFreq[s[i]-'a'] == 0)
+                rightDistinctChars--
+
+            if (leftDistinctChars == rightDistinctChars)
+                goodSplits++
+        }
+
+        return goodSplits
+    }
+
+    private fun version1(s: String): Int {
         if (s.length <= 1)
             return 0
-        if (s.length==2) {
+        if (s.length == 2) {
             return 1
         }
 
         val charFrequency: IntArray = createCharFrequency(s)
         var totalNumberOfDistinctLetters = totalNumberOfDistinctLetters(charFrequency)
 
-        val left = IntArray(s.length+1)
-        val right = IntArray(s.length+1)
+        val left = IntArray(s.length + 1)
+        val right = IntArray(s.length + 1)
         val leftSet = mutableSetOf<Char>()
 
         for (i in 0..s.length) {
@@ -51,19 +84,19 @@ class NumberOfGoodWaysToSplitAString {
                 left[i] = totalNumberOfDistinctLetters
                 right[i] = 0
             } else {
-                val c = s[i-1]
-                charFrequency[c-'a']--
-                if (charFrequency[c-'a'] == 0)
+                val c = s[i - 1]
+                charFrequency[c - 'a']--
+                if (charFrequency[c - 'a'] == 0)
                     totalNumberOfDistinctLetters--
 
-                left[i] = left[i-1] + if (leftSet.contains(c)) 0 else 1
+                left[i] = left[i - 1] + if (leftSet.contains(c)) 0 else 1
                 right[i] = totalNumberOfDistinctLetters
-                leftSet.add(s[i-1])
+                leftSet.add(s[i - 1])
             }
         }
 
         var count = 0
-        for (i in 0..s.length-1) {
+        for (i in 0..s.length - 1) {
             if (left[i] == right[i])
                 count++
         }
