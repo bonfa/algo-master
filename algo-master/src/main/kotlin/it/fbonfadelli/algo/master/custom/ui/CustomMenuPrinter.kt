@@ -1,7 +1,7 @@
 package it.fbonfadelli.algo.master.custom.ui
 
 import it.fbonfadelli.algo.master.Common
-import it.fbonfadelli.algo.master.custom.exercises.BinarySearch
+import it.fbonfadelli.algo.master.custom.exercises.BinarySearchSimple
 
 object CustomMenuPrinter {
 
@@ -16,7 +16,7 @@ object CustomMenuPrinter {
         val input = readlnOrNull()?.trim()?.uppercase()
 
         when (input) {
-            "1" -> BinarySearch.main()
+            "1" -> BinarySearchSimple.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()

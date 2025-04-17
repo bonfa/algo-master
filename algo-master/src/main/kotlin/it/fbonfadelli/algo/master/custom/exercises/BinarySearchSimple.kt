@@ -1,9 +1,9 @@
 package it.fbonfadelli.algo.master.custom.exercises
 
-class BinarySearch {
+class BinarySearchSimple {
 
     companion object {
-        private val binarySearch = BinarySearch()
+        private val binarySearch = BinarySearchSimple()
 
         fun main() {
             println("BINARY SEARCH - SIMPLE VERSION")
