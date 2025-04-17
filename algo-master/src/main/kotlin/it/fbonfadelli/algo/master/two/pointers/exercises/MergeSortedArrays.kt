@@ -29,8 +29,45 @@ class MergeSortedArrays {
     }
 
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
+        version2(m, n, nums1, nums2)
+    }
+
+    private fun version2(m: Int, n: Int, nums1: IntArray, nums2: IntArray) {
+        if (n == 0)
+            return
+
+        var p1 = 0
+        var p2 = 0
+
+        while (p1 < m+n) {
+            if (p1 < m && p2 < n) {
+                if (nums1[p1] <= nums2[p2]) {
+                    p1++
+                } else {
+                    var temp = nums1[p1]
+                    nums1[p1] = nums2[p2]
+                    nums2[p2] = temp
+
+                    var p2Temp = p2
+                    while(p2Temp < n-1 && nums2[p2Temp+1] < nums2[p2Temp]) {
+                        var t = nums2[p2Temp]
+                        nums2[p2Temp] = nums2[p2Temp+1]
+                        nums2[p2Temp+1] = t
+                        p2Temp++
+                    }
+                }
+            } else {
+                nums1[p1] = nums2[p2]
+                p1++
+                p2++
+            }
+        }
+    }
+
+
+    private fun version1(m: Int, n: Int, nums1: IntArray, nums2: IntArray) {
         //create result
-        val result = IntArray(m+n)
+        val result = IntArray(m + n)
         var i = 0
         var j = 0
         var k = 0
@@ -61,13 +98,13 @@ class MergeSortedArrays {
 
             k++
 
-            if (i >= m && j>=n)
+            if (i >= m && j >= n)
                 break
         }
 
 
         //copy result in nums1
-        for (i in 0..result.size-1) {
+        for (i in 0..result.size - 1) {
             nums1[i] = result[i]
         }
     }

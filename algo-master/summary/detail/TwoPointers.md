@@ -12,6 +12,12 @@
 * 3Sum (SOLVED_SUB_OPTIMAL -> brute force, tried two pointers but I was missing some cases)
 * Trapping Rain Water (NOT_SOLVED)
 
+# Attempt 2
+* Merge sorted arrays (SOLVED_SUB_OPTIMAL -> could not find the smart way to do the in place solution)
+* Container With Most Water
+* 3Sum
+* Trapping Rain Water
+* 
 # Revision List
 ## After Attempt 1
 * Merge sorted arrays 
