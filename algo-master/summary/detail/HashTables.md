@@ -55,3 +55,13 @@
 * Split Array into Consecutive Subsequences
 * Number of Matching Subsequences
 * Number of Good Ways to Split a String
+
+## After Attempt 2
+* Design HashMap (+ handle the collision)
+* Isomorphic Strings
+* Group Anagrams
+* Encode and Decode TinyURL
+* Reorganize String
+* Longest Consecutive Sequence
+* Split Array into Consecutive Subsequences
+* Number of Matching Subsequences
