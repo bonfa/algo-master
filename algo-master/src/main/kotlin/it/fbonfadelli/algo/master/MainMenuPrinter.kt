@@ -2,6 +2,7 @@ package it.fbonfadelli.algo.master
 
 import it.fbonfadelli.algo.master.arrays.ui.ArrayMenuPrinter
 import it.fbonfadelli.algo.master.bit.manipulation.ui.BitManipulationMenuPrinter
+import it.fbonfadelli.algo.master.custom.ui.CustomMenuPrinter
 import it.fbonfadelli.algo.master.hash.tables.ui.HashTablesMenuPrinter
 import it.fbonfadelli.algo.master.prefix.sum.ui.PrefixSumMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.ui.SlidingWindowMenuPrinter
@@ -24,6 +25,7 @@ object MainMenuPrinter {
         println("[5] - Two Pointers")
         println("[6] - Prefix Sum")
         println("[7] - Sliding Window")
+        println("[99] - Custom Exercises")
         println()
         println(Common.Messages.EXIT)
 
@@ -37,6 +39,7 @@ object MainMenuPrinter {
             "5" -> TwoPointersMenuPrinter.execute()
             "6" -> PrefixSumMenuPrinter.execute()
             "7" -> SlidingWindowMenuPrinter.execute()
+            "99" -> CustomMenuPrinter.execute()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             else -> Common.Actions.exitWithError()
         }
