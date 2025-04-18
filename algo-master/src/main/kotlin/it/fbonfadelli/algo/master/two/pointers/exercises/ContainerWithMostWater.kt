@@ -30,17 +30,16 @@ class ContainerWithMostWater {
     }
 
     fun maxArea(height: IntArray): Int {
-        var p1 = 0
-        var p2 = height.size - 1
         var maxArea = 0
+        var low = 0
+        var high = height.size - 1
 
-        while (p1 < p2) {
-            maxArea = Math.max(maxArea, (p2-p1) * Math.min(height[p1], height[p2]))
-
-            if (height[p1] < height[p2])
-                p1++
-            else
-                p2--
+        while (low < high) {
+            maxArea = Math.max(maxArea, (high-low) * Math.min(height[low], height[high]))
+            if (height[low] > height[high]) {
+                high--
+            } else
+                low++
         }
 
         return maxArea
