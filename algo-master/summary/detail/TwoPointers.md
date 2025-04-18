@@ -15,7 +15,7 @@
 # Attempt 2
 * Merge sorted arrays (SOLVED_SUB_OPTIMAL -> could not find the smart way to do the in place solution)
 * Container With Most Water (SOLVED_PERFECTLY)
-* 3Sum
+* 3Sum (SOLVED_SUB_OPTIMAL -> brute force - did not think about the proper trick)
 * Trapping Rain Water
 
 # Revision List
