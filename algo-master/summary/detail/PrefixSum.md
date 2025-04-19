@@ -14,8 +14,8 @@
 
 ## Attempt 2
 * Range Sum Query - Immutable (SOLVED ALMOST PERFECTLY -> I did not remember perfectly the algorithm)
-* Subarray Sum Equals K
-* Subarray Sums Divisible by K
+* Subarray Sum Equals K (SOLVED SUB_OPTIMAL)
+* Subarray Sums Divisible by K (NOT_SOLVED)
 * Continuous Subarray Sum
 * Contiguous Array
 
