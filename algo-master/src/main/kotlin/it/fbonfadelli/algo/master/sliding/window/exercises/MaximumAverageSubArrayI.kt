@@ -27,24 +27,19 @@ class MaximumAverageSubArrayI {
     }
 
     fun findMaxAverage(nums: IntArray, k: Int): Double {
-        var left = 0
-        var right = left + k
-
         var sum = 0
-        for (i in left until right) {
+        for (i in 0 until k) {
             sum += nums[i]
         }
 
-        var maxAvg = sum.toDouble() / k.toDouble()
+        var maxSum = sum
+        for (i in k until nums.size) {
+            sum = sum - nums[i - k] + nums[i]
 
-        while(right < nums.size) {
-            sum = sum - nums[left] + nums[right]
-            maxAvg = Math.max(maxAvg, sum.toDouble() / k.toDouble())
-            left++
-            right++
+            maxSum = Math.max(maxSum, sum)
         }
 
-        return maxAvg
+        return maxSum.toDouble() / k.toDouble()
     }
 
     private data class Input(val array: IntArray, val k: Int)

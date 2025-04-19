@@ -14,7 +14,7 @@
 
 # Revision List
 ## After Attempt 1
-* Maximum Average Subarray I
+* Maximum Average Subarray I (SOLVED_PERFECTLY)
 * Find All Anagrams in a String
 * Permutation in String
 * Maximum Sum of Distinct Subarrays With Length K
