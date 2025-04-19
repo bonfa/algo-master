@@ -27,6 +27,47 @@ class MaximumSumOfDistinctSubArraysOfLengthK {
     }
 
     fun maximumSubArraySum(nums: IntArray, k: Int): Long {
+        return version2(k, nums)
+    }
+
+    private fun version2(k: Int, nums: IntArray): Long {
+        var i = 0
+        val freq = mutableMapOf<Int, Int>()
+        var sum: Long = 0L
+        while(i < k) {
+            val num = nums[i]
+            freq[num] = freq.getOrDefault(num, 0) + 1
+            sum += num.toLong()
+            i++
+        }
+
+        var maxSum: Long = if (freq.keys.size == k) sum else 0L
+
+        i = 0
+        while (i + k < nums.size) {
+            val toRemove = nums[i]
+            sum -= toRemove.toLong()
+            if (freq[toRemove]!! == 1)
+                freq.remove(toRemove)
+            else {
+                freq[toRemove] = freq[toRemove]!! - 1
+            }
+
+            val toAdd = nums[i + k]
+            sum += toAdd.toLong()
+            freq[toAdd] = freq.getOrDefault(toAdd, 0) + 1
+
+            if (freq.keys.size == k) {
+                maxSum = Math.max(maxSum, sum)
+            }
+
+            i++
+        }
+
+        return maxSum
+    }
+
+    private fun version1(k: Int, nums: IntArray): Long {
         val numFrequency = IntArray(100_001)
         var sum = 0L
         var validSum = 0L
@@ -45,7 +86,7 @@ class MaximumSumOfDistinctSubArraysOfLengthK {
 
         for (i in 0 until nums.size - k) {
             val numToRemove = nums[i]
-            val numToAdd = nums[i+k]
+            val numToAdd = nums[i + k]
             var needToRecomputeValidity = true
 
             numFrequency[numToRemove]--
