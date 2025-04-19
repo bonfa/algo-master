@@ -1,9 +1,9 @@
 # Exercise list
-1. Range Sum Query - Immutable
-2. Subarray Sum Equals K
-3. Subarray Sums Divisible by K
-4. Continuous Subarray Sum
-5. Contiguous Array
+1. Maximum Average Subarray I
+2. Find All Anagrams in a String
+3. Permutation in String
+4. Maximum Sum of Distinct Subarrays With Length K
+5. Substring with Concatenation of All Words
 
 # Attempt 1
 * Maximum Average Subarray I (SOLVED_PERFECTLY -> I saw the algorithm 2 minutes before)
@@ -14,4 +14,8 @@
 
 # Revision List
 ## After Attempt 1
-TDB
+* Maximum Average Subarray I
+* Find All Anagrams in a String
+* Permutation in String
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
