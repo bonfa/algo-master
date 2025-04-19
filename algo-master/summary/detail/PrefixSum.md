@@ -26,3 +26,10 @@
 * Subarray Sums Divisible by K
 * Continuous Subarray Sum
 * Contiguous Array
+
+## After Attempt 2
+* Range Sum Query - Immutable
+* Subarray Sum Equals K
+* Subarray Sums Divisible by K
+* Continuous Subarray Sum
+* Contiguous Array
