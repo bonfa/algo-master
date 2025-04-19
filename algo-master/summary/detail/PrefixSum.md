@@ -17,7 +17,7 @@
 * Subarray Sum Equals K (SOLVED SUB_OPTIMAL)
 * Subarray Sums Divisible by K (NOT_SOLVED)
 * Continuous Subarray Sum (NOT_SOLVED)
-* Contiguous Array
+* Contiguous Array (NOT_SOLVED)
 
 # Revision List
 ## After Attempt 1
