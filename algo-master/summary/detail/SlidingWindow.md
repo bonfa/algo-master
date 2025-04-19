@@ -12,10 +12,17 @@
 * Maximum Sum of Distinct Subarrays With Length K (SOLVED_SUB_OPTIMAL)
 * Substring with Concatenation of All Words (NOT_SOLVED)
 
-# Revision List
-## After Attempt 1
+# Attempt 2
 * Maximum Average Subarray I (SOLVED_PERFECTLY)
 * Find All Anagrams in a String (SOLVED ALMOST PERFECTLY -> did not initialize the two arrays in the same loop at the first iteration)
+* Permutation in String (SOLVED_PERFECTLY)
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
+
+# Revision List
+## After Attempt 1
+* Maximum Average Subarray I 
+* Find All Anagrams in a String
 * Permutation in String
 * Maximum Sum of Distinct Subarrays With Length K
 * Substring with Concatenation of All Words
