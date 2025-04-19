@@ -10,7 +10,10 @@ class FindAllAnagramsInAString {
 
             val inputs = listOf(
                 Input("abc", "abc"),
+                Input("cbaebabacd", "abc"),
                 Input("abab", "ab"),
+                Input("cbab", "ab"),
+                Input("aa", "bb"),
                 Input("cbaebabacd", "abc"),
                 Input("aaaaaaaaaa", "aaaaaaaaaaaaa"),
             )
@@ -28,6 +31,46 @@ class FindAllAnagramsInAString {
     }
 
     fun findAnagrams(s: String, p: String): List<Int> {
+        return version2(p, s)
+    }
+
+    private fun version2(p: String, s: String): List<Int> {
+        if (p.length > s.length)
+            return emptyList()
+
+        val pFreq = IntArray(26)
+        for (i in p.indices) {
+            pFreq[p[i]-'a']++
+        }
+
+        val k = p.length
+
+        val sFreq = IntArray(26)
+        for (i in 0 until k) {
+            sFreq[s[i]-'a']++
+        }
+
+        var anagramsIndices = mutableListOf<Int>()
+        if (pFreq.contentEquals(sFreq)) {
+            anagramsIndices.add(0)
+        }
+
+        var left = 0
+        while(left + k < s.length) {
+            sFreq[s[left]-'a']--
+            sFreq[s[left + k]-'a']++
+
+            if (pFreq.contentEquals(sFreq)) {
+                anagramsIndices.add(left + 1)
+            }
+
+            left++
+        }
+
+        return anagramsIndices
+    }
+
+    private fun version1(p: String, s: String): List<Int> {
         val size = p.length
         if (s.length < p.length)
             return emptyList()
@@ -82,7 +125,7 @@ class FindAllAnagramsInAString {
             }
 
             if (pCharCounts.isEmpty()) {
-                result.add(i+1)
+                result.add(i + 1)
             }
         }
 
