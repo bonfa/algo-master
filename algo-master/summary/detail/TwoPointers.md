@@ -24,3 +24,8 @@
 * Container With Most Water 
 * 3Sum 
 * Trapping Rain Water
+
+## After Attempt 2
+* Merge sorted arrays
+* 3Sum
+* Trapping Rain Water
