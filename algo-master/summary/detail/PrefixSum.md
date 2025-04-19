@@ -13,7 +13,7 @@
 * Contiguous Array (NOT_SOLVED -> could have solved brute force but I knew it was not the proper solution)
 
 ## Attempt 2
-* Range Sum Query - Immutable
+* Range Sum Query - Immutable (SOLVED ALMOST PERFECTLY -> I did not remember perfectly the algorithm)
 * Subarray Sum Equals K
 * Subarray Sums Divisible by K
 * Continuous Subarray Sum
