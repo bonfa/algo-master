@@ -26,3 +26,8 @@
 * Permutation in String
 * Maximum Sum of Distinct Subarrays With Length K
 * Substring with Concatenation of All Words
+
+## After Attempt 2
+* Find All Anagrams in a String
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
