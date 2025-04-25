@@ -5,6 +5,7 @@ import it.fbonfadelli.algo.master.bit.manipulation.ui.BitManipulationMenuPrinter
 import it.fbonfadelli.algo.master.custom.ui.CustomMenuPrinter
 import it.fbonfadelli.algo.master.hash.tables.ui.HashTablesMenuPrinter
 import it.fbonfadelli.algo.master.prefix.sum.ui.PrefixSumMenuPrinter
+import it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui.SlidingWindowDynamicSizeMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.fixed.size.ui.SlidingWindowFixedSizeMenuPrinter
 import it.fbonfadelli.algo.master.strings.ui.StringMenuPrinter
 import it.fbonfadelli.algo.master.two.pointers.ui.TwoPointersMenuPrinter
@@ -24,7 +25,8 @@ object MainMenuPrinter {
         println("[4] - Hash Tables")
         println("[5] - Two Pointers")
         println("[6] - Prefix Sum")
-        println("[7] - Sliding Window")
+        println("[7] - Sliding Window Fixed Size")
+        println("[8] - Sliding Window Dynamic Size")
         println("[99] - Custom Exercises")
         println()
         println(Common.Messages.EXIT)
@@ -39,6 +41,7 @@ object MainMenuPrinter {
             "5" -> TwoPointersMenuPrinter.execute()
             "6" -> PrefixSumMenuPrinter.execute()
             "7" -> SlidingWindowFixedSizeMenuPrinter.execute()
+            "8" -> SlidingWindowDynamicSizeMenuPrinter.execute()
             "99" -> CustomMenuPrinter.execute()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             else -> Common.Actions.exitWithError()
