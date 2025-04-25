@@ -1,6 +1,7 @@
 package it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui
 
 import it.fbonfadelli.algo.master.Common
+import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.LongestSubstringWithoutRepeatingCharacters
 import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.FindAllAnagramsInAString
 import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.MaximumAverageSubArrayI
 import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.MaximumSumOfDistinctSubArraysOfLengthK
@@ -19,7 +20,7 @@ object SlidingWindowDynamicSizeMenuPrinter {
         val input = readlnOrNull()?.trim()?.uppercase()
 
         when (input) {
-//            "1" -> MaximumAverageSubArrayI.main()
+            "1" -> LongestSubstringWithoutRepeatingCharacters.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
