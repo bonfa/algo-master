@@ -6,7 +6,7 @@ class LongestSubstringWithoutRepeatingCharacters {
         private val longestSubstringWithoutRepeatingCharacters = LongestSubstringWithoutRepeatingCharacters()
 
         fun main() {
-            println("FIND ALL ANAGRAMS IN A STRING")
+            println("LONGEST SUBSTRING WITHOUT REPEATING CHARACTERS")
 
             val inputs = listOf(
                 "abcabcbb",
