@@ -1,15 +1,15 @@
-package it.fbonfadelli.algo.master.sliding.window.ui
+package it.fbonfadelli.algo.master.sliding.window.fixed.size.ui
 
 import it.fbonfadelli.algo.master.Common
-import it.fbonfadelli.algo.master.sliding.window.exercises.FindAllAnagramsInAString
-import it.fbonfadelli.algo.master.sliding.window.exercises.MaximumAverageSubArrayI
-import it.fbonfadelli.algo.master.sliding.window.exercises.MaximumSumOfDistinctSubArraysOfLengthK
-import it.fbonfadelli.algo.master.sliding.window.exercises.PermutationInString
+import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.FindAllAnagramsInAString
+import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.MaximumAverageSubArrayI
+import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.MaximumSumOfDistinctSubArraysOfLengthK
+import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.PermutationInString
 
-object SlidingWindowMenuPrinter {
+object SlidingWindowFixedSizeMenuPrinter {
 
     fun execute() {
-        println("SLIDING WINDOW OPTIONS:")
+        println("SLIDING WINDOW FIXED SIZE OPTIONS:")
         println("[1] - Maximum Average SubArray I")
         println("[2] - Find All Anagrams in a String")
         println("[3] - Permutation in String")

@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.sliding.window.exercises
+package it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises
 
 class PermutationInString {
 
