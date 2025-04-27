@@ -10,9 +10,13 @@
 * Longest Repeating Character Replacement (NOT SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
 * Minimum Size Subarray Sum (SOLVED PERFECTLY -> got lost a bit in indexes)
 * Max Consecutive Ones III (SOLVED PERFECTLY -> but the third attempt - keeping it in the revision list anyway)
-* Minimum Window Substring
+* Minimum Window Substring (NOT SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
 
 
 # Revision List
 ## After Attempt 1
-TBD
+* Longest Substring Without Repeating Characters
+* Longest Repeating Character Replacement
+* Minimum Size Subarray Sum
+* Max Consecutive Ones III
+* Minimum Window Substring
