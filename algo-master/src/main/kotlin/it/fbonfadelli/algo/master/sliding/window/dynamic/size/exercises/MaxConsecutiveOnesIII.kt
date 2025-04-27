@@ -1,9 +1,9 @@
 package it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises
 
-class MaxConsecutiveOnes3 {
+class MaxConsecutiveOnesIII {
 
     companion object {
-        private val maxConsecutiveOnes3 = MaxConsecutiveOnes3()
+        private val maxConsecutiveOnesIII = MaxConsecutiveOnesIII()
 
         fun main() {
             println("MAX CONSECUTIVE ONES III")
@@ -23,7 +23,7 @@ class MaxConsecutiveOnes3 {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = maxConsecutiveOnes3.longestOnes(input.nums, input.k)
+            val output = maxConsecutiveOnesIII.longestOnes(input.nums, input.k)
             println("Output: $output")
             println()
         }

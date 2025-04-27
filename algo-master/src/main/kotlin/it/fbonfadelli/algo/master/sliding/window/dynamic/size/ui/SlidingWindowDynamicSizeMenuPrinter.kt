@@ -2,11 +2,8 @@ package it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui
 
 import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.LongestSubstringWithoutRepeatingCharacters
+import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.MaxConsecutiveOnesIII
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.MinimumSizeSubArraySum
-import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.FindAllAnagramsInAString
-import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.MaximumAverageSubArrayI
-import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.MaximumSumOfDistinctSubArraysOfLengthK
-import it.fbonfadelli.algo.master.sliding.window.fixed.size.exercises.PermutationInString
 
 object SlidingWindowDynamicSizeMenuPrinter {
 
@@ -14,6 +11,7 @@ object SlidingWindowDynamicSizeMenuPrinter {
         println("SLIDING WINDOW DYNAMIC SIZE OPTIONS:")
         println("[1] - Longest Substring Without Repeating Characters")
         println("[3] - Minimum Size Subarray Sum")
+        println("[4] - Max Consecutive Ones III")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -24,6 +22,7 @@ object SlidingWindowDynamicSizeMenuPrinter {
         when (input) {
             "1" -> LongestSubstringWithoutRepeatingCharacters.main()
             "3" -> MinimumSizeSubArraySum.main()
+            "4" -> MaxConsecutiveOnesIII.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
