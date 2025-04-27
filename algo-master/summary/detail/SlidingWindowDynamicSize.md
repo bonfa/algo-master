@@ -9,7 +9,7 @@
 * Longest Substring Without Repeating Characters (SOLVED PERFECTLY -> took a bit to realize the proper solution)
 * Longest Repeating Character Replacement (NOT SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
 * Minimum Size Subarray Sum (SOLVED PERFECTLY -> got lost a bit in indexes)
-* Max Consecutive Ones III (NOT SOLVED)
+* Max Consecutive Ones III (SOLVED PERFECTLY -> but the third attempt - keeping it in the revision list anyway)
 * Minimum Window Substring
 
 
