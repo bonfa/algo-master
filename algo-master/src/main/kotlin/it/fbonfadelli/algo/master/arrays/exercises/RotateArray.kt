@@ -93,120 +93,28 @@ class RotateArray {
         }
     }
 
-    fun rotate(nums: IntArray, k: Int): Unit {
-        version2(nums, k)
+    fun rotate(nums: IntArray, k: Int) {
+        val fixedK = if (k > nums.size) k % nums.size else k
+
+        if (fixedK == nums.size) return
+
+        reverse(nums, 0, nums.size - 1)
+        reverse(nums, 0, fixedK - 1)
+        reverse(nums, fixedK, nums.size - 1)
     }
 
-    private fun version2(nums: IntArray, k: Int): Unit {
-        val myK = k % nums.size
-        if (nums.size <= 1 || myK == 0)
-            return
+    private fun reverse(arr: IntArray, from: Int, to: Int) {
+        var p1 = from
+        var p2 = to
+        while(p1 < p2) {
+            val temp = arr[p1]
+            arr[p1] = arr[p2]
+            arr[p2] = temp
 
-        invert(nums)
-        invertFirstElements(nums, myK)
-        invertLatestElements(nums, nums.size - myK)
-    }
-
-    private fun invert(nums: IntArray) {
-        for (i in 0..(nums.size) / 2 - 1) {
-            val temp = nums[nums.size - 1 - i]
-            nums[nums.size - 1 - i] = nums[i]
-            nums[i] = temp
+            p1++
+            p2--
         }
     }
-
-    private fun invertFirstElements(nums: IntArray, x: Int) {
-        for (i in 0..(x - 1) / 2) {
-            val temp = nums[x - 1 - i]
-            nums[x - 1 - i] = nums[i]
-            nums[i] = temp
-        }
-    }
-
-    private fun invertLatestElements(nums: IntArray, x: Int) {
-        for (i in 0..(x - 1) / 2) {
-            val temp = nums[nums.size - x + i]
-            nums[nums.size - x + i] = nums[nums.size - 1 - i]
-            nums[nums.size - 1 - i] = temp
-        }
-    }
-
-    private fun version1(nums: IntArray, k: Int): Unit {
-        val size = nums.size
-        val sanitisedK = k % size //eventually the max value of rotation is the size of the array
-        if (sanitisedK == 0) return //no need to rotate
-
-        val dest = IntArray(nums.size)
-
-        for (i in 0..size - 1) {
-            val newIndex = (i + sanitisedK) % size
-            dest[newIndex] = nums[i]
-        }
-
-        for (i in 0..size - 1) {
-            nums[i] = dest[i]
-        }
-    }
-
-
-    fun customLinkedListBased(nums: IntArray, k: Int): Unit {
-        if (nums.size == 1 || k == 0)
-            return
-
-        //create circular linkedList
-        val head = arrayToCircularLinkedList(nums)
-
-        // rotation
-        val gap = if (nums.size > k)
-            nums.size - k
-        else
-            nums.size - (k % nums.size)
-        val newHead = rotate(head, gap)
-
-        // linked list to array
-        var node: Node? = newHead
-        var i = 0
-        while (i < nums.size) {
-            nums[i] = node!!.value
-            node = node?.next
-            i++
-        }
-    }
-
-    private fun arrayToCircularLinkedList(nums: IntArray): Node {
-        var head: Node? = null
-        var previousNode: Node? = null
-        for (i in 0..(nums.size - 1)) {
-            val node = Node(value = nums[i], next = null)
-            if (head == null)
-                head = node
-
-            if (previousNode == null)
-                previousNode = node
-            else {
-                previousNode?.next = node
-                previousNode = previousNode?.next
-            }
-        }
-
-        previousNode?.next = head
-
-        return head!!
-    }
-
-    private fun rotate(head: Node, steps: Int): Node {
-        var newHead: Node = head
-        for (i in 0..steps - 1) {
-            newHead = newHead!!.next!!
-        }
-
-        return newHead!!
-    }
-
-    class Node(
-        val value: Int,
-        var next: Node? = null
-    )
 
     private data class Input(val array: IntArray, val k: Int)
 }

@@ -12,7 +12,7 @@
 
 ## After Attempt 4
 * Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but again with two loops)
-* Rotate Array
+* Rotate Array (SOLVED_PERFECTLY)
 * First Missing Positive
 
 # Attempt 3
