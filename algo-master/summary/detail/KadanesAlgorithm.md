@@ -6,7 +6,7 @@
 
 ## Attempt 1
 * Maximum Subarray (SOLVED PERFECTLY -> I saw the explanation of the algorithm two days before)
-* Maximum Sum Circular Subarray
+* Maximum Sum Circular Subarray (NOT SOLVED -> I did not know the proper logic and without it just got lost in edge cases)
 * Maximum Product Subarray
 * Best Sightseeing Pair
 
