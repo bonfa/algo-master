@@ -28,10 +28,6 @@ class MajorityElement {
     }
 
     fun majorityElement(nums: IntArray): Int {
-        return boyerMooreVotingAlgorithm(nums)
-    }
-
-    private fun boyerMooreVotingAlgorithm(nums: IntArray): Int {
         var candidate = nums[0]
         var count = 1
         for (i in 1..nums.size-1) {
@@ -45,20 +41,5 @@ class MajorityElement {
         }
 
         return candidate
-    }
-
-    private fun mapBased(nums: IntArray): Int {
-        val counts = mutableMapOf<Int, Int>()
-
-        nums.forEach { num ->
-            if (counts[num] == null)
-                counts[num] = 1
-            else
-                counts[num] = counts[num]!! + 1
-        }
-
-        val key = counts.entries.maxBy { (k, v) -> v }.key
-
-        return key
     }
 }
