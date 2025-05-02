@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.kadane
+package it.fbonfadelli.algo.master.kadane.exercises
 
 import it.fbonfadelli.algo.master.utils.printable
 
