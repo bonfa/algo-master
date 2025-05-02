@@ -28,10 +28,6 @@ class RemoveDuplicates {
     }
 
     fun removeDuplicates(nums: IntArray): Int {
-        return version2(nums)
-    }
-
-    private fun version2(nums: IntArray): Int {
         var lastChangedIndex = 0
         for (i in 1..nums.size-1) {
             if (nums[i] > nums[lastChangedIndex]) {
@@ -41,25 +37,5 @@ class RemoveDuplicates {
         }
 
         return lastChangedIndex + 1
-    }
-
-
-    private fun version1(nums: IntArray): Int {
-        var positionToOverride = 0
-        var currentPosition = 1
-        while (true) {
-            if (currentPosition >= nums.size)
-                break
-
-            if (nums[positionToOverride] == nums[currentPosition]) {
-                currentPosition++
-            } else {
-                positionToOverride++
-                nums[positionToOverride] = nums[currentPosition]
-                currentPosition++
-            }
-        }
-
-        return positionToOverride + 1
     }
 }
