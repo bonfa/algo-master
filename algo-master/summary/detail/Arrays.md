@@ -13,7 +13,7 @@
 ## After Attempt 4
 * Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but again with two loops)
 * Rotate Array (SOLVED_PERFECTLY)
-* First Missing Positive
+* First Missing Positive (NOT_SOLVED --> did not remember the algorithm)
 
 # Attempt 3
 1. Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)
