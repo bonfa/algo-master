@@ -6,6 +6,10 @@
 5. Reverse words in a String
 6. Guess the word
 
+## After Attempt 4
+* Longest Common Prefix
+* Guess the word
+
 # Attempt 3
 * Longest Common Prefix (NOT_SOLVED -> I knew the proper algorithm, but I failed the implementation)
 * Zigzag conversion (SOLVED_PERFECTLY)
