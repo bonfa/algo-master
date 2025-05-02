@@ -22,17 +22,13 @@ class MoveZeroes {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
-            moveZeroes.moveZeroes(input)
+            moveZeroes.execute(input)
             println("Output: " + input.printable())
             println()
         }
     }
 
-    fun moveZeroes(nums: IntArray): Unit {
-        latestSolution(nums)
-    }
-
-    private fun latestSolution(nums: IntArray): Unit {
+    fun execute(nums: IntArray): Unit {
         var indexToChange = -1
 
         var i = 0
