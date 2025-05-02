@@ -10,6 +10,11 @@
 9. Increasing Triplet Subsequence
 10. First Missing Positive
 
+## After Attempt 4
+* Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but again with two loops)
+* Rotate Array
+* First Missing Positive
+
 # Attempt 3
 1. Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but with internal loop)
 2. Majority Element (SOLVED_PERFECTLY)
