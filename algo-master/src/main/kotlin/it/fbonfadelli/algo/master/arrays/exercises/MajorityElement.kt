@@ -21,13 +21,13 @@ class MajorityElement {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
-            val me = majorityElement.majorityElement(input)
+            val me = majorityElement.execute(input)
             println("Output: $me")
             println()
         }
     }
 
-    fun majorityElement(nums: IntArray): Int {
+    fun execute(nums: IntArray): Int {
         var candidate = nums[0]
         var count = 1
         for (i in 1..nums.size-1) {

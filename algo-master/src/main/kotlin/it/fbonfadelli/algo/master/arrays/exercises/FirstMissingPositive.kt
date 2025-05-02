@@ -27,13 +27,13 @@ class FirstMissingPositive {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
-            val output = firstMissingPositive.firstMissingPositive(input)
+            val output = firstMissingPositive.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun firstMissingPositive(nums: IntArray): Int {
+    fun execute(nums: IntArray): Int {
         if (nums.size == 1) {
             if (nums[0] == 1)
                 return 2

@@ -27,13 +27,13 @@ class IncreasingTriplet {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: " + input.printable())
-            val output = increasingTriplet.increasingTriplet(input)
+            val output = increasingTriplet.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun increasingTriplet(nums: IntArray): Boolean {
+    fun execute(nums: IntArray): Boolean {
         var i : Int? = null
         var j : Int? = null
 
