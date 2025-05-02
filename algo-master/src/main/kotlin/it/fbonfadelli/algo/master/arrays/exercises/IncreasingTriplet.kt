@@ -34,10 +34,6 @@ class IncreasingTriplet {
     }
 
     fun increasingTriplet(nums: IntArray): Boolean {
-        return version2(nums)
-    }
-
-    private fun version2(nums: IntArray): Boolean {
         var i : Int? = null
         var j : Int? = null
 
@@ -65,30 +61,6 @@ class IncreasingTriplet {
             if (j != null && num > j) {
                 return true
             }
-        }
-
-        return false
-    }
-
-    private fun version1(nums: IntArray): Boolean {
-        var firstItem: Int? = null
-        var secondItem: Int? = null
-
-        for (i in 0..nums.size - 1) {
-            val num = nums[i]
-
-            if (firstItem == null || nums[i] < firstItem) {
-                firstItem = nums[i]
-                continue
-            }
-
-            if (firstItem != null && nums[i] > firstItem && (secondItem == null || nums[i] < secondItem!!)) {
-                secondItem = nums[i]
-                continue
-            }
-
-            if (firstItem != null && secondItem != null && nums[i] > secondItem!!)
-                return true
         }
 
         return false
