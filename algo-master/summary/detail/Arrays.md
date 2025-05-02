@@ -11,7 +11,7 @@
 10. First Missing Positive
 
 ## After Attempt 4
-* Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers but again with two loops)
+* Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers, but again with two loops)
 * Rotate Array (SOLVED_PERFECTLY)
 * First Missing Positive (NOT_SOLVED --> did not remember the algorithm)
 
@@ -71,4 +71,8 @@ Skipping the solutions where I do not remember the optimal algorithm
 ## After Attempt 3
 * Move Zeroes
 * Rotate Array
+* First Missing Positive
+
+## After Attempt 4
+* Move Zeroes
 * First Missing Positive
