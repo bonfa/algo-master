@@ -8,7 +8,7 @@
 7. Sum of two integers
 
 ## After Attempt 4
-* Counting bits
+* Counting bits (SOLVED PERFECTLY)
 * Reverse bits
 * Bitwise AND of number range
 * Single number III
