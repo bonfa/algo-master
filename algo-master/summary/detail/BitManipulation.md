@@ -9,7 +9,7 @@
 
 ## After Attempt 4
 * Counting bits (SOLVED PERFECTLY)
-* Reverse bits
+* Reverse bits (SOLVED PERFECTLY)
 * Bitwise AND of number range
 * Single number III
 * Sum of two integers
