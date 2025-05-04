@@ -15,7 +15,7 @@
 
 ## Attempt 3
 * Design HashMap (SOLVED PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
-* Isomorphic Strings
+* Isomorphic Strings (SOLVED_SUB_OPTIMAL -> used one array instead of two)
 * Group Anagrams
 * Encode and Decode TinyURL
 * Reorganize String
