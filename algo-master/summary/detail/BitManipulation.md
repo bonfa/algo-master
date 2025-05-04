@@ -11,7 +11,7 @@
 * Counting bits (SOLVED PERFECTLY)
 * Reverse bits (SOLVED PERFECTLY)
 * Bitwise AND of number range (SOLVED PERFECTLY)
-* Single number III
+* Single number III (NOT SOLVED -> close to the proper reasoning, but I missed a detail)
 * Sum of two integers
 
 ## Attempt 3
