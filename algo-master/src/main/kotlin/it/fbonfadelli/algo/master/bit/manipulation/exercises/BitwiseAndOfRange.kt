@@ -32,60 +32,17 @@ class BitwiseAndOfRange {
     }
 
     fun rangeBitwiseAnd(left: Int, right: Int): Int {
-        return version2(left, right)
-    }
+        var uLeft = left
+        var uRight = right
 
-    private fun version2(left: Int, right: Int): Int {
-        val uLeft = left.toUInt()
-        val uRight = right.toUInt()
-
-        if (uLeft == uRight)
-            return left
-
-        if (uLeft * 2u < uRight) {
-            return 0
+        var shiftCount = 0
+        while(uRight != 0 && uRight != uLeft) {
+            uLeft = uLeft shr 1
+            uRight = uRight shr 1
+            shiftCount++
         }
 
-        var res = uLeft
-        for (i in uLeft+1u..uRight) {
-            res = res and i
-        }
-        return res.toInt()
-    }
-
-    private fun version1(left: Int, right: Int): Int {
-        if (left == right)
-            return left
-
-        var num = 0u
-        var myLeft = left.toUInt()
-        var myRight = right.toUInt()
-        while (true) {
-            val mostSignificantBitInLeft: UInt = mostSignificantBitIn(myLeft.toUInt())
-            val mostSignificantBitInRight: UInt = mostSignificantBitIn(myRight.toUInt())
-
-            if (mostSignificantBitInRight == mostSignificantBitInLeft) {
-                num = num + mostSignificantBitInLeft
-                myLeft = myLeft - mostSignificantBitInLeft
-                myRight = myRight - mostSignificantBitInRight
-            } else {
-                break
-            }
-        }
-
-        return num.toInt()
-    }
-
-    private fun mostSignificantBitIn(num:UInt): UInt {
-        if (num == 0u)
-            return 0u
-
-        var msb = 1u
-        while ((msb shl 1) <= num) {
-            msb = msb shl 1
-        }
-
-        return msb
+        return uRight shl shiftCount
     }
 
     private data class Input(val min:Int, val max:Int)
