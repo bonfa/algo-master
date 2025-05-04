@@ -7,8 +7,8 @@
 6. Guess the word
 
 ## After Attempt 4
-* Longest Common Prefix
-* Guess the word
+* Longest Common Prefix (NOT_SOLVED -> could not implement binary search properly in the amount of time)
+* Guess the word (NOT_SOLVED -> did not remember the proper strategy)
 
 # Attempt 3
 * Longest Common Prefix (NOT_SOLVED -> I knew the proper algorithm, but I failed the implementation)
