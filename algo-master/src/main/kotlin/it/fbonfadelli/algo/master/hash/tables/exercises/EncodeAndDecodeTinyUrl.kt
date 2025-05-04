@@ -1,11 +1,9 @@
 package it.fbonfadelli.algo.master.hash.tables.exercises
 
-import java.util.Random
-
 class EncodeAndDecodeTinyUrl {
 
     companion object {
-        private val codec = CodecV2()
+        private val codec = Codec()
 
         fun main() {
             println("ENCODE AND DECODE TINY URL")
@@ -27,63 +25,41 @@ class EncodeAndDecodeTinyUrl {
         }
     }
 
-    private class CodecV2 {
-        private val BASE = "http://tinyurl.com/"
-        private val CHARS = "ABCDEFGHIJKLMNOPQRSTUWXYZabcdefghijklmnopqrstuvwxyz1234567890"
-        private val urlMap = mutableMapOf<String, String>()
+    class Codec() {
 
-        // Encodes a URL to a shortened URL.
-        fun encode(longUrl: String): String {
-            val key = randomStringOfLengthSix()
-            urlMap[key] = longUrl
-            return BASE + key
-        }
-
-        // Decodes a shortened URL to its original URL.
-        fun decode(shortUrl: String): String {
-            return urlMap[shortUrl.drop(BASE.length)]!!
-        }
-
-        private fun randomStringOfLengthSix(): String {
-            val builder = StringBuilder()
-            for (i in 0 until 6) {
-                builder.append(CHARS.random())
-            }
-            return builder.toString()
-        }
-    }
-
-    private class CodecV1 {
         private val map: MutableMap<String, String> = mutableMapOf()
 
         fun encode(longUrl: String): String {
-            var entered = false
-            var key: String
-            do {
-                key = generateKey()
-                if (map[key] == null) {
-                    map.put(key, longUrl)
-                    entered = true
-                }
+            var key = createRandomString()
+            while(map.containsKey(key)) {
+                key = createRandomString()
+            }
 
-            } while (entered == false)
-
-            return "http://tinyurl.com/" + key
+            map[key] = longUrl
+            return "$TINY_URL_PREFIX$key"
         }
 
         fun decode(shortUrl: String): String {
-            val key = shortUrl.drop(19)
-            return map[key] ?: "ERROR"
+            val key = shortUrl.removePrefix(TINY_URL_PREFIX)
+            return map[key]!!
         }
 
-        private fun generateKey(): String {
-            val random = Random(128)
-            val keyBuilder = StringBuilder()
-            for (i in 0..5) {
-                keyBuilder.append(random.nextInt().toChar())
+        private fun createRandomString(): String {
+            val builder = StringBuilder()
+
+            var i = 0
+            while (i < KEY_SIZE) {
+                builder.append(ALPHABET.random())
+                i++
             }
 
-            return keyBuilder.toString()
+            return builder.toString()
+        }
+
+        companion object {
+            private const val TINY_URL_PREFIX = "http://tinyurl.com/"
+            private const val ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            private const val KEY_SIZE = 6
         }
     }
 }

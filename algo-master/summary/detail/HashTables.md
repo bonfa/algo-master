@@ -17,7 +17,7 @@
 * Design HashMap (SOLVED PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
 * Isomorphic Strings (SOLVED_SUB_OPTIMAL -> used one array instead of two)
 * Group Anagrams (SOLVED_SUB_OPTIMAL -> The simple solution did not come to my mind)
-* Encode and Decode TinyURL
+* Encode and Decode TinyURL (SOLVED PERFECTLY)
 * Reorganize String
 * Longest Consecutive Sequence
 * Split Array into Consecutive Subsequences
