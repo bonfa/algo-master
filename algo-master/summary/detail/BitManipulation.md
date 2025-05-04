@@ -12,7 +12,7 @@
 * Reverse bits (SOLVED PERFECTLY)
 * Bitwise AND of number range (SOLVED PERFECTLY)
 * Single number III (NOT SOLVED -> close to the proper reasoning, but I missed a detail)
-* Sum of two integers
+* Sum of two integers (NOT SOLVED -> close to the proper reasoning, but I missed a detail)
 
 ## Attempt 3
 * Counting bits (SOLVED_SUB_OPTIMAL - close to perfect but not yet the perfect one)
@@ -61,5 +61,9 @@
 * Counting bits
 * Reverse bits
 * Bitwise AND of number range
+* Single number III
+* Sum of two integers
+
+## After Attempt 4
 * Single number III
 * Sum of two integers
