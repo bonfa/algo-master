@@ -29,58 +29,34 @@ class GroupAnagrams {
     }
 
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
-        return version2(strs)
-    }
-
-    fun version2(strs: Array<String>): List<List<String>> {
-        val charFrequencies = mutableMapOf<List<Int>, MutableList<String>>()
-        strs.forEach { str ->
-            val charFrequency = charFrequency(str)
-            if (charFrequencies.containsKey(charFrequency)) {
-                charFrequencies[charFrequency]!!.add(str)
-            } else {
-                charFrequencies[charFrequency] = mutableListOf(str)
-            }
-        }
-
-        return charFrequencies.values.map { it.toList() }
-    }
-
-    private fun charFrequency(str: String): List<Int> {
-        val frequencies = IntArray(26)
-        for (i in str.indices) {
-            frequencies[str[i]-'a']++
-        }
-        return frequencies.toList()
-    }
-
-    private fun version1(strs: Array<String>): List<List<String>> {
-        val map: MutableMap<CharacterMap, MutableList<String>> = mutableMapOf()
-
+        val map: MutableMap<String, MutableList<String>> = mutableMapOf()
         for (str in strs) {
-            val charMap = str.characterMap()
-            if (map[charMap] == null) {
-                map[charMap] = mutableListOf(str)
+            val f = freq(str)
+            if (map.containsKey(f)) {
+                map[f]!!.add(str)
             } else {
-                map[charMap]!!.add(str)
+                map[f] = mutableListOf(str)
+            }
+        }
+        return map.values.toList()
+    }
+
+    private fun freq(str:String): String {
+        val freq = IntArray(26)
+
+        for (i in str.indices) {
+            freq[str[i]-'a']++
+        }
+
+        val builder = StringBuilder()
+        for (i in 0 until freq.size) {
+            if (freq[i] > 0) {
+                builder.append((i + 'a'.code).toChar())
+                builder.append(freq[i])
+                builder.append("#")
             }
         }
 
-        return map.values.map { it.toList() }
+        return builder.toString()
     }
-
-    private fun String.characterMap(): CharacterMap {
-        val map: MutableMap<Char, Int> = mutableMapOf()
-        for (i in 0..this.length-1) {
-            val char = this[i]
-            if (map[char] == null)
-                map[char] = 1
-            else
-                map[char] = map[char]!! + 1
-        }
-        return CharacterMap(map)
-    }
-
-    @JvmInline
-    private value class CharacterMap(val value: Map<Char, Int>)
 }
