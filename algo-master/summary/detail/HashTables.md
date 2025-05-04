@@ -13,6 +13,15 @@
 12. Number of Matching Subsequences
 13. Number of Good Ways to Split a String
 
+## Attempt 3
+* Design HashMap (SOLVED PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
+* Isomorphic Strings
+* Group Anagrams
+* Encode and Decode TinyURL
+* Reorganize String
+* Longest Consecutive Sequence
+* Split Array into Consecutive Subsequences
+* Number of Matching Subsequences
 
 ## Attempt 1
 1. Design HashMap (SOLVED_PERFECTLY (for time))
