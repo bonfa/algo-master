@@ -18,7 +18,7 @@
 * Isomorphic Strings (SOLVED_SUB_OPTIMAL -> used one array instead of two)
 * Group Anagrams (SOLVED_SUB_OPTIMAL -> The simple solution did not come to my mind)
 * Encode and Decode TinyURL (SOLVED PERFECTLY)
-* Reorganize String
+* Reorganize String (SOLVED_SUB_OPTIMAL)
 * Longest Consecutive Sequence
 * Split Array into Consecutive Subsequences
 * Number of Matching Subsequences
