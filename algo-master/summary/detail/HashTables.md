@@ -20,7 +20,7 @@
 * Encode and Decode TinyURL (SOLVED PERFECTLY)
 * Reorganize String (SOLVED_SUB_OPTIMAL)
 * Longest Consecutive Sequence (NOT SOLVED)
-* Split Array into Consecutive Subsequences
+* Split Array into Consecutive Subsequences (SOLVED -> but optimally for space and not for time)
 * Number of Matching Subsequences
 
 ## Attempt 1
