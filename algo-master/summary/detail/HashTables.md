@@ -19,7 +19,7 @@
 * Group Anagrams (SOLVED_SUB_OPTIMAL -> The simple solution did not come to my mind)
 * Encode and Decode TinyURL (SOLVED PERFECTLY)
 * Reorganize String (SOLVED_SUB_OPTIMAL)
-* Longest Consecutive Sequence
+* Longest Consecutive Sequence (NOT SOLVED)
 * Split Array into Consecutive Subsequences
 * Number of Matching Subsequences
 
