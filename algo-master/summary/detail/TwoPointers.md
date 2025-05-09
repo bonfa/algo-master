@@ -21,7 +21,7 @@
 # Attempt 3
 * Merge sorted arrays -> (NOT_SOLVED)
 * 3Sum -> (NOT_SOLVED)
-* Trapping Rain Water
+* Trapping Rain Water (NOT_SOLVED)
 
 # Revision List
 ## After Attempt 1
@@ -31,6 +31,11 @@
 * Trapping Rain Water
 
 ## After Attempt 2
+* Merge sorted arrays
+* 3Sum
+* Trapping Rain Water
+
+## After Attempt 3
 * Merge sorted arrays
 * 3Sum
 * Trapping Rain Water
