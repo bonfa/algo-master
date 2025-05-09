@@ -21,7 +21,7 @@ class NumberOfMatchingSubsequences {
 
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: ${input}")
+            println("Input: $input")
             val output = numberOfMatchingSubsequences.numMatchingSubseq(input.s, input.words)
             println("Output: $output")
             println()
@@ -29,59 +29,61 @@ class NumberOfMatchingSubsequences {
     }
 
     fun numMatchingSubseq(s: String, words: Array<String>): Int {
-        val charMap: Array<MutableList<Int>> = charMap(s)
-        val wordsMap: Map<String, Int> = createWordMap(words)
+        val wordsMap: Map<String, Int> = map(words)
+        val sMap: Map<Char, List<Int>> = computeMap(s)
 
         var count = 0
-        for ((w,c) in wordsMap) {
-            if (w.length > s.length)
-                continue
-            else if (w == s)
-                count+=c
-            else if (canBuildFrom(w, charMap))
-                count+=c
+        for ((word, numberOfWords) in wordsMap.entries) {
+            if (isSubsequence(word, sMap))
+                count += numberOfWords
         }
 
         return count
     }
 
-    private fun createWordMap(words: Array<String>): Map<String, Int> {
+    private fun map(words: Array<String>): Map<String, Int> {
         val map = mutableMapOf<String, Int>()
         for (w in words) {
-            if (map[w] != null)
-                map[w] = map[w]!! + 1
-            else {
-                map[w] = 1
-            }
+            map[w] = map.getOrDefault(w, 0) + 1
         }
         return map
     }
 
-    private fun charMap(s:String): Array<MutableList<Int>> {
-        val arr: Array<MutableList<Int>> = Array(128) { mutableListOf<Int>() }
-
-        for (i in 0..s.length-1) {
-            arr[s[i]-'a']!!.add(i)
+    private fun computeMap(s:String): Map<Char, List<Int>> {
+        val map = mutableMapOf<Char, MutableList<Int>>()
+        for (i in s.indices) {
+            val c = s[i]
+            if (map.containsKey(c)) {
+                map[c]!!.add(i)
+            } else {
+                map[c] = mutableListOf(i)
+            }
         }
 
-        return arr
+        return map
     }
 
-    private fun canBuildFrom(word: String, charMap: Array<MutableList<Int>>): Boolean {
-        var indexInS = -1
-        var i = 0
-        while (i < word.length) {
-            val c = word[i]
-
-            if (charMap[c-'a'].isEmpty())
+    private fun isSubsequence(word: String, sMap:Map<Char, List<Int>>): Boolean {
+        var prevCharIdx = -1
+        for (c in word) {
+            if (!sMap.containsKey(c)) {
                 return false
+            }
+            else { //char is present
+                val indicesOfCInS = sMap[c]!!
+                var firstIndexOfCGreaterThanPrevChar = prevCharIdx
+                for (idx in indicesOfCInS) {
+                    if (idx > firstIndexOfCGreaterThanPrevChar) {
+                        firstIndexOfCGreaterThanPrevChar = idx
+                        break
+                    }
+                }
+                if (firstIndexOfCGreaterThanPrevChar == prevCharIdx) { //could not find valid char
+                    return false
+                }
 
-            if (charMap[c-'a']!!.none { it > indexInS })
-                return false
-
-            indexInS = charMap[c-'a']!!.first { it > indexInS }!!
-
-            i++
+                prevCharIdx = firstIndexOfCGreaterThanPrevChar
+            }
         }
 
         return true
