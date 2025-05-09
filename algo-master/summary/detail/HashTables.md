@@ -13,16 +13,6 @@
 12. Number of Matching Subsequences
 13. Number of Good Ways to Split a String
 
-## Attempt 3
-* Design HashMap (SOLVED PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
-* Isomorphic Strings (SOLVED_SUB_OPTIMAL -> used one array instead of two)
-* Group Anagrams (SOLVED_SUB_OPTIMAL -> The simple solution did not come to my mind)
-* Encode and Decode TinyURL (SOLVED PERFECTLY)
-* Reorganize String (SOLVED_SUB_OPTIMAL)
-* Longest Consecutive Sequence (NOT SOLVED)
-* Split Array into Consecutive Subsequences (SOLVED -> but optimally for space and not for time)
-* Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> did not use binary search to search the index in the list)
-
 ## Attempt 1
 1. Design HashMap (SOLVED_PERFECTLY (for time))
 2. Maximum Number of Balloons (SOLVED_NOT_OPTIMAL -> Solved with map not with array)
@@ -51,6 +41,16 @@
 * Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> brute force)
 * Number of Good Ways to Split a String (SOLVED_PERFECTLY)
 
+## Attempt 3
+* Design HashMap (SOLVED PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
+* Isomorphic Strings (SOLVED_SUB_OPTIMAL -> used one array instead of two)
+* Group Anagrams (SOLVED_SUB_OPTIMAL -> The simple solution did not come to my mind)
+* Encode and Decode TinyURL (SOLVED PERFECTLY)
+* Reorganize String (SOLVED_SUB_OPTIMAL)
+* Longest Consecutive Sequence (NOT SOLVED)
+* Split Array into Consecutive Subsequences (SOLVED -> but optimally for space and not for time)
+* Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> did not use binary search to search the index in the list)
+
 # Revision List
 ## After Attempt 1
 * Design HashMap (+ handle the collision)
@@ -73,4 +73,12 @@
 * Reorganize String
 * Longest Consecutive Sequence
 * Split Array into Consecutive Subsequences
+* Number of Matching Subsequences
+
+## After Attempt 3
+* Isomorphic Strings 
+* Group Anagrams 
+* Reorganize String 
+* Longest Consecutive Sequence 
+* Split Array into Consecutive Subsequences 
 * Number of Matching Subsequences
