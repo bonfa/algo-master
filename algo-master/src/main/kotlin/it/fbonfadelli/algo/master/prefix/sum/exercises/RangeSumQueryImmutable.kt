@@ -27,18 +27,22 @@ class RangeSumQueryImmutable {
     }
 
     class NumArray(nums: IntArray) {
-
-        private val prefixSum : IntArray
+        private val prefixSum: IntArray = IntArray(nums.size)
 
         init {
-            prefixSum = IntArray(nums.size)
             prefixSum[0] = nums[0]
-            for(i in  1..nums.size-1)
-                prefixSum[i] = prefixSum[i-1] + nums[i]
+            var i = 1
+            while (i < prefixSum.size) {
+                prefixSum[i] = prefixSum[i - 1] + nums[i]
+                i++
+            }
         }
 
         fun sumRange(left: Int, right: Int): Int {
-            return prefixSum[right] - (if (left == 0) 0 else prefixSum[left-1])
+            return if (left == 0)
+                prefixSum[right]
+            else
+                prefixSum[right] - prefixSum[left - 1]
         }
     }
 
