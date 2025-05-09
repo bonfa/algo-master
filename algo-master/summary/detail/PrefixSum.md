@@ -19,6 +19,13 @@
 * Continuous Subarray Sum (NOT_SOLVED)
 * Contiguous Array (NOT_SOLVED)
 
+## Attempt 3
+* Range Sum Query - Immutable
+* Subarray Sum Equals K
+* Subarray Sums Divisible by K
+* Continuous Subarray Sum
+* Contiguous Array
+
 # Revision List
 ## After Attempt 1
 * Range Sum Query - Immutable
