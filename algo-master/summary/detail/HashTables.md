@@ -21,7 +21,7 @@
 * Reorganize String (SOLVED_SUB_OPTIMAL)
 * Longest Consecutive Sequence (NOT SOLVED)
 * Split Array into Consecutive Subsequences (SOLVED -> but optimally for space and not for time)
-* Number of Matching Subsequences
+* Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> did not use binary search to search the index in the list)
 
 ## Attempt 1
 1. Design HashMap (SOLVED_PERFECTLY (for time))
