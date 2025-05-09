@@ -19,48 +19,28 @@ class SubArraySumEqualsK {
 
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: ${input}")
-            val output = subArraySumEqualsK.subArraySum(input.array, input.k)
-            println("Output: ${output}")
+            println("Input: $input")
+            val output = subArraySumEqualsK.execute(input.array, input.k)
+            println("Output: $output")
             println()
         }
     }
 
-    fun subArraySum(nums: IntArray, k: Int): Int {
-        var sum = 0
+    fun execute(nums: IntArray, k: Int): Int {
+        var currentSum = 0
         var count = 0
 
-        val counts = mutableMapOf<Int, Int>()
-        counts[0] = 1
+        val sums = mutableMapOf<Int, Int>()
+        sums[0] = 1
 
-        nums.forEach { num ->
-            sum = sum + num
+        for (num in nums) {
+            currentSum += num
 
-            if (counts.containsKey(sum - k)) {
-                count += counts[sum - k]!!
+            if (sums.containsKey(currentSum - k)) {
+                count += sums[currentSum - k]!!
             }
 
-            counts[sum] = (counts[sum] ?: 0) + 1
-        }
-
-        return count
-    }
-
-    private fun bruteForce(nums: IntArray, k: Int): Int {
-        for (i in 1 until nums.size) {
-            nums[i] = nums[i-1] + nums[i]
-        }
-        //nums now contains the cumulative sum
-
-        var count = 0
-        for (i in 0 until nums.size) {
-            if (nums[i] == k)
-                count++
-
-            for (j in i+1 until nums.size) {
-                if (nums[j]-nums[i] == k)
-                    count++
-            }
+            sums[currentSum] = sums.getOrDefault(currentSum, 0) + 1
         }
 
         return count
