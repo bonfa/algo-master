@@ -25,17 +25,13 @@ class LongestConsecutiveSequence {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: '${input.printable()}'")
-            val output = longestConsecutiveSequence.longestConsecutive(input)
+            val output = longestConsecutiveSequence.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun longestConsecutive(nums: IntArray): Int {
-        return version2(nums)
-    }
-
-    private fun version2(nums: IntArray): Int {
+    fun execute(nums: IntArray): Int {
         if (nums.size <= 1)
             return nums.size
 
@@ -88,54 +84,6 @@ class LongestConsecutiveSequence {
             max = Math.max(max, entry.value-entry.key)
         }
         return max + 1
-    }
-
-    private fun version1(nums: IntArray): Int {
-        if (nums.size <= 1)
-            return nums.size
-
-        val map = mutableMapOf<Int, Int>()
-
-        for (i in 0..nums.size - 1) {
-            val num = nums[i]
-
-            //num already present
-            if (map[num] != null)
-                continue
-
-            //num already inside range
-            if (map.entries.any { (k, v) -> k <= num && v >= num })
-                continue
-
-            var addedAsValue = false
-            var addedAsKey = false
-            var keyWhereAddedAsValue = num
-
-            if (map.entries.any { (_, v) -> v == num - 1 }) {
-                val k = map.entries.first { (_, v) -> v == num - 1 }!!.key
-                map[k] = num
-                keyWhereAddedAsValue = k
-                addedAsValue = true
-            }
-
-            if (map.entries.any { (k, _) -> k == num + 1 }) {
-                val (k, v) = map.entries.first { (k, _) -> k == num + 1 }!!
-                map.remove(k)
-                map[num] = v
-                addedAsKey = true
-            }
-
-            if (addedAsValue && addedAsKey) {
-                map[keyWhereAddedAsValue] = map[num]!!
-                map.remove(num)
-            }
-
-            if (!addedAsValue && !addedAsKey) {
-                map[num] = num
-            }
-        }
-
-        return map.entries.map { (k, v) -> v - k }.max() + 1
     }
 }
 

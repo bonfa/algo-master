@@ -22,13 +22,13 @@ class GroupAnagrams {
         private fun execute(index: Int, input: Array<String>) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = groupAnagrams.groupAnagrams(input)
+            val output = groupAnagrams.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun groupAnagrams(strs: Array<String>): List<List<String>> {
+    fun execute(strs: Array<String>): List<List<String>> {
         val map: MutableMap<String, MutableList<String>> = mutableMapOf()
         for (str in strs) {
             val f = freq(str)

@@ -21,19 +21,13 @@ class MaxNumberOfBalloons {
         private fun execute(index: Int, input: String) {
             println("CASE ${index+1}:")
             println("Input: '$input'")
-            val output = maxNumberOfBalloons.maxNumberOfBalloons(input)
+            val output = maxNumberOfBalloons.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    private val balloonChars = "balon".toCharArray().toSet()
-
-    fun maxNumberOfBalloons(text: String): Int {
-        return withArray(text)
-    }
-
-    private fun withArray(text: String): Int {
+    fun execute(text: String): Int {
         val frequencies = IntArray(5)
 
         for (i in text.indices) {
@@ -49,24 +43,5 @@ class MaxNumberOfBalloons {
         frequencies[2] = frequencies[2] / 2
         frequencies[3] = frequencies[3] / 2
         return frequencies.min()
-    }
-
-    private fun withMap(text: String): Int {
-        val charCounts = mutableMapOf<Char, Int>()
-        balloonChars.forEach { c -> charCounts.put(c, 0) }
-
-        for (c in text) {
-            if (c in balloonChars) {
-                charCounts[c] = charCounts[c]!! + 1
-            }
-        }
-
-        if (charCounts['l'] != null)
-            charCounts['l'] = charCounts['l']!! / 2
-
-        if (charCounts['o'] != null)
-            charCounts['o'] = charCounts['o']!! / 2
-
-        return charCounts.values.min()
     }
 }

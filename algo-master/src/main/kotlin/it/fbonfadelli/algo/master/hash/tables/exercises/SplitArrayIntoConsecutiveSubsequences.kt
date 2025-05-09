@@ -21,13 +21,13 @@ class SplitArrayIntoConsecutiveSubsequences {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: '${input.printable()}'")
-            val output = splitArrayIntoConsecutiveSubsequences.isPossible(input)
+            val output = splitArrayIntoConsecutiveSubsequences.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun isPossible(nums: IntArray): Boolean {
+    fun execute(nums: IntArray): Boolean {
         val ranges: MutableList<IntArray> = mutableListOf()
 
         for (num in nums) {

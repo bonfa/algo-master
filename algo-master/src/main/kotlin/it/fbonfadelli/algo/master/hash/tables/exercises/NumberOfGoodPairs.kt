@@ -23,13 +23,13 @@ class NumberOfGoodPairs {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = numberOfGoodPairs.numIdenticalPairs(input)
+            val output = numberOfGoodPairs.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun numIdenticalPairs(nums: IntArray): Int {
+    fun execute(nums: IntArray): Int {
         val firstIndexes = IntArray(101)
 
         var counts = 0

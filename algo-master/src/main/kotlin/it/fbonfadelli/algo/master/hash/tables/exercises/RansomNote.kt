@@ -22,13 +22,13 @@ class RansomNote {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: ${input}")
-            val output = ransomNote.canConstruct(input.ransomNote, input.magazine)
+            val output = ransomNote.execute(input.ransomNote, input.magazine)
             println("Output: $output")
             println()
         }
     }
 
-    fun canConstruct(ransomNote: String, magazine: String): Boolean {
+    fun execute(ransomNote: String, magazine: String): Boolean {
         val availability: MutableMap<Char, Int> = mutableMapOf()
         magazine.forEach { char ->
             if (availability[char] == null)

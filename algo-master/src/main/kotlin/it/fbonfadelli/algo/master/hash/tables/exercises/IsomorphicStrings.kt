@@ -21,18 +21,13 @@ class IsomorphicStrings {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: ${input}")
-            val output = isomorphicStrings.isIsomorphic(input.s, input.t)
+            val output = isomorphicStrings.execute(input.s, input.t)
             println("Output: $output")
             println()
         }
     }
 
-    fun isIsomorphic(s: String, t: String): Boolean {
-        return withArrays(s, t)
-    }
-
-
-    private fun withArrays(s: String, t: String): Boolean {
+    fun execute(s: String, t: String): Boolean {
         val sToTMap = CharArray(128)
         val tToSMap = CharArray(128)
 
@@ -52,24 +47,6 @@ class IsomorphicStrings {
         }
 
         return true
-    }
-
-    private fun withMap(s: String, t: String): Boolean {
-        val map = mutableMapOf<Char, Char>()
-
-        for (i in 0..s.length - 1) {
-            val sc = s[i]
-            val st = t[i]
-
-            if (map[sc] == null) {
-                map[sc] = st
-            } else {
-                if (map[sc] != st)
-                    return false
-            }
-        }
-
-        return map.values.toSet().size == map.keys.size
     }
 
     private data class Input(val s:String, val t:String)

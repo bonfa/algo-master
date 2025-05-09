@@ -22,13 +22,13 @@ class NumberOfMatchingSubsequences {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = numberOfMatchingSubsequences.numMatchingSubseq(input.s, input.words)
+            val output = numberOfMatchingSubsequences.execute(input.s, input.words)
             println("Output: $output")
             println()
         }
     }
 
-    fun numMatchingSubseq(s: String, words: Array<String>): Int {
+    fun execute(s: String, words: Array<String>): Int {
         val wordsMap: Map<String, Int> = map(words)
         val sMap: Map<Char, List<Int>> = computeMap(s)
 
