@@ -18,6 +18,11 @@
 * 3Sum (SOLVED_SUB_OPTIMAL -> brute force - did not think about the proper trick)
 * Trapping Rain Water (SOLVED_SUB_OPTIMAL)
 
+# Attempt 3
+* Merge sorted arrays
+* 3Sum
+* Trapping Rain Water
+
 # Revision List
 ## After Attempt 1
 * Merge sorted arrays 
