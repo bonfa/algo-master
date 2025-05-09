@@ -20,7 +20,7 @@
 * Contiguous Array (NOT_SOLVED)
 
 ## Attempt 3
-* Range Sum Query - Immutable
+* Range Sum Query - Immutable (SOLVED PERFECTLY)
 * Subarray Sum Equals K
 * Subarray Sums Divisible by K
 * Continuous Subarray Sum
