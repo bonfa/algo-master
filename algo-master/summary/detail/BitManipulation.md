@@ -7,7 +7,7 @@
 6. Single number III
 7. Sum of two integers
 
-## After Attempt 4
+## Attempt 4
 * Counting bits (SOLVED PERFECTLY)
 * Reverse bits (SOLVED PERFECTLY)
 * Bitwise AND of number range (SOLVED PERFECTLY)
