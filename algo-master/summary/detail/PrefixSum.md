@@ -21,7 +21,7 @@
 
 ## Attempt 3
 * Range Sum Query - Immutable (SOLVED PERFECTLY)
-* Subarray Sum Equals K
+* Subarray Sum Equals K (SOLVED PERFECTLY)
 * Subarray Sums Divisible by K
 * Continuous Subarray Sum
 * Contiguous Array
