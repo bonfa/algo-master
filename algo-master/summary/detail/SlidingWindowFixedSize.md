@@ -19,6 +19,11 @@
 * Maximum Sum of Distinct Subarrays With Length K (SOLVED ALMOST PERFECTLY)
 * Substring with Concatenation of All Words (NOT_SOLVED -> the solution was there but I finished the time in the edge cases)
 
+## After Attempt 3
+* Find All Anagrams in a String (SOLVED_PERFECTLY)
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
+
 # Revision List
 ## After Attempt 1
 * Maximum Average Subarray I 
