@@ -25,37 +25,38 @@ class LongestSubstringWithoutRepeatingCharacters {
         private fun execute(index: Int, input: String) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(input)
+            val output = longestSubstringWithoutRepeatingCharacters.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun lengthOfLongestSubstring(s: String): Int {
-        if (s.length <= 1) {
+    fun execute(s: String): Int {
+        if (s.length <= 1)
             return s.length
-        }
 
-        val lastCharIndex = mutableMapOf<Char, Int>()
+        val map = IntArray(128)
 
-        var l = -1
-        var maxCount = 0
+        var l = 0
         var r = 0
-        while (r < s.length) {
-            val c = s[r]
-            if (!lastCharIndex.containsKey(c) || (lastCharIndex.containsKey(c) && lastCharIndex[c]!! < l)) {
-                lastCharIndex[c] = r
-            } else {
-                maxCount = Math.max(r-l-1, maxCount)
-                l = lastCharIndex[c]!!
-                lastCharIndex[c] = r
+        var maxLength = 0
+
+        while(r < s.length) {
+            val toAdd = s[r]
+            while (map[toAdd.code] > 0 && l < r) {
+                val toRemove = s[l]
+                map[toRemove.code] = map[toRemove.code] - 1
+                l++
             }
+
+            map[toAdd.code]++
+            val currentLength = r - l + 1
+            maxLength = Math.max(maxLength, currentLength)
             r++
         }
 
-        maxCount = Math.max(r-l-1, maxCount)
 
-        return maxCount
+        return maxLength
     }
 
 }
