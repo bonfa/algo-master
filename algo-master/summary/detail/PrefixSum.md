@@ -23,7 +23,7 @@
 * Range Sum Query - Immutable (SOLVED PERFECTLY)
 * Subarray Sum Equals K (SOLVED PERFECTLY)
 * Subarray Sums Divisible by K (NOT_SOLVED -> forgot negative remainder)
-* Continuous Subarray Sum
+* Continuous Subarray Sum (NOT_SOLVED -> wrong math assumption)
 * Contiguous Array
 
 # Revision List
