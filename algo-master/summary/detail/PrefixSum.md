@@ -24,7 +24,7 @@
 * Subarray Sum Equals K (SOLVED PERFECTLY)
 * Subarray Sums Divisible by K (NOT_SOLVED -> forgot negative remainder)
 * Continuous Subarray Sum (NOT_SOLVED -> wrong math assumption)
-* Contiguous Array
+* Contiguous Array (NOT_SOLVED -> did not remember the trick)
 
 # Revision List
 ## After Attempt 1
@@ -37,6 +37,11 @@
 ## After Attempt 2
 * Range Sum Query - Immutable
 * Subarray Sum Equals K
+* Subarray Sums Divisible by K
+* Continuous Subarray Sum
+* Contiguous Array
+
+## After Attempt 3
 * Subarray Sums Divisible by K
 * Continuous Subarray Sum
 * Contiguous Array
