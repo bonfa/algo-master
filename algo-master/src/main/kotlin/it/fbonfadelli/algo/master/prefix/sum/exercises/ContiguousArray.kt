@@ -2,10 +2,10 @@ package it.fbonfadelli.algo.master.prefix.sum.exercises
 
 import it.fbonfadelli.algo.master.utils.printable
 
-class ContinguousArray {
+class ContiguousArray {
 
     companion object {
-        private val continguousArray = ContinguousArray()
+        private val contiguousArray = ContiguousArray()
 
         fun main() {
             println("CONTIGUOUS ARRAY")
@@ -23,13 +23,13 @@ class ContinguousArray {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = continguousArray.findMaxLength(input)
+            val output = contiguousArray.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun findMaxLength(nums: IntArray): Int {
+    fun execute(nums: IntArray): Int {
         var sum = 0
         var maxLength = 0
 

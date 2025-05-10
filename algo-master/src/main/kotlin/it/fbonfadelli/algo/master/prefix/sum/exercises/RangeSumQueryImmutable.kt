@@ -19,9 +19,9 @@ class RangeSumQueryImmutable {
 
         private fun execute(index: Int, numArray: NumArray, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: ${input}")
+            println("Input: $input")
             val output = numArray.sumRange(input.left, input.right)
-            println("Output: ${output}")
+            println("Output: $output")
             println()
         }
     }

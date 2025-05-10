@@ -24,7 +24,7 @@ object PrefixSumMenuPrinter {
             "2" -> SubArraySumEqualsK.main()
             "3" -> SubArraySumDivisibleByK.main()
             "4" -> ContinuousSubArraySum.main()
-            "5" -> ContinguousArray.main()
+            "5" -> ContiguousArray.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()

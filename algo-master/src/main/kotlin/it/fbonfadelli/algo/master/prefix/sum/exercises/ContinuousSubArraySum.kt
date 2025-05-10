@@ -25,14 +25,14 @@ class ContinuousSubArraySum {
 
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
-            println("Input: ${input}")
-            val output = continuousSubArraySum.checkSubArraySum(input.array, input.k)
-            println("Output: ${output}")
+            println("Input: $input")
+            val output = continuousSubArraySum.execute(input.array, input.k)
+            println("Output: $output")
             println()
         }
     }
 
-    fun checkSubArraySum(nums: IntArray, k: Int): Boolean {
+    fun execute(nums: IntArray, k: Int): Boolean {
 
         var sum = 0
         val reminderFirstIndex = mutableMapOf<Int, Int>()

@@ -20,13 +20,13 @@ class SubArraySumDivisibleByK {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = subArraySumDivisibleByK.subarraysDivByK(input.array, input.k)
+            val output = subArraySumDivisibleByK.execute(input.array, input.k)
             println("Output: $output")
             println()
         }
     }
 
-    fun subarraysDivByK(nums: IntArray, k: Int): Int {
+    fun execute(nums: IntArray, k: Int): Int {
         var sum = 0
         var count = 0
 
@@ -44,30 +44,6 @@ class SubArraySumDivisibleByK {
             }
 
             reminderCounts[remainder] = (reminderCounts[remainder] ?: 0) + 1
-        }
-
-        return count
-    }
-
-    private fun bruteForce(nums: IntArray, k: Int): Int {
-        for (i in 1 until nums.size) {
-            nums[i] = nums[i] + nums[i-1]
-        }
-        //now nums is the sumPrefix
-
-        //starting brute force as it is easier
-        var count = 0
-        for (i in 0 until nums.size) {
-            if (nums[i] % k == 0) {
-                count++
-            }
-
-            val reminder = nums[i] % k
-            for (j in i+1 until nums.size) {
-                if (nums[j] % k == reminder) {
-                    count++
-                }
-            }
         }
 
         return count
