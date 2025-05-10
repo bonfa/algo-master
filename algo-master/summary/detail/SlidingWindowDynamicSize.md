@@ -13,7 +13,7 @@
 * Minimum Window Substring (NOT_SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
 
 ## Attempt 2
-* Longest Substring Without Repeating Characters
+* Longest Substring Without Repeating Characters (SOLVED_PERFECTLY)
 * Longest Repeating Character Replacement
 * Minimum Size Subarray Sum
 * Max Consecutive Ones III
