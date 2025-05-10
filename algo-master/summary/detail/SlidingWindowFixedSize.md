@@ -21,8 +21,8 @@
 
 ## After Attempt 3
 * Find All Anagrams in a String (SOLVED_PERFECTLY)
-* Maximum Sum of Distinct Subarrays With Length K
-* Substring with Concatenation of All Words
+* Maximum Sum of Distinct Subarrays With Length K (SOLVED ALMOST PERFECTLY)
+* Substring with Concatenation of All Words (SOLVED_SUB_OPTIMAL -> the solution was close to the optimal one, but I needed to optimise it further)
 
 # Revision List
 ## After Attempt 1
@@ -34,5 +34,9 @@
 
 ## After Attempt 2
 * Find All Anagrams in a String
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
+
+## After Attempt 3
 * Maximum Sum of Distinct Subarrays With Length K
 * Substring with Concatenation of All Words
