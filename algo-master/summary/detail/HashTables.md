@@ -42,12 +42,12 @@
 * Number of Good Ways to Split a String (SOLVED_PERFECTLY)
 
 ## Attempt 3
-* Design HashMap (SOLVED PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
+* Design HashMap (SOLVED_PERFECTLY -> actually the tests are not working well with collision, but I am fine with that)
 * Isomorphic Strings (SOLVED_SUB_OPTIMAL -> used one array instead of two)
 * Group Anagrams (SOLVED_SUB_OPTIMAL -> The simple solution did not come to my mind)
-* Encode and Decode TinyURL (SOLVED PERFECTLY)
+* Encode and Decode TinyURL (SOLVED_PERFECTLY)
 * Reorganize String (SOLVED_SUB_OPTIMAL)
-* Longest Consecutive Sequence (NOT SOLVED)
+* Longest Consecutive Sequence (NOT_SOLVED)
 * Split Array into Consecutive Subsequences (SOLVED -> but optimally for space and not for time)
 * Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> did not use binary search to search the index in the list)
 

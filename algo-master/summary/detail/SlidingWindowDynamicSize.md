@@ -6,11 +6,11 @@
 5. Minimum Window Substring
 
 # Attempt 1
-* Longest Substring Without Repeating Characters (SOLVED PERFECTLY -> took a bit to realize the proper solution)
-* Longest Repeating Character Replacement (NOT SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
-* Minimum Size Subarray Sum (SOLVED PERFECTLY -> got lost a bit in indexes)
-* Max Consecutive Ones III (SOLVED PERFECTLY -> but the third attempt - keeping it in the revision list anyway)
-* Minimum Window Substring (NOT SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
+* Longest Substring Without Repeating Characters (SOLVED_PERFECTLY -> took a bit to realize the proper solution)
+* Longest Repeating Character Replacement (NOT_SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
+* Minimum Size Subarray Sum (SOLVED_PERFECTLY -> got lost a bit in indexes)
+* Max Consecutive Ones III (SOLVED_PERFECTLY -> but the third attempt - keeping it in the revision list anyway)
+* Minimum Window Substring (NOT_SOLVED -> close to the proper solution but a lot out of time with an edge case to solve)
 
 
 # Revision List
