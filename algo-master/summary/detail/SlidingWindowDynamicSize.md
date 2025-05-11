@@ -16,7 +16,7 @@
 * Longest Substring Without Repeating Characters (SOLVED_PERFECTLY)
 * Longest Repeating Character Replacement (NOT_SOLVED)
 * Minimum Size Subarray Sum (SOLVED_ALMOST_PERFECTLY -> kept twice the same condition)
-* Max Consecutive Ones III
+* Max Consecutive Ones III (SOLVED_PERFECTLY)
 * Minimum Window Substring
 
 
