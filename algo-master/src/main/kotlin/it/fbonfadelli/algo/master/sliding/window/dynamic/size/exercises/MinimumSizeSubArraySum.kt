@@ -20,48 +20,43 @@ class MinimumSizeSubArraySum {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = minimumSizeSubArraySum.minSubArrayLen(input.target, input.nums)
+            val output = minimumSizeSubArraySum.execute(input.target, input.nums)
             println("Output: $output")
             println()
         }
     }
 
-    fun minSubArrayLen(target: Int, nums: IntArray): Int {
-        if (nums.size == 1 && nums[0] >= target) {
-            return 1
-        } else if (nums.size == 1 && nums[0] < target) {
-            return 0
-        } else {
-            var minLength = Int.MAX_VALUE
-            var l = 0
-            var r = l+1
-            var currentSum = nums[l]
+    fun execute(target: Int, nums: IntArray): Int {
+        var minLength = Integer.MAX_VALUE
+        var sum = 0
+        var l = 0
+        var r = 0
 
-            if (currentSum >= target)
-                return 1
-
-            while(r < nums.size) {
-                currentSum += nums[r]
-                if (currentSum >= target) {
-                    minLength = Math.min(minLength, r - l + 1)
-                }
-
-                while ((currentSum - nums[l]) >= target && l <= r) {
-                    currentSum -= nums[l]
-                    l++
-                    minLength = Math.min(minLength, r - l + 1)
-                }
-
-                if (minLength == 1) {
-                    break
-                }
-
-                r++
+        while(r < nums.size) {
+            val toAdd = nums[r]
+            sum += toAdd
+            if (sum >= target) {
+                minLength = Math.min(minLength, r - l + 1)
             }
 
-            return if (minLength == Int.MAX_VALUE) 0 else minLength
+            //compression
+            while(sum >= target) {
+                val toRemove = nums[l]
+                sum -= toRemove
+                l++
+                if (sum >= target) {
+                    minLength = Math.min(minLength, r - l + 1)
+                }
+            }
+
+            r++
         }
+
+
+
+        return if (minLength == Integer.MAX_VALUE) 0 else minLength
     }
+
 
     private data class Input(val target: Int, val nums: IntArray)
 }
