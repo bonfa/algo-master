@@ -17,7 +17,7 @@
 * Longest Repeating Character Replacement (NOT_SOLVED)
 * Minimum Size Subarray Sum (SOLVED_ALMOST_PERFECTLY -> kept twice the same condition)
 * Max Consecutive Ones III (SOLVED_PERFECTLY)
-* Minimum Window Substring (SOLVED_ALMOST_PERFECTLY -> used array instead of hashmap)
+* Minimum Window Substring (SOLVED_ALMOST_PERFECTLY -> could optimise the condition to expand/shrink the window)
 
 
 # Revision List
