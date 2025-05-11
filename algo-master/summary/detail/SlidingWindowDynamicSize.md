@@ -27,3 +27,8 @@
 * Minimum Size Subarray Sum
 * Max Consecutive Ones III
 * Minimum Window Substring
+
+## After Attempt 2
+* Longest Repeating Character Replacement
+* Minimum Size Subarray Sum
+* Minimum Window Substring
