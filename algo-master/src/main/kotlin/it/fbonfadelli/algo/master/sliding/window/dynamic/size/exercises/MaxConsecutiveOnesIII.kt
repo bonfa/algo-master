@@ -23,60 +23,35 @@ class MaxConsecutiveOnesIII {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = maxConsecutiveOnesIII.longestOnes(input.nums, input.k)
+            val output = maxConsecutiveOnesIII.execute(input.nums, input.k)
             println("Output: $output")
             println()
         }
     }
 
-    fun longestOnes(nums: IntArray, k: Int): Int {
-        if (nums.size == 1) {
-            if (k <= 1 || nums[0] == 1)
-                return 1
-            else
-                return 0
-        } else if (k >= nums.size) {
-            return k
-        } else {
-            return execute(nums, k)
-        }
-    }
-
-    private fun execute(nums: IntArray, k: Int): Int {
+    fun execute(nums: IntArray, k: Int): Int {
+        var maxLength = 0
+        var countOfZeroes = 0
         var l = 0
         var r = 0
-        var maxLength = 0
-        var availableFlips = k
 
         while(r < nums.size) {
-            val num = nums[r]
-            if (num == 1) {
-                maxLength = Math.max(maxLength, r + 1 - l)
-                r++
-            } else if (num == 0 && availableFlips > 0) {
-                maxLength = Math.max(maxLength, r + 1 - l)
-                r++
-                availableFlips--
-            } else { //(num == 0 && availableFlips == 0)
-                while (l < r) {
-                    if (nums[l] == 0 && availableFlips < k) {
-                        availableFlips++
-                        l++
-                        break
-                    } else {
-                        l++
-                    }
-                }
-
-                if (availableFlips > 0) {
-                    maxLength = Math.max(maxLength, r + 1 - l)
-                    r++
-                    availableFlips--
-                } else {
-                    r++
-                    l = Math.max(l+1, r)
-                }
+            val toAdd = nums[r]
+            if (toAdd == 0) {
+                countOfZeroes++
             }
+
+            while(countOfZeroes > k) {
+                val toRemove = nums[l]
+                if (toRemove == 0) {
+                    countOfZeroes--
+                }
+                l++
+            }
+
+            maxLength = Math.max(maxLength, r - l + 1)
+
+            r++
         }
 
         return maxLength
