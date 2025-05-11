@@ -14,7 +14,7 @@
 
 ## Attempt 2
 * Longest Substring Without Repeating Characters (SOLVED_PERFECTLY)
-* Longest Repeating Character Replacement
+* Longest Repeating Character Replacement (NOT_SOLVED)
 * Minimum Size Subarray Sum
 * Max Consecutive Ones III
 * Minimum Window Substring
