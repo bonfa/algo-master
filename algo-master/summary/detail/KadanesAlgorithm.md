@@ -14,7 +14,7 @@
 * Maximum Subarray (SOLVED_PERFECTLY)
 * Maximum Sum Circular Subarray (NOT_SOLVED)
 * Maximum Product Subarray (NOT_SOLVED)
-* Best Sightseeing Pair
+* Best Sightseeing Pair (NOT_SOLVED)
 
 # Revision List
 ## After Attempt 1
