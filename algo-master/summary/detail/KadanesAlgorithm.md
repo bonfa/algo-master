@@ -10,6 +10,15 @@
 * Maximum Product Subarray (NOT_SOLVED -> My intuition was close to the proper one, but it was incomplete)
 * Best Sightseeing Pair (NOT_SOLVED -> Did not have the proper intuition)
 
+## Attempt 2
+* Maximum Subarray
+* Maximum Sum Circular Subarray
+* Maximum Product Subarray
+* Best Sightseeing Pair
+
 # Revision List
 ## After Attempt 1
-TDB
+* Maximum Subarray
+* Maximum Sum Circular Subarray
+* Maximum Product Subarray
+* Best Sightseeing Pair
