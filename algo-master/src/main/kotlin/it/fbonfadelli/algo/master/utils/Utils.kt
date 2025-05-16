@@ -1,10 +1,13 @@
 package it.fbonfadelli.algo.master.utils
 
 fun IntArray.printable() =
-    "[" + this.joinToString((",")) + "]"
+    "[" + this.joinToString(",") + "]"
 
 fun Array<String>.printable() =
-    "[" + this.joinToString((",")) + "]"
+    "[" + this.joinToString(",") + "]"
 
 fun <T> List<T>.printable() =
-    "[" + this.joinToString((",")) + "]"
+    "[" + this.joinToString(",") + "]"
+
+fun Array<IntArray>.printable() =
+    "[" + this.joinToString(separator = ",", transform = { it.printable() } ) + "]"

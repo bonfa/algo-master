@@ -1,5 +1,7 @@
 package it.fbonfadelli.algo.master.matrix.exercises
 
+import it.fbonfadelli.algo.master.utils.printable
+
 class SpiralMatrix {
 
     companion object {
@@ -23,7 +25,7 @@ class SpiralMatrix {
 
         private fun execute(index: Int, input: Array<IntArray>) {
             println("CASE ${index+1}:")
-            println("Input: $input")
+            println("Input: ${input.printable()}")
             val output = spiralMatrix.execute(input)
             println("Output: $output")
             println()
