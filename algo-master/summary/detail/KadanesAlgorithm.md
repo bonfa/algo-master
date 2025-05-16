@@ -12,7 +12,7 @@
 
 ## Attempt 2
 * Maximum Subarray (SOLVED_PERFECTLY)
-* Maximum Sum Circular Subarray
+* Maximum Sum Circular Subarray (NOT_SOLVED)
 * Maximum Product Subarray
 * Best Sightseeing Pair
 
