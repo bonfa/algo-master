@@ -1,6 +1,7 @@
 package it.fbonfadelli.algo.master.kadane.exercises
 
 import it.fbonfadelli.algo.master.utils.printable
+import kotlin.math.max
 
 class MaximumSubarray {
 
@@ -22,20 +23,20 @@ class MaximumSubarray {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = maximumSubArray.maxSubArray(input)
+            val output = maximumSubArray.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun maxSubArray(nums: IntArray): Int {
+    fun execute(nums: IntArray): Int {
         var currentSum = nums[0]
         var maxSum = nums[0]
 
         var r = 1
         while(r < nums.size) {
-            currentSum = (currentSum + nums[r]).coerceAtLeast(nums[r])
-            maxSum = Math.max(currentSum, maxSum)
+            currentSum = max(currentSum + nums[r],nums[r])
+            maxSum = max(currentSum, maxSum)
             r++
         }
 
