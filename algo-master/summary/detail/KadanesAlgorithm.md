@@ -11,7 +11,7 @@
 * Best Sightseeing Pair (NOT_SOLVED -> Did not have the proper intuition)
 
 ## Attempt 2
-* Maximum Subarray
+* Maximum Subarray (SOLVED_PERFECTLY)
 * Maximum Sum Circular Subarray
 * Maximum Product Subarray
 * Best Sightseeing Pair
