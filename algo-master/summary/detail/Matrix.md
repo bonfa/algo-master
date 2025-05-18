@@ -8,7 +8,7 @@
 # Attempt 1
 1. Spiral Matrix (SOLVED_PERFECTLY)
 2. Rotate Image (NOT_SOLVED)
-
+3. Set Matrix Zeroes (SOLVED_SUB_OPTIMAL -> did not solve it optimally for O(1) space)
 
 
 
