@@ -13,7 +13,9 @@
 5. Game of Life (SOLVED_SUB_OPTIMAL -> could not find a good solution for in place substitution)
 
 
-
 # Revision List
 ## After Attempt 1
-TBD
+* Spiral Matrix
+* Rotate Image 
+* Set Matrix Zeroes
+* Game of Life
