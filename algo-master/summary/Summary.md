@@ -11,6 +11,10 @@ Currently, the following categories are present:
 5. [Two Pointers](detail/TwoPointers.md)
 6. [Prefix Sum](detail/PrefixSum.md)
 7. [Sliding Window - Fixed Size](detail/SlidingWindowFixedSize.md)
+8. [Sliding Window - Dynamic Size](detail/SlidingWindowDynamicSize.md)
+9. [Kadane's Algorithm](detail/KadanesAlgorithm.md)
+10. [Matrix](detail/Matrix.md)
+11. [LinkedList](detail/LinkedList.md)
 
 # Reference
 https://algomaster.io/practice/dsa-patterns
