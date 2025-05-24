@@ -138,7 +138,7 @@ class DesignLinkedList {
             var node: Node? = head
 
             while(node?.next != null) {
-                node = node?.next
+                node = node.next
             }
 
             return node
