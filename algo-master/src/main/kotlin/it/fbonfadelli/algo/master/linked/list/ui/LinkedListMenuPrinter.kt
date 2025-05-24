@@ -3,6 +3,7 @@ package it.fbonfadelli.algo.master.linked.list.ui
 import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.linked.list.exercises.DesignLinkedList
 import it.fbonfadelli.algo.master.linked.list.exercises.IntersectionOfTwoLinkedLists
+import it.fbonfadelli.algo.master.linked.list.exercises.RemoveDuplicatesFromSortedListII
 import it.fbonfadelli.algo.master.linked.list.exercises.RemoveNthFromEndOfList
 
 object LinkedListMenuPrinter {
@@ -12,6 +13,7 @@ object LinkedListMenuPrinter {
         println("[1] - Intersection Of Two Linked Lists")
         println("[2] - Design Linked List")
         println("[3] - Remove Nth From End Of List")
+        println("[4] - Remove Duplicates From Sorted List II")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -23,6 +25,7 @@ object LinkedListMenuPrinter {
             "1" -> IntersectionOfTwoLinkedLists.main()
             "2" -> DesignLinkedList.main()
             "3" -> RemoveNthFromEndOfList.main()
+            "4" -> RemoveDuplicatesFromSortedListII.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
