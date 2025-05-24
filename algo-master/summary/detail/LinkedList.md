@@ -13,6 +13,7 @@
 # Attempt 1
 1. Intersection of Two Linked Lists (SOLVED_SUB_OPTIMAL -> did not get a super simple final optimization)
 2. Design Linked List (SOLVED_PERFECTLY)
+3. Remove Nth Node From End of List (SOLVED_SUB_OPTIMAL -> lost in edge cases)
 
 
 # Revision List
