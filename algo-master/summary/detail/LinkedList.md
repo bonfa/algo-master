@@ -12,6 +12,7 @@
 
 # Attempt 1
 1. Intersection of Two Linked Lists (SOLVED_SUB_OPTIMAL -> did not get a super simple final optimization)
+2. Design Linked List (SOLVED_PERFECTLY)
 
 
 # Revision List
