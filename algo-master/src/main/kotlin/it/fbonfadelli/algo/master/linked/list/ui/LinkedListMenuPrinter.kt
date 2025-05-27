@@ -5,6 +5,7 @@ import it.fbonfadelli.algo.master.linked.list.exercises.DesignLinkedList
 import it.fbonfadelli.algo.master.linked.list.exercises.IntersectionOfTwoLinkedLists
 import it.fbonfadelli.algo.master.linked.list.exercises.RemoveDuplicatesFromSortedListII
 import it.fbonfadelli.algo.master.linked.list.exercises.RemoveNthFromEndOfList
+import it.fbonfadelli.algo.master.linked.list.exercises.SwapNodesInPairs
 
 object LinkedListMenuPrinter {
 
@@ -14,6 +15,7 @@ object LinkedListMenuPrinter {
         println("[2] - Design Linked List")
         println("[3] - Remove Nth From End Of List")
         println("[4] - Remove Duplicates From Sorted List II")
+        println("[5] - Swap nodes in pairs")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -26,6 +28,7 @@ object LinkedListMenuPrinter {
             "2" -> DesignLinkedList.main()
             "3" -> RemoveNthFromEndOfList.main()
             "4" -> RemoveDuplicatesFromSortedListII.main()
+            "5" -> SwapNodesInPairs.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
