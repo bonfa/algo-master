@@ -16,6 +16,7 @@
 3. Remove Nth Node From End of List (SOLVED_SUB_OPTIMAL -> lost in edge cases)
 4. Remove Duplicates from Sorted List II (SOLVED_SUB_OPTIMAL -> the performance are comparable with the ideal solution but using a dummy node would improve a lot the clarity of the solution)
 5. Swap Nodes in Pairs (SOLVED_PERFECTLY)
+6. Copy List with Random Pointer (SOLVED_SUB_OPTIMAL -> did not use constant space)
 
 
 # Revision List
