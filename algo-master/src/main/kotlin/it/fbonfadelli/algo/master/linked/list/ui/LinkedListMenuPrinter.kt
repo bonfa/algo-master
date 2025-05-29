@@ -4,6 +4,7 @@ import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.linked.list.exercises.AddTwoNumbers
 import it.fbonfadelli.algo.master.linked.list.exercises.CopyListWithRandomPointer
 import it.fbonfadelli.algo.master.linked.list.exercises.DesignLinkedList
+import it.fbonfadelli.algo.master.linked.list.exercises.FlattenAMultiLevelDoublyLinkedList
 import it.fbonfadelli.algo.master.linked.list.exercises.IntersectionOfTwoLinkedLists
 import it.fbonfadelli.algo.master.linked.list.exercises.PartitionList
 import it.fbonfadelli.algo.master.linked.list.exercises.RemoveDuplicatesFromSortedListII
@@ -24,6 +25,7 @@ object LinkedListMenuPrinter {
         println("[7] - Partition list")
         println("[8] - Rotate list")
         println("[9] - Add two numbers")
+        println("[10] - Flatten A Multi Level Doubly Linked List")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -41,6 +43,7 @@ object LinkedListMenuPrinter {
             "7" -> PartitionList.main()
             "8" -> RotateList.main()
             "9" -> AddTwoNumbers.main()
+            "10" -> FlattenAMultiLevelDoublyLinkedList.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
