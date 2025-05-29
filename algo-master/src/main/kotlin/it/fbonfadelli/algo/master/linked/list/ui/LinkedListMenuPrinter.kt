@@ -1,6 +1,7 @@
 package it.fbonfadelli.algo.master.linked.list.ui
 
 import it.fbonfadelli.algo.master.Common
+import it.fbonfadelli.algo.master.linked.list.exercises.AddTwoNumbers
 import it.fbonfadelli.algo.master.linked.list.exercises.CopyListWithRandomPointer
 import it.fbonfadelli.algo.master.linked.list.exercises.DesignLinkedList
 import it.fbonfadelli.algo.master.linked.list.exercises.IntersectionOfTwoLinkedLists
@@ -22,6 +23,7 @@ object LinkedListMenuPrinter {
         println("[6] - Copy list with random pointer")
         println("[7] - Partition list")
         println("[8] - Rotate list")
+        println("[9] - Add two numbers")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -38,6 +40,7 @@ object LinkedListMenuPrinter {
             "6" -> CopyListWithRandomPointer.main()
             "7" -> PartitionList.main()
             "8" -> RotateList.main()
+            "9" -> AddTwoNumbers.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()

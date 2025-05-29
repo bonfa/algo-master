@@ -17,6 +17,9 @@
 4. Remove Duplicates from Sorted List II (SOLVED_SUB_OPTIMAL -> the performance are comparable with the ideal solution but using a dummy node would improve a lot the clarity of the solution)
 5. Swap Nodes in Pairs (SOLVED_PERFECTLY)
 6. Copy List with Random Pointer (SOLVED_SUB_OPTIMAL -> did not use constant space)
+7. Partition List (SOLVED_PERFECTLY)
+8. Rotate List (SOLVED_PERFECTLY)
+9. Add Two Numbers (SOLVED_PERFECTLY -> took a bit to find the optimal solution but that's fine)
 
 
 # Revision List
