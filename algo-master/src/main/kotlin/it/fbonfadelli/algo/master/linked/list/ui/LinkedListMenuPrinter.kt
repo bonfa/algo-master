@@ -4,6 +4,7 @@ import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.linked.list.exercises.CopyListWithRandomPointer
 import it.fbonfadelli.algo.master.linked.list.exercises.DesignLinkedList
 import it.fbonfadelli.algo.master.linked.list.exercises.IntersectionOfTwoLinkedLists
+import it.fbonfadelli.algo.master.linked.list.exercises.PartitionList
 import it.fbonfadelli.algo.master.linked.list.exercises.RemoveDuplicatesFromSortedListII
 import it.fbonfadelli.algo.master.linked.list.exercises.RemoveNthFromEndOfList
 import it.fbonfadelli.algo.master.linked.list.exercises.SwapNodesInPairs
@@ -18,6 +19,7 @@ object LinkedListMenuPrinter {
         println("[4] - Remove Duplicates From Sorted List II")
         println("[5] - Swap nodes in pairs")
         println("[6] - Copy list with random pointer")
+        println("[7] - Partition list")
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -32,6 +34,7 @@ object LinkedListMenuPrinter {
             "4" -> RemoveDuplicatesFromSortedListII.main()
             "5" -> SwapNodesInPairs.main()
             "6" -> CopyListWithRandomPointer.main()
+            "7" -> PartitionList.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
