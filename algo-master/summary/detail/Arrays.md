@@ -49,6 +49,10 @@ Skipping the solutions where I do not remember the optimal algorithm
 * Rotate Array (SOLVED_PERFECTLY)
 * First Missing Positive (NOT_SOLVED --> did not remember the algorithm)
 
+## Attempt 5
+* Move Zeroes (SOLVED_SUB_OPTIMAL --> two pointers, but again with two loops)
+* First Missing Positive (SOLVED_ALMOST_PERFECTLY --> within 45 minutes, the solution is still a bit messy, could have been more elegant)
+
 # Revision List
 ## After Attempt 1
 * Move Zeroes
@@ -74,5 +78,9 @@ Skipping the solutions where I do not remember the optimal algorithm
 * First Missing Positive
 
 ## After Attempt 4
+* Move Zeroes
+* First Missing Positive
+
+## After Attempt 5
 * Move Zeroes
 * First Missing Positive
