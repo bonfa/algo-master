@@ -31,6 +31,9 @@
 * Longest Common Prefix (NOT_SOLVED -> could not implement binary search properly in the amount of time)
 * Guess the word (NOT_SOLVED -> did not remember the proper strategy)
 
+## Attempt 5
+* Longest Common Prefix (NOT_SOLVED -> could not implement binary search properly in the amount of time)
+* Guess the word
 
 # Revision List
 ## After Attempt 1
