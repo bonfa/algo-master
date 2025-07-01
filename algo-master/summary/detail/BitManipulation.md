@@ -41,7 +41,7 @@
 
 ## Attempt 5
 * Single number III (SOLVED_PERFECTLY)
-* Sum of two integers
+* Sum of two integers (NOT_SOLVED -> close to the proper reasoning, but I missed the logic for negative numbers)
 
 # Revision List
 ## After Attempt 1
@@ -69,4 +69,7 @@
 
 ## After Attempt 4
 * Single number III
+* Sum of two integers
+
+## After Attempt 5
 * Sum of two integers
