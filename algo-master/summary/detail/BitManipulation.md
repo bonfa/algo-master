@@ -7,18 +7,13 @@
 6. Single number III
 7. Sum of two integers
 
-## Attempt 4
-* Counting bits (SOLVED_PERFECTLY)
-* Reverse bits (SOLVED_PERFECTLY)
-* Bitwise AND of number range (SOLVED_PERFECTLY)
-* Single number III (NOT_SOLVED -> close to the proper reasoning, but I missed a detail)
-* Sum of two integers (NOT_SOLVED -> close to the proper reasoning, but I missed a detail)
-
-## Attempt 3
-* Counting bits (SOLVED_SUB_OPTIMAL - close to perfect but not yet the perfect one)
-* Reverse bits (NOT_SOLVED)
-* Bitwise AND of number range (SOLVED_SUB_OPTIMAL)
-* Single number III (NOT_SOLVED)
+## Attempt 1
+* Single Number (NOT_SOLVED)
+* Number of 1 bits (NOT_SOLVED)
+* Counting bits (SOLVED_SUB_OPTIMAL - with brute force)
+* Reverse bits (NOT_SOLVED - issues with pow)
+* Bitwise AND of number range (NOT_SOLVED - intuition was corret)
+* Single number III (SOLVED_SUB_OPTIMAL - with map)
 * Sum of two integers (NOT_SOLVED)
 
 ## Attempt 2
@@ -30,15 +25,23 @@
 * Single number III (SOLVED_SUB_OPTIMAL - with map - did not remember the optimal solution and why it worked)
 * Sum of two integers (NOT_SOLVED - did not remember the solution)
 
-## Attempt 1
-* Single Number (NOT_SOLVED)
-* Number of 1 bits (NOT_SOLVED)
-* Counting bits (SOLVED_SUB_OPTIMAL - with brute force)
-* Reverse bits (NOT_SOLVED - issues with pow)
-* Bitwise AND of number range (NOT_SOLVED - intuition was corret)
-* Single number III (SOLVED_SUB_OPTIMAL - with map)
+## Attempt 3
+* Counting bits (SOLVED_SUB_OPTIMAL - close to perfect but not yet the perfect one)
+* Reverse bits (NOT_SOLVED)
+* Bitwise AND of number range (SOLVED_SUB_OPTIMAL)
+* Single number III (NOT_SOLVED)
 * Sum of two integers (NOT_SOLVED)
 
+## Attempt 4
+* Counting bits (SOLVED_PERFECTLY)
+* Reverse bits (SOLVED_PERFECTLY)
+* Bitwise AND of number range (SOLVED_PERFECTLY)
+* Single number III (NOT_SOLVED -> close to the proper reasoning, but I missed a detail)
+* Sum of two integers (NOT_SOLVED -> close to the proper reasoning, but I missed a detail)
+
+## Attempt 5
+* Single number III
+* Sum of two integers
 
 # Revision List
 ## After Attempt 1
