@@ -21,25 +21,41 @@ class SingleNumberIII {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = singleNumberIII.singleNumber(input)
+            val output = singleNumberIII.execute(input)
             println("Output: ${output.printable()}")
             println()
         }
     }
 
-    fun singleNumber(nums: IntArray): IntArray {
-        return withMap(nums)
-    }
-
-    private fun withMap(nums: IntArray): IntArray {
-        val counts: MutableMap<Int, Int> = mutableMapOf()
-        nums.toList().forEach { num ->
-            if (counts[num] == null)
-                counts[num] = 1
-            else
-                counts[num] = counts[num]!!+1
+    fun execute(nums: IntArray): IntArray {
+        var xxor = nums[0]
+        var i = 1
+        while(i < nums.size) {
+            xxor = xxor xor nums[i]
+            i++
         }
 
-        return counts.filter { (k,v) -> v == 1 }.map { it.key }.toIntArray()
+        var firstDifferentBit = xxor
+        var numberOfShifts = 0
+
+        while(firstDifferentBit and 1 == 0) {
+            firstDifferentBit = firstDifferentBit shr 1
+            numberOfShifts++
+        }
+
+        firstDifferentBit = 1 shl numberOfShifts
+
+        i = 0
+        var num1 = 0
+        var num2 = 0
+        while(i < nums.size) {
+            if (nums[i] and firstDifferentBit == 0) {
+                num1 = num1 xor nums[i]
+            } else {
+                num2 = num2 xor nums[i]
+            }
+            i++
+        }
+        return intArrayOf(num1, num2)
     }
 }

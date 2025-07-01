@@ -40,7 +40,7 @@
 * Sum of two integers (NOT_SOLVED -> close to the proper reasoning, but I missed a detail)
 
 ## Attempt 5
-* Single number III
+* Single number III (SOLVED_PERFECTLY)
 * Sum of two integers
 
 # Revision List
