@@ -51,7 +51,8 @@ class GroupAnagrams {
         val builder = StringBuilder()
         for (i in 0 until freq.size) {
             if (freq[i] > 0) {
-                builder.append((i + 'a'.code).toChar())
+                builder.append(i)
+                builder.append(".")
                 builder.append(freq[i])
                 builder.append("#")
             }
