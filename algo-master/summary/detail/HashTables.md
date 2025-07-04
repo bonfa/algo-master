@@ -54,8 +54,8 @@
 ## Attempt 4
 * Isomorphic Strings (SOLVED_PERFECTLY)
 * Group Anagrams (SOLVED_PERFECTLY)
-* Reorganize String
-* Longest Consecutive Sequence
+* Reorganize String (SOLVED_SUB_OPTIMAL)
+* Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL)
 * Split Array into Consecutive Subsequences
 * Number of Matching Subsequences
 
