@@ -53,7 +53,7 @@
 
 ## Attempt 4
 * Isomorphic Strings (SOLVED_PERFECTLY)
-* Group Anagrams
+* Group Anagrams (SOLVED_PERFECTLY)
 * Reorganize String
 * Longest Consecutive Sequence
 * Split Array into Consecutive Subsequences
