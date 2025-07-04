@@ -51,6 +51,14 @@
 * Split Array into Consecutive Subsequences (SOLVED -> but optimally for space and not for time)
 * Number of Matching Subsequences (SOLVED_SUB_OPTIMAL -> did not use binary search to search the index in the list)
 
+## Attempt 4
+* Isomorphic Strings (SOLVED_PERFECTLY)
+* Group Anagrams
+* Reorganize String
+* Longest Consecutive Sequence
+* Split Array into Consecutive Subsequences
+* Number of Matching Subsequences
+
 # Revision List
 ## After Attempt 1
 * Design HashMap (+ handle the collision)

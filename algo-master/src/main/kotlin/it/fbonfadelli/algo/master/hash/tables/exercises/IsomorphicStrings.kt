@@ -28,22 +28,23 @@ class IsomorphicStrings {
     }
 
     fun execute(s: String, t: String): Boolean {
-        val sToTMap = CharArray(128)
-        val tToSMap = CharArray(128)
+        if (s.length != t.length)
+            return false
 
-        for(i in s.indices){
-            val sc = s[i]
-            val tc = t[i]
+        val sToT = IntArray(128)
+        val tToS = IntArray(128)
+        for (i in s.indices) {
+            val sc = s[i].code
+            val tc = t[i].code
 
-            if (sToTMap[sc.code] == '\u0000')
-                sToTMap[sc.code] = tc
-            else if (sToTMap[sc.code] != tc)
-                return false
-
-            if (tToSMap[tc.code] == '\u0000')
-                tToSMap[tc.code] = sc
-            else if (tToSMap[tc.code] != sc)
-                return false
+            when {
+                sToT[sc] != 0 && sToT[sc] != tc -> return false
+                tToS[tc] != 0 && tToS[tc] != sc -> return false
+                else -> {
+                    sToT[sc] = tc
+                    tToS[tc] = sc
+                }
+            }
         }
 
         return true
