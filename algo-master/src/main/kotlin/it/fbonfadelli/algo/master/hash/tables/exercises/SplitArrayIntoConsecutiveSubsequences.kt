@@ -28,22 +28,36 @@ class SplitArrayIntoConsecutiveSubsequences {
     }
 
     fun execute(nums: IntArray): Boolean {
-        val ranges: MutableList<IntArray> = mutableListOf()
+        val subsequences = mutableListOf<MutableList<Int>>()
 
-        for (num in nums) {
-            var candidate: IntArray? = null
-            for (range in ranges) {
-                if (range[1] == num - 1 && (candidate == null || (range[1] - range[0]) < (candidate[1] - candidate[0]))) {
-                    candidate = range
+        var i = nums.size - 1
+        while (i >= 0) {
+            val num = nums[i]
+
+            var added = false
+            val validSubsequences = mutableListOf<MutableList<Int>>()
+            for (subsequence in subsequences) {
+                if (subsequence.last() > num + 1 && subsequence.first() - subsequence.last() < 2)
+                    return false
+
+                if (subsequence.last() == num + 1) {
+                    validSubsequences.add(subsequence)
                 }
             }
-            if (candidate == null)
-                ranges.add(intArrayOf(num, num))
-            else {
-                candidate[1] = num
+
+            if (validSubsequences.isNotEmpty()) {
+                validSubsequences.sortBy{ it.size }
+                validSubsequences.first().add(num)
+                added = true
             }
+
+            if (!added) {
+                subsequences.add(mutableListOf(num))
+            }
+
+            i--
         }
 
-        return ranges.all { it[1] - it[0] + 1 >= 3 }
+        return subsequences.all { subsequence -> subsequence.first() - subsequence.last() >= 2 }
     }
 }
