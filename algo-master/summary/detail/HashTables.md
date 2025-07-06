@@ -56,7 +56,7 @@
 * Group Anagrams (SOLVED_PERFECTLY)
 * Reorganize String (SOLVED_SUB_OPTIMAL)
 * Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL)
-* Split Array into Consecutive Subsequences
+* Split Array into Consecutive Subsequences (SOLVED_PERFECTLY)
 * Number of Matching Subsequences
 
 # Revision List
