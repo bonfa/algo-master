@@ -57,7 +57,7 @@
 * Reorganize String (SOLVED_SUB_OPTIMAL)
 * Longest Consecutive Sequence (SOLVED_SUB_OPTIMAL)
 * Split Array into Consecutive Subsequences (SOLVED_PERFECTLY)
-* Number of Matching Subsequences
+* Number of Matching Subsequences (SOLVED_SUB_OPTIMAL)
 
 # Revision List
 ## After Attempt 1
@@ -89,4 +89,9 @@
 * Reorganize String 
 * Longest Consecutive Sequence 
 * Split Array into Consecutive Subsequences 
+* Number of Matching Subsequences
+
+## After Attempt 4
+* Reorganize String
+* Longest Consecutive Sequence
 * Number of Matching Subsequences
