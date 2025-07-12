@@ -24,6 +24,10 @@
 * Maximum Sum of Distinct Subarrays With Length K (SOLVED_ALMOST_PERFECTLY)
 * Substring with Concatenation of All Words (SOLVED_SUB_OPTIMAL -> the solution was close to the optimal one, but I needed to optimise it further)
 
+## Attempt 4
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
+
 # Revision List
 ## After Attempt 1
 * Maximum Average Subarray I 
