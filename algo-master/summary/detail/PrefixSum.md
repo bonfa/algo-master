@@ -27,9 +27,9 @@
 * Contiguous Array (NOT_SOLVED -> did not remember the trick)
 
 ## Attempt 4
-* Subarray Sums Divisible by K
-* Continuous Subarray Sum
-* Contiguous Array
+* Subarray Sums Divisible by K (NOT_SOLVED)
+* Continuous Subarray Sum (NOT_SOLVED)
+* Contiguous Array (SOLVED_PERFECTLY)
 
 # Revision List
 ## After Attempt 1
@@ -50,3 +50,7 @@
 * Subarray Sums Divisible by K
 * Continuous Subarray Sum
 * Contiguous Array
+
+## After Attempt 4
+* Subarray Sums Divisible by K
+* Continuous Subarray Sum
