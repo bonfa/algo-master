@@ -1,6 +1,7 @@
 package it.fbonfadelli.algo.master.prefix.sum.exercises
 
 import it.fbonfadelli.algo.master.utils.printable
+import kotlin.math.max
 
 class ContiguousArray {
 
@@ -30,20 +31,19 @@ class ContiguousArray {
     }
 
     fun execute(nums: IntArray): Int {
+        val idxMap = mutableMapOf<Int, Int>()
+        idxMap[0] = -1
+
         var sum = 0
         var maxLength = 0
+        for (i in 0 until nums.size) {
+            val num = if (nums[i] == 0) -1 else nums[i] // -1 or 1
 
-        val sumIndex = mutableMapOf<Int, Int>()
-        sumIndex[0] = -1
-
-        nums.forEachIndexed { i, num ->
-
-            sum += if (num == 0) -1 else 1
-
-            if (sumIndex.containsKey(sum)) {
-                maxLength = Math.max(maxLength, i - sumIndex[sum]!!)
+            sum += num
+            if (idxMap.containsKey(sum)) {
+                maxLength = max(maxLength, i - idxMap[sum]!!)
             } else {
-                sumIndex[sum] = i
+                idxMap[sum] = i
             }
         }
 
