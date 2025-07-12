@@ -26,6 +26,11 @@
 * Continuous Subarray Sum (NOT_SOLVED -> wrong math assumption)
 * Contiguous Array (NOT_SOLVED -> did not remember the trick)
 
+## Attempt 4
+* Subarray Sums Divisible by K
+* Continuous Subarray Sum
+* Contiguous Array
+
 # Revision List
 ## After Attempt 1
 * Range Sum Query - Immutable
