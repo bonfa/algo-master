@@ -25,7 +25,7 @@
 * Substring with Concatenation of All Words (SOLVED_SUB_OPTIMAL -> the solution was close to the optimal one, but I needed to optimise it further)
 
 ## Attempt 4
-* Maximum Sum of Distinct Subarrays With Length K
+* Maximum Sum of Distinct Subarrays With Length K (SOLVED_SUB_OPTIMAL)
 * Substring with Concatenation of All Words
 
 # Revision List
