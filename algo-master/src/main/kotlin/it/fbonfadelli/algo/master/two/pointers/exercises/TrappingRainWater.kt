@@ -25,7 +25,7 @@ class TrappingRainWater {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = trappingRainWater.trap(input)
+            val output = trappingRainWater.execute(input)
             println("Output: $output")
             println()
         }
@@ -35,7 +35,7 @@ class TrappingRainWater {
     private val DECREASING = 2
     private val UNKNOWN = 0
 
-    fun trap(height: IntArray): Int {
+    fun execute(height: IntArray): Int {
         if (height.size == 1)
             return 0
 

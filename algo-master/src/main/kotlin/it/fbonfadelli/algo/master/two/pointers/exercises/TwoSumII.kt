@@ -24,13 +24,13 @@ class TwoSumII {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            val output = twoSumII.twoSum(input.nums, input.target)
+            val output = twoSumII.execute(input.nums, input.target)
             println("Output: ${output.printable()}")
             println()
         }
     }
 
-    fun twoSum(numbers: IntArray, target: Int): IntArray {
+    fun execute(numbers: IntArray, target: Int): IntArray {
         if (numbers.size==2)
             return intArrayOf(1,2)
 

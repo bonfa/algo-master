@@ -22,17 +22,13 @@ class MergeSortedArrays {
         private fun execute(index: Int, input: Input) {
             println("CASE ${index+1}:")
             println("Input: $input")
-            mergeSortedArrays.merge(input.nums1, input.m, input.nums2, input.n)
+            mergeSortedArrays.execute(input.nums1, input.m, input.nums2, input.n)
             println("Output: ${input.nums1.printable()}")
             println()
         }
     }
 
-    fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
-        version2(m, n, nums1, nums2)
-    }
-
-    private fun version2(m: Int, n: Int, nums1: IntArray, nums2: IntArray) {
+    fun execute(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
         val temp = IntArray(m + n)
         var p1 = 0
         var p2 = 0

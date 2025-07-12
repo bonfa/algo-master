@@ -25,17 +25,13 @@ class ThreeSum {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = threeSum.threeSum(input)
+            val output = threeSum.execute(input)
             println("Output: ${output.printable()}")
             println()
         }
     }
 
-    fun threeSum(nums: IntArray): List<List<Int>> {
-        return bruteForce(nums)
-    }
-
-    private fun bruteForce(nums: IntArray): List<List<Int>> {
+    fun execute(nums: IntArray): List<List<Int>> {
         val result = mutableSetOf<List<Int>>()
 
         for (i in 0..nums.size-1) {

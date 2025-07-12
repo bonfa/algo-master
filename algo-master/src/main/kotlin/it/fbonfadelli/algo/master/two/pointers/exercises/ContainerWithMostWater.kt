@@ -23,13 +23,13 @@ class ContainerWithMostWater {
         private fun execute(index: Int, input: IntArray) {
             println("CASE ${index+1}:")
             println("Input: ${input.printable()}")
-            val output = containerWithMostWater.maxArea(input)
+            val output = containerWithMostWater.execute(input)
             println("Output: $output")
             println()
         }
     }
 
-    fun maxArea(height: IntArray): Int {
+    fun execute(height: IntArray): Int {
         var maxArea = 0
         var low = 0
         var high = height.size - 1
