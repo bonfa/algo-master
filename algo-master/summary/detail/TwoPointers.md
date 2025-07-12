@@ -24,7 +24,7 @@
 * Trapping Rain Water (NOT_SOLVED)
 
 ## Attempt 4
-* Merge sorted arrays
+* Merge sorted arrays (SOLVED_SUB_OPTIMAL)
 * 3Sum
 * Trapping Rain Water
 
