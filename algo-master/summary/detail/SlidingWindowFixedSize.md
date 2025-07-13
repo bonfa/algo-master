@@ -26,7 +26,7 @@
 
 ## Attempt 4
 * Maximum Sum of Distinct Subarrays With Length K (SOLVED_SUB_OPTIMAL)
-* Substring with Concatenation of All Words
+* Substring with Concatenation of All Words (SOLVED_SUB_OPTIMAL)
 
 # Revision List
 ## After Attempt 1
@@ -42,5 +42,9 @@
 * Substring with Concatenation of All Words
 
 ## After Attempt 3
+* Maximum Sum of Distinct Subarrays With Length K
+* Substring with Concatenation of All Words
+
+## After Attempt 4
 * Maximum Sum of Distinct Subarrays With Length K
 * Substring with Concatenation of All Words
