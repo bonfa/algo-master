@@ -18,7 +18,7 @@
 
 ## Attempt 3
 * Maximum Sum Circular Subarray (NOT_SOLVED)
-* Maximum Product Subarray
+* Maximum Product Subarray (NOT_SOLVED)
 * Best Sightseeing Pair
 
 # Revision List
