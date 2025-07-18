@@ -30,63 +30,52 @@ class MinimumWindowSubString {
     }
 
     fun execute(s: String, t: String): String {
-        val tMap = charMap(t)
-        val tLength = t.length
+        val tMap = map(t)
 
         var l = 0
         var r = 0
+        var minIdx = -1
         var minLength = Integer.MAX_VALUE
-        var minSubString = ""
-        val sMap = IntArray(52)
+
+        val sMap = IntArray(58)
         while(r < s.length) {
-            val toAdd = s[r]
+            val rc = s[r]
+            sMap[rc - 'A']++
 
-            if (toAdd in 'A'..'Z')
-                sMap[toAdd - 'A']++
-            else
-                sMap[toAdd.code + 1 - 'a'.code + 'Z'.code - 'A'.code]++
-
-            //compression
-            while(r - l + 1 >= tLength && contains(sMap, tMap)) {
-                if (r - l + 1 < minLength) {
-                    minLength = r - l + 1
-                    minSubString = s.substring(l, r + 1)
+            while(canShrink(sMap, tMap)) {
+                val currentLength = r + 1 - l
+                if (currentLength < minLength) {
+                    minIdx = l
+                    minLength = currentLength
                 }
-                val toRemove = s[l]
-                if (toRemove in 'A'..'Z')
-                    sMap[toRemove - 'A']--
-                else
-                    sMap[toRemove.code + 1 - 'a'.code + 'Z'.code - 'A'.code]--
 
-
+                val lc = s[l]
+                sMap[lc - 'A']--
                 l++
             }
 
             r++
         }
 
-        return minSubString
+        return if (minIdx == -1) "" else s.substring(minIdx, minIdx + minLength)
     }
 
-    private fun charMap(str: String): IntArray {
-        val map = IntArray(52)
-        for(c in str) {
-            if (c in 'A'..'Z')
-                map[c - 'A']++
-            else
-                map[c.code + 1 - 'a'.code + 'Z'.code - 'A'.code]++
+
+    private fun map(t: String): IntArray {
+        val map = IntArray(58)
+
+        for (tc in t) {
+            map[tc - 'A']++
         }
+
         return map
     }
 
-    private fun contains(container: IntArray, contained: IntArray): Boolean {
-        var i = 0
-        while (i < container.size) {
-            if (container[i] < contained[i])
+    private fun canShrink(sMap: IntArray, tMap: IntArray): Boolean {
+        for (i in 0 until tMap.size) {
+            if (sMap[i] < tMap[i])
                 return false
-            i++
         }
-
         return true
     }
 
