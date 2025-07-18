@@ -1,6 +1,7 @@
 package it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui
 
 import it.fbonfadelli.algo.master.Common
+import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.LongestRepeatingCharactersReplacement
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.LongestSubstringWithoutRepeatingCharacters
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.MaxConsecutiveOnesIII
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises.MinimumSizeSubArraySum
@@ -11,6 +12,7 @@ object SlidingWindowDynamicSizeMenuPrinter {
     fun execute() {
         println("SLIDING WINDOW DYNAMIC SIZE OPTIONS:")
         println("[1] - Longest Substring Without Repeating Characters")
+        println("[2] - Longest Repeating Characters Replacement")
         println("[3] - Minimum Size Subarray Sum")
         println("[4] - Max Consecutive Ones III")
         println("[5] - Minimum Window Sub String")
@@ -23,6 +25,7 @@ object SlidingWindowDynamicSizeMenuPrinter {
 
         when (input) {
             "1" -> LongestSubstringWithoutRepeatingCharacters.main()
+            "2" -> LongestRepeatingCharactersReplacement.main()
             "3" -> MinimumSizeSubArraySum.main()
             "4" -> MaxConsecutiveOnesIII.main()
             "5" -> MinimumWindowSubString.main()
