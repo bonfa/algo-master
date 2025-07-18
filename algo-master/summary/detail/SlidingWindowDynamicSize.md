@@ -23,7 +23,7 @@
 ## Attempt 3
 * Longest Repeating Character Replacement (SOLVED_ALMOST_PERFECTLY -> complexity ok, code a bit messy)
 * Minimum Size Subarray Sum (SOLVED_PERFECTLY)
-* Minimum Window Substring
+* Minimum Window Substring (SOLVED_PERFECTLY)
 
 # Revision List
 ## After Attempt 1
@@ -37,3 +37,6 @@
 * Longest Repeating Character Replacement
 * Minimum Size Subarray Sum
 * Minimum Window Substring
+
+## After Attempt 3
+* Longest Repeating Character Replacement
