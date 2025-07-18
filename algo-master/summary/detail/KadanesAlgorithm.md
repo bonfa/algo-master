@@ -16,6 +16,11 @@
 * Maximum Product Subarray (NOT_SOLVED)
 * Best Sightseeing Pair (NOT_SOLVED)
 
+## Attempt 3
+* Maximum Sum Circular Subarray
+* Maximum Product Subarray
+* Best Sightseeing Pair
+
 # Revision List
 ## After Attempt 1
 * Maximum Subarray
