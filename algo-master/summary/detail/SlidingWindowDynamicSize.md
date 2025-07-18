@@ -20,6 +20,11 @@
 * Minimum Window Substring (SOLVED_ALMOST_PERFECTLY -> could optimise the condition to expand/shrink the window)
 
 
+## Attempt 3
+* Longest Repeating Character Replacement (SOLVED_ALMOST_PERFECTLY -> complexity ok, code a bit messy)
+* Minimum Size Subarray Sum
+* Minimum Window Substring
+
 # Revision List
 ## After Attempt 1
 * Longest Substring Without Repeating Characters
