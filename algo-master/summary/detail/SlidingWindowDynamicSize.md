@@ -22,7 +22,7 @@
 
 ## Attempt 3
 * Longest Repeating Character Replacement (SOLVED_ALMOST_PERFECTLY -> complexity ok, code a bit messy)
-* Minimum Size Subarray Sum
+* Minimum Size Subarray Sum (SOLVED_PERFECTLY)
 * Minimum Window Substring
 
 # Revision List
