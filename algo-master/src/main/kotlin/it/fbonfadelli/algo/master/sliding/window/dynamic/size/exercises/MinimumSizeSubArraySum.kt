@@ -1,5 +1,7 @@
 package it.fbonfadelli.algo.master.sliding.window.dynamic.size.exercises
 
+import kotlin.math.min
+
 class MinimumSizeSubArraySum {
 
     companion object {
@@ -27,32 +29,24 @@ class MinimumSizeSubArraySum {
     }
 
     fun execute(target: Int, nums: IntArray): Int {
-        var minLength = Integer.MAX_VALUE
-        var sum = 0
         var l = 0
         var r = 0
+        var minLength = Integer.MAX_VALUE
+        var currentSum = 0
 
         while(r < nums.size) {
-            val toAdd = nums[r]
-            sum += toAdd
-            if (sum >= target) {
-                minLength = Math.min(minLength, r - l + 1)
-            }
+            val num = nums[r]
 
-            //compression
-            while(sum >= target) {
+            currentSum += num
+            while (currentSum >= target) {
+                minLength = min(minLength, r + 1 - l)
                 val toRemove = nums[l]
-                sum -= toRemove
+                currentSum -= toRemove
                 l++
-                if (sum >= target) {
-                    minLength = Math.min(minLength, r - l + 1)
-                }
             }
 
             r++
         }
-
-
 
         return if (minLength == Integer.MAX_VALUE) 0 else minLength
     }
