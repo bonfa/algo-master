@@ -12,6 +12,11 @@
 4. Valid Sudoku (SOLVED_PERFECTLY -> better  than AlgoMaster solution)
 5. Game of Life (SOLVED_SUB_OPTIMAL -> could not find a good solution for in place substitution)
 
+## Attempt 2
+* Spiral Matrix
+* Rotate Image (NOT_SOLVED)
+* Set Matrix Zeroes
+* Game of Life
 
 # Revision List
 ## After Attempt 1
