@@ -15,8 +15,8 @@
 ## Attempt 2
 * Spiral Matrix (SOLVED_PERFECTLY)
 * Rotate Image (NOT_SOLVED)
-* Set Matrix Zeroes
-* Game of Life
+* Set Matrix Zeroes (SOLVED_SUB_OPTIMAL -> did not solve it optimally for O(1) space)
+* Game of Life (SOLVED_SUB_OPTIMAL -> could not find a good solution for in place substitution)
 
 # Revision List
 ## After Attempt 1
