@@ -13,7 +13,7 @@
 5. Game of Life (SOLVED_SUB_OPTIMAL -> could not find a good solution for in place substitution)
 
 ## Attempt 2
-* Spiral Matrix
+* Spiral Matrix (SOLVED_PERFECTLY)
 * Rotate Image (NOT_SOLVED)
 * Set Matrix Zeroes
 * Game of Life
