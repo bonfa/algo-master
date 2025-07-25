@@ -37,39 +37,48 @@ class GameOfLife {
         }
     }
 
+    private val dead = 0
+    private val alive = 1
+
     fun execute(board: Array<IntArray>) {
-        val copy: Array<IntArray> = Array(board.size) { IntArray(board[0].size) }
+        val aliveInTheNextState = mutableSetOf<Coord>()
 
         for (y in 0 until board.size) {
             for (x in 0 until board[y].size) {
-                val cell = board[y][x]
-                val aliveNeighbourhoods = numberOfAliveNeighbourhoods(board, y, x)
-                if (aliveNeighbourhoods == 3 || (aliveNeighbourhoods == 2 && cell == 1)) {
-                    copy[y][x] = 1
+                val numberOfAliveNeighbours = numberOfAliveNeighbours(board, y, x)
+                if (numberOfAliveNeighbours == 3 || (numberOfAliveNeighbours == 2 && board[y][x] == alive)) {
+                    aliveInTheNextState.add(Coord(y,x))
                 }
             }
         }
 
         for (y in 0 until board.size) {
             for (x in 0 until board[y].size) {
-                board[y][x] = copy[y][x]
+                if (aliveInTheNextState.contains(Coord(y,x)))
+                    board[y][x] = alive
+                else
+                    board[y][x] = dead
             }
         }
     }
 
-    private fun numberOfAliveNeighbourhoods(board: Array<IntArray>, currY: Int, currX: Int): Int {
-        var count = 0
+    private fun numberOfAliveNeighbours(board: Array<IntArray>, yCell: Int, xCell:Int): Int {
+        val minX = max(0, xCell - 1)
+        val maxX = min(xCell + 2, board[yCell].size)
+        val minY = max(0, yCell - 1)
+        val maxY = min(yCell + 2, board.size)
 
-        for (y in max(0, currY - 1) until min(board.size, currY + 2)) {
-            for (x in max(0, currX - 1) until min(board[0].size, currX + 2)) {
-                if (board[y][x] == 1)
+        var count = 0
+        for (y in minY until maxY) {
+            for (x in minX until maxX) {
+                if (x == xCell && y == yCell)
+                    continue
+                if (board[y][x] == alive)
                     count++
             }
         }
-
-        if (board[currY][currX] == 1)
-            count--
-
         return count
     }
+
+    private data class Coord(val y:Int, val x:Int)
 }
