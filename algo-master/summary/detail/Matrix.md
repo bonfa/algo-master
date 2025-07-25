@@ -24,3 +24,8 @@
 * Rotate Image 
 * Set Matrix Zeroes
 * Game of Life
+
+## After Attempt 2
+* Rotate Image
+* Set Matrix Zeroes
+* Game of Life
