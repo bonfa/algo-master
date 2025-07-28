@@ -25,4 +25,8 @@
 
 # Revision List
 ## After Attempt 1
-TBD
+* Intersection of Two Linked Lists
+* Remove Nth Node From End of List 
+* Remove Duplicates from Sorted List II
+* Copy List with Random Pointer
+*  Flatten a Multilevel Doubly Linked List 
