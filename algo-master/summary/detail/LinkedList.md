@@ -23,7 +23,7 @@
 * Flatten a Multilevel Doubly Linked List (SOLVED_SUB_OPTIMAL)
 
 ## Attempt 2
-* Intersection of Two Linked Lists
+* Intersection of Two Linked Lists (NOT_SOLVED)
 * Remove Nth Node From End of List
 * Remove Duplicates from Sorted List II
 * Copy List with Random Pointer
