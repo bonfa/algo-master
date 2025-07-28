@@ -10,7 +10,7 @@
 9. Add Two Numbers
 10. Flatten a Multilevel Doubly Linked List
 
-# Attempt 1
+## Attempt 1
 * Intersection of Two Linked Lists (SOLVED_SUB_OPTIMAL -> did not get a super simple final optimization)
 * Design Linked List (SOLVED_PERFECTLY)
 * Remove Nth Node From End of List (SOLVED_SUB_OPTIMAL -> lost in edge cases)
@@ -20,7 +20,14 @@
 * Partition List (SOLVED_PERFECTLY)
 * Rotate List (SOLVED_PERFECTLY)
 * Add Two Numbers (SOLVED_PERFECTLY -> took a bit to find the optimal solution but that's fine)
-*  Flatten a Multilevel Doubly Linked List (SOLVED_SUB_OPTIMAL)
+* Flatten a Multilevel Doubly Linked List (SOLVED_SUB_OPTIMAL)
+
+## Attempt 2
+* Intersection of Two Linked Lists
+* Remove Nth Node From End of List
+* Remove Duplicates from Sorted List II
+* Copy List with Random Pointer
+* Flatten a Multilevel Doubly Linked List
 
 
 # Revision List
@@ -29,4 +36,7 @@
 * Remove Nth Node From End of List 
 * Remove Duplicates from Sorted List II
 * Copy List with Random Pointer
-*  Flatten a Multilevel Doubly Linked List 
+* Flatten a Multilevel Doubly Linked List
+
+## After Attempt 2
+TBD
