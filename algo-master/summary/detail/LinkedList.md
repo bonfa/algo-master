@@ -21,10 +21,10 @@
 * Rotate List (SOLVED_PERFECTLY)
 * Add Two Numbers (SOLVED_PERFECTLY -> took a bit to find the optimal solution but that's fine)
 * Flatten a Multilevel Doubly Linked List (SOLVED_SUB_OPTIMAL)
-
+    
 ## Attempt 2
 * Intersection of Two Linked Lists (NOT_SOLVED)
-* Remove Nth Node From End of List
+* Remove Nth Node From End of List (SOLVED_PERFECTLY)
 * Remove Duplicates from Sorted List II
 * Copy List with Random Pointer
 * Flatten a Multilevel Doubly Linked List
