@@ -25,7 +25,7 @@
 ## Attempt 2
 * Intersection of Two Linked Lists (NOT_SOLVED)
 * Remove Nth Node From End of List (SOLVED_PERFECTLY)
-* Remove Duplicates from Sorted List II
+* Remove Duplicates from Sorted List II (SOLVED_PERFECTLY)
 * Copy List with Random Pointer
 * Flatten a Multilevel Doubly Linked List
 
