@@ -31,39 +31,25 @@ class RemoveNthFromEndOfList {
     }
 
     fun execute(head: ListNode?, n: Int): ListNode? {
-        val size = size(head)
+        val fakeHead: ListNode? = ListNode(-1)
+        fakeHead?.next = head
 
-        if (size == n)
-            return head?.next
-
-        val indexToRemove = size - n
-        val indexOfPredecessor = indexToRemove - 1
-
-        var index = 0
-        var node = head
-        while(node != null) {
-            if (index == indexOfPredecessor) {
-                break
-            }
-            node = node.next
-            index++
+        var k = n
+        var node = fakeHead
+        while (k > 0) {
+            node = node?.next
+            k--
         }
 
-        node?.next = node.next?.next
-
-        return head
-    }
-
-    private fun size(head: ListNode?): Int {
-        var size = 0
-        var node = head
-
-        while(node != null) {
-            size++
+        var prevToRemove = fakeHead
+        while(node?.next != null) {
             node = node.next
+            prevToRemove = prevToRemove?.next
         }
 
-        return size
+        prevToRemove?.next = prevToRemove.next?.next
+
+        return fakeHead?.next
     }
 
     private data class Input(private val array: IntArray, val n: Int) {
