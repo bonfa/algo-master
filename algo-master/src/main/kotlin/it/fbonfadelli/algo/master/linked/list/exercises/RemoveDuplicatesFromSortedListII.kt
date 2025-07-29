@@ -30,39 +30,25 @@ class RemoveDuplicatesFromSortedListII {
     }
 
     fun execute(head: ListNode?): ListNode? {
-        var node = head
-        var newHead: ListNode? = null
-        var prev: ListNode? = null
-        while (node != null) {
-            val value = node.`val`
-            if (node.next?.`val` == value) { //value has to be removed
-                var firstNodeWithDifferentValue = node
-                while (firstNodeWithDifferentValue?.`val` == value) {
-                    firstNodeWithDifferentValue = firstNodeWithDifferentValue.next
-                }
+        val fakeHead: ListNode? = ListNode(-1000)
+        fakeHead?.next = head
 
-                node = firstNodeWithDifferentValue
-
-                if (node == null)
-                    prev?.next = null
-
-            } else { //value has to be kept
-                if (newHead == null) {
-                    newHead = node
-                }
-
-                if (prev == null) {
-                    prev = node
-                } else {
-                    prev.next = node
-                    prev = prev.next
-                }
-
-                node = node.next
+        var prev: ListNode? = fakeHead
+        var valueToRemove = -2000
+        while (prev?.next != null) {
+            val curr = prev.next!!
+            val currVal = curr.`val`
+            if (curr.`val` == valueToRemove) {
+                prev.next = curr.next
+            } else if (currVal == curr.next?.`val`) {
+                valueToRemove = curr.`val`
+                prev.next = curr.next
+            } else {
+                prev = prev.next
             }
         }
 
-        return newHead
+        return fakeHead?.next
     }
 
     private data class Input(private val array: IntArray) {
