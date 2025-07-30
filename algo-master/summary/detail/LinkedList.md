@@ -26,8 +26,8 @@
 * Intersection of Two Linked Lists (NOT_SOLVED)
 * Remove Nth Node From End of List (SOLVED_PERFECTLY)
 * Remove Duplicates from Sorted List II (SOLVED_PERFECTLY)
-* Copy List with Random Pointer
-* Flatten a Multilevel Doubly Linked List
+* Copy List with Random Pointer (SOLVED_SUB_OPTIMAL -> did not use constant space)
+* Flatten a Multilevel Doubly Linked List (SOLVED_SUB_OPTIMAL)
 
 
 # Revision List
