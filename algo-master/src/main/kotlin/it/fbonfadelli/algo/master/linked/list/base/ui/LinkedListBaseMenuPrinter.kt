@@ -1,18 +1,18 @@
-package it.fbonfadelli.algo.master.linked.list.ui
+package it.fbonfadelli.algo.master.linked.list.base.ui
 
 import it.fbonfadelli.algo.master.Common
-import it.fbonfadelli.algo.master.linked.list.exercises.AddTwoNumbers
-import it.fbonfadelli.algo.master.linked.list.exercises.CopyListWithRandomPointer
-import it.fbonfadelli.algo.master.linked.list.exercises.DesignLinkedList
-import it.fbonfadelli.algo.master.linked.list.exercises.FlattenAMultiLevelDoublyLinkedList
-import it.fbonfadelli.algo.master.linked.list.exercises.IntersectionOfTwoLinkedLists
-import it.fbonfadelli.algo.master.linked.list.exercises.PartitionList
-import it.fbonfadelli.algo.master.linked.list.exercises.RemoveDuplicatesFromSortedListII
-import it.fbonfadelli.algo.master.linked.list.exercises.RemoveNthFromEndOfList
-import it.fbonfadelli.algo.master.linked.list.exercises.RotateList
-import it.fbonfadelli.algo.master.linked.list.exercises.SwapNodesInPairs
+import it.fbonfadelli.algo.master.linked.list.base.exercises.AddTwoNumbers
+import it.fbonfadelli.algo.master.linked.list.base.exercises.CopyListWithRandomPointer
+import it.fbonfadelli.algo.master.linked.list.base.exercises.DesignLinkedList
+import it.fbonfadelli.algo.master.linked.list.base.exercises.FlattenAMultiLevelDoublyLinkedList
+import it.fbonfadelli.algo.master.linked.list.base.exercises.IntersectionOfTwoLinkedLists
+import it.fbonfadelli.algo.master.linked.list.base.exercises.PartitionList
+import it.fbonfadelli.algo.master.linked.list.base.exercises.RemoveDuplicatesFromSortedListII
+import it.fbonfadelli.algo.master.linked.list.base.exercises.RemoveNthFromEndOfList
+import it.fbonfadelli.algo.master.linked.list.base.exercises.RotateList
+import it.fbonfadelli.algo.master.linked.list.base.exercises.SwapNodesInPairs
 
-object LinkedListMenuPrinter {
+object LinkedListBaseMenuPrinter {
 
     fun execute() {
         println("LINKED LIST OPTIONS:")

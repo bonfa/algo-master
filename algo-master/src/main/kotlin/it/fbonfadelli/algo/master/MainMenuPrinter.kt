@@ -5,7 +5,7 @@ import it.fbonfadelli.algo.master.bit.manipulation.ui.BitManipulationMenuPrinter
 import it.fbonfadelli.algo.master.custom.ui.CustomMenuPrinter
 import it.fbonfadelli.algo.master.hash.tables.ui.HashTablesMenuPrinter
 import it.fbonfadelli.algo.master.kadane.ui.KadanesAlgorithmMenuPrinter
-import it.fbonfadelli.algo.master.linked.list.ui.LinkedListMenuPrinter
+import it.fbonfadelli.algo.master.linked.list.base.ui.LinkedListBaseMenuPrinter
 import it.fbonfadelli.algo.master.matrix.ui.MatrixMenuPrinter
 import it.fbonfadelli.algo.master.prefix.sum.ui.PrefixSumMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui.SlidingWindowDynamicSizeMenuPrinter
@@ -50,7 +50,7 @@ object MainMenuPrinter {
             "8" -> SlidingWindowDynamicSizeMenuPrinter.execute()
             "9" -> KadanesAlgorithmMenuPrinter.execute()
             "10" -> MatrixMenuPrinter.execute()
-            "11" -> LinkedListMenuPrinter.execute()
+            "11" -> LinkedListBaseMenuPrinter.execute()
             "99" -> CustomMenuPrinter.execute()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             else -> Common.Actions.exitWithError()

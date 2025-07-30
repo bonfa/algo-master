@@ -1,4 +1,6 @@
-package it.fbonfadelli.algo.master.linked.list.exercises
+package it.fbonfadelli.algo.master.linked.list.base.exercises
+
+import kotlin.collections.get
 
 class CopyListWithRandomPointer {
 

@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.linked.list.exercises
+package it.fbonfadelli.algo.master.linked.list.base.exercises
 
 class DesignLinkedList {
 

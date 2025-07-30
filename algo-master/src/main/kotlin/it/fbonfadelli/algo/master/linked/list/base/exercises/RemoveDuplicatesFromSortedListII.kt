@@ -1,6 +1,6 @@
-package it.fbonfadelli.algo.master.linked.list.exercises
+package it.fbonfadelli.algo.master.linked.list.base.exercises
 
-import it.fbonfadelli.algo.master.linked.list.util.ListNode
+import it.fbonfadelli.algo.master.linked.list.base.util.ListNode
 
 class RemoveDuplicatesFromSortedListII {
 

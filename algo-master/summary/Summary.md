@@ -14,7 +14,7 @@ Currently, the following categories are present:
 8. [Sliding Window - Dynamic Size](detail/SlidingWindowDynamicSize.md)
 9. [Kadane's Algorithm](detail/KadanesAlgorithm.md)
 10. [Matrix](detail/Matrix.md)
-11. [LinkedList](detail/LinkedList.md)
+11. [LinkedList Base](detail/LinkedListBase.md)
 
 # Reference
 https://algomaster.io/practice/dsa-patterns
