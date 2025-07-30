@@ -5,7 +5,7 @@
 4. Reverse Nodes in k-Group
 
 ## Attempt 1
-*
+* Palindrome Linked List (NOT_SOLVED - error in reversing the list in place)
 
 # Revision List
 ## After Attempt 1
