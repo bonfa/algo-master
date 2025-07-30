@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.linked.list.base.ui
+package it.fbonfadelli.algo.master.linked.list.`in`.place.reversal.ui
 
 import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.linked.list.base.exercises.AddTwoNumbers
@@ -12,20 +12,15 @@ import it.fbonfadelli.algo.master.linked.list.base.exercises.RemoveNthFromEndOfL
 import it.fbonfadelli.algo.master.linked.list.base.exercises.RotateList
 import it.fbonfadelli.algo.master.linked.list.base.exercises.SwapNodesInPairs
 
-object LinkedListBaseMenuPrinter {
+object LinkedListInPlaceReversalMenuPrinter {
 
     fun execute() {
-        println("LINKED LIST - BASE - OPTIONS:")
-        println("[1] - Intersection Of Two Linked Lists")
-        println("[2] - Design Linked List")
-        println("[3] - Remove Nth From End Of List")
-        println("[4] - Remove Duplicates From Sorted List II")
-        println("[5] - Swap nodes in pairs")
-        println("[6] - Copy list with random pointer")
-        println("[7] - Partition list")
-        println("[8] - Rotate list")
-        println("[9] - Add two numbers")
-        println("[10] - Flatten A Multi Level Doubly Linked List")
+        println("LINKED LIST - IN PLACE REVERSAL - OPTIONS:")
+        println("[1] - Palindrome Linked List")
+        println("[2] - Reverse Linked List")
+        println("[3] - Reverse Linked List II")
+        println("[4] - Reverse Nodes in k-Group")
+
         println()
         println(Common.Messages.EXIT)
         println(Common.Messages.BACK)
@@ -34,16 +29,7 @@ object LinkedListBaseMenuPrinter {
         val input = readlnOrNull()?.trim()?.uppercase()
 
         when (input) {
-            "1" -> IntersectionOfTwoLinkedLists.main()
-            "2" -> DesignLinkedList.main()
-            "3" -> RemoveNthFromEndOfList.main()
-            "4" -> RemoveDuplicatesFromSortedListII.main()
-            "5" -> SwapNodesInPairs.main()
-            "6" -> CopyListWithRandomPointer.main()
-            "7" -> PartitionList.main()
-            "8" -> RotateList.main()
-            "9" -> AddTwoNumbers.main()
-            "10" -> FlattenAMultiLevelDoublyLinkedList.main()
+
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
