@@ -46,7 +46,9 @@ class ReverseLinkedList {
     }
 
     private data class Input(private val array: IntArray) {
-        fun linkedList(): ListNode {
+        fun linkedList(): ListNode? {
+            if (array.isEmpty()) return null
+
             val head: ListNode? = ListNode(array.first())
             var node = head
             for (i in 1 until array.size) {

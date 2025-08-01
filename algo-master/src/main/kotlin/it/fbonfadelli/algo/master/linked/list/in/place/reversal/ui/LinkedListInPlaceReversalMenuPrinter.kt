@@ -11,6 +11,7 @@ import it.fbonfadelli.algo.master.linked.list.base.exercises.RemoveDuplicatesFro
 import it.fbonfadelli.algo.master.linked.list.base.exercises.RemoveNthFromEndOfList
 import it.fbonfadelli.algo.master.linked.list.base.exercises.RotateList
 import it.fbonfadelli.algo.master.linked.list.base.exercises.SwapNodesInPairs
+import it.fbonfadelli.algo.master.linked.list.`in`.place.reversal.exercises.ReverseLinkedList
 
 object LinkedListInPlaceReversalMenuPrinter {
 
@@ -29,7 +30,7 @@ object LinkedListInPlaceReversalMenuPrinter {
         val input = readlnOrNull()?.trim()?.uppercase()
 
         when (input) {
-
+            "2" -> ReverseLinkedList.main()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
             else -> Common.Actions.exitWithError()
