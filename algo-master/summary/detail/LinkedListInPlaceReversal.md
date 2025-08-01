@@ -6,6 +6,7 @@
 
 ## Attempt 1
 * Palindrome Linked List (NOT_SOLVED - error in reversing the list in place)
+* Reverse Linked List (SOLVED_PERFECTLY - some issues in the condition but solved easily)
 
 # Revision List
 ## After Attempt 1
