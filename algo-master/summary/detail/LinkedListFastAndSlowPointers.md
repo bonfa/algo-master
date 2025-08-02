@@ -11,4 +11,6 @@
 
 # Revision List
 ## After Attempt 1
-TBD
+* Middle Of The Linked List
+* Happy Number
+* Linked List Cycle II
