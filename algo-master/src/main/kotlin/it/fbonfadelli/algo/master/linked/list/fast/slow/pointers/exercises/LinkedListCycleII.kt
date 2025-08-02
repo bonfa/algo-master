@@ -11,8 +11,8 @@ class LinkedListCycleII {
             println("LINKED LIST - CYCLE 2")
 
             val inputs = listOf(
-                Input(intArrayOf(3,2,0,-4), 1),
-                Input(intArrayOf(1,2), 0),
+                Input(intArrayOf(3, 2, 0, -4), 1),
+                Input(intArrayOf(1, 2), 0),
                 Input(intArrayOf(1), -1),
             )
 
@@ -23,7 +23,7 @@ class LinkedListCycleII {
             println("CASE ${index + 1}:")
             println("Input: $input")
             val output = linkedListCycleII.execute(input.linkedList())
-            println("Output: ${output?.printable()}")
+            println("Output: ${output?.`val`}")
             println()
         }
     }
@@ -57,25 +57,24 @@ class LinkedListCycleII {
         fun linkedList(): ListNode? {
             if (array.isEmpty()) return null
 
-            val head: ListNode? = ListNode(array.first())
-            var node = head
-            var startOfCycle: ListNode? = null
-            if (indexOfTheStartOfTheCycle == 0)
-                startOfCycle = head
+            val head = ListNode(array.first())
+            var tail = head
+            var startOfCycle: ListNode? = if (indexOfTheStartOfTheCycle == 0) head else null
 
             for (i in 1 until array.size) {
                 val newNode = ListNode(array[i])
-                if (i == indexOfTheStartOfTheCycle)
+                if (i == indexOfTheStartOfTheCycle) {
                     startOfCycle = newNode
-                node!!.next = newNode
-                node = node.next
+                }
+                tail.next = newNode
+                tail = newNode
             }
 
             if (startOfCycle != null) {
-                node?.next = startOfCycle
+                tail.next = startOfCycle
             }
 
-            return head!!
+            return head
         }
     }
 }
