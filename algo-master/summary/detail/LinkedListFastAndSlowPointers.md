@@ -6,7 +6,7 @@
 
 ## Attempt 1
 * Middle Of The Linked List (SOLVED_PERFECTLY)
-* Happy Number
+* Happy Number (SOLVED_SUB_OPTIMAL)
 * Linked List Cycle II
 
 # Revision List
