@@ -1,6 +1,6 @@
 package it.fbonfadelli.algo.master.linked.list.`in`.place.reversal.exercises
 
-import it.fbonfadelli.algo.master.linked.list.base.util.ListNode
+import it.fbonfadelli.algo.master.linked.list.util.ListNode
 
 class ReverseLinkedList {
 

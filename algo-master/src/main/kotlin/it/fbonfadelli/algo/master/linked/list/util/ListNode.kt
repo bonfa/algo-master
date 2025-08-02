@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.linked.list.base.util
+package it.fbonfadelli.algo.master.linked.list.util
 
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
