@@ -12,4 +12,7 @@
 
 # Revision List
 ## After Attempt 1
-TBD
+* Palindrome Linked List
+* Reverse Linked List
+* Reverse Linked List II
+* Reverse Nodes in k-Group
