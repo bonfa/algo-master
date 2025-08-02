@@ -12,7 +12,7 @@ import it.fbonfadelli.algo.master.linked.list.base.exercises.RemoveNthFromEndOfL
 import it.fbonfadelli.algo.master.linked.list.base.exercises.RotateList
 import it.fbonfadelli.algo.master.linked.list.base.exercises.SwapNodesInPairs
 import it.fbonfadelli.algo.master.linked.list.fast.slow.pointers.exercises.MiddleOfTheLinkedList
-import it.fbonfadelli.algo.master.linked.list.`in`.place.reversal.exercises.HappyNumber
+import it.fbonfadelli.algo.master.linked.list.fast.slow.pointers.exercises.HappyNumber
 import it.fbonfadelli.algo.master.linked.list.`in`.place.reversal.exercises.ReverseLinkedList
 
 object LinkedListFastAndSlowPointersMenuPrinter {

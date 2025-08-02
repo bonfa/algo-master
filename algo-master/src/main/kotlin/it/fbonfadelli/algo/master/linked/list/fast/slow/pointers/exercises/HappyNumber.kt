@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.linked.list.`in`.place.reversal.exercises
+package it.fbonfadelli.algo.master.linked.list.fast.slow.pointers.exercises
 
 class HappyNumber {
 
