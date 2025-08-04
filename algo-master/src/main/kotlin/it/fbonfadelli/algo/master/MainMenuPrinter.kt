@@ -12,6 +12,7 @@ import it.fbonfadelli.algo.master.matrix.ui.MatrixMenuPrinter
 import it.fbonfadelli.algo.master.prefix.sum.ui.PrefixSumMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui.SlidingWindowDynamicSizeMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.fixed.size.ui.SlidingWindowFixedSizeMenuPrinter
+import it.fbonfadelli.algo.master.stack.ui.StackMenuPrinter
 import it.fbonfadelli.algo.master.strings.ui.StringMenuPrinter
 import it.fbonfadelli.algo.master.two.pointers.ui.TwoPointersMenuPrinter
 
@@ -37,6 +38,7 @@ object MainMenuPrinter {
         println("[11] - Linked List - Base")
         println("[12] - Linked List - In Place Reversal")
         println("[13] - Linked List - Fast and Slow Pointers")
+        println("[14] - Stack")
         println("[99] - Custom Exercises")
         println()
         println(Common.Messages.EXIT)
@@ -57,6 +59,7 @@ object MainMenuPrinter {
             "11" -> LinkedListBaseMenuPrinter.execute()
             "12" -> LinkedListInPlaceReversalMenuPrinter.execute()
             "13" -> LinkedListFastAndSlowPointersMenuPrinter.execute()
+            "14" -> StackMenuPrinter.execute()
             "99" -> CustomMenuPrinter.execute()
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             else -> Common.Actions.exitWithError()

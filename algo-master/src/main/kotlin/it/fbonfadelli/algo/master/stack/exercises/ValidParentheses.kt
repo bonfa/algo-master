@@ -22,7 +22,7 @@ class ValidParentheses {
 
         private fun execute(index: Int, input: String) {
             println("CASE ${index+1}:")
-            println("Input: " + "s=${input}")
+            println("Input: " + "s='${input}'")
             val output = validParentheses.execute(input)
             println("Output: $output")
             println()
