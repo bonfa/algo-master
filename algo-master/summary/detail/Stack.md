@@ -10,7 +10,14 @@
 
 
 ## Attempt 1
-* 
+* Valid Parentheses (SOLVED_PERFECTLY)
+* Remove All Adjacent Duplicates In String
+* Min Stack
+* Remove Duplicate Letters
+* Removing Stars From a String
+* Evaluate Reverse Polish Notation
+* Basic Calculator II
+* Longest Valid Parentheses
 
 # Revision List
 ## After Attempt 1
