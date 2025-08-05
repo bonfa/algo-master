@@ -12,7 +12,7 @@
 ## Attempt 1
 * Valid Parentheses (SOLVED_PERFECTLY)
 * Remove All Adjacent Duplicates In String (SOLVED_SUB_OPTIMAL)
-* Min Stack
+* Min Stack (NOT_SOLVED --> I could not find a solution working in O(1) time for all the operations)
 * Remove Duplicate Letters
 * Removing Stars From a String
 * Evaluate Reverse Polish Notation
