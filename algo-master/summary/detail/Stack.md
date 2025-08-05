@@ -11,7 +11,7 @@
 
 ## Attempt 1
 * Valid Parentheses (SOLVED_PERFECTLY)
-* Remove All Adjacent Duplicates In String
+* Remove All Adjacent Duplicates In String (SOLVED_SUB_OPTIMAL)
 * Min Stack
 * Remove Duplicate Letters
 * Removing Stars From a String
