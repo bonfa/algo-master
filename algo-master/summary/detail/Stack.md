@@ -13,7 +13,7 @@
 * Valid Parentheses (SOLVED_PERFECTLY)
 * Remove All Adjacent Duplicates In String (SOLVED_SUB_OPTIMAL)
 * Min Stack (NOT_SOLVED --> I could not find a solution working in O(1) time for all the operations)
-* Remove Duplicate Letters
+* Remove Duplicate Letters (NOT_SOLVED)
 * Removing Stars From a String
 * Evaluate Reverse Polish Notation
 * Basic Calculator II
