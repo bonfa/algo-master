@@ -2,6 +2,7 @@ package it.fbonfadelli.algo.master.stack.ui
 
 import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.stack.exercises.RemoveAllAdjacentDuplicatesInString
+import it.fbonfadelli.algo.master.stack.exercises.RemovingStarsFromAString
 import it.fbonfadelli.algo.master.stack.exercises.ValidParentheses
 
 object StackMenuPrinter {
@@ -12,7 +13,7 @@ object StackMenuPrinter {
         println("2. Remove All Adjacent Duplicates In String")
 //        println("3. Min Stack")
 //        println("4. Remove Duplicate Letters")
-//        println("5. Removing Stars From a String")
+        println("5. Removing Stars From a String")
 //        println("6. Evaluate Reverse Polish Notation")
 //        println("7. Basic Calculator II")
 //        println("8. Longest Valid Parentheses")
@@ -26,6 +27,7 @@ object StackMenuPrinter {
         when (input) {
             "1" -> ValidParentheses.main()
             "2" -> RemoveAllAdjacentDuplicatesInString.main()
+            "5" -> RemovingStarsFromAString.main()
 
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
