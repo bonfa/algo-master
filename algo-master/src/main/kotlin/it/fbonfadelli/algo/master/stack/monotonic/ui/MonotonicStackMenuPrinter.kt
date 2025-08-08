@@ -11,7 +11,7 @@ object MonotonicStackMenuPrinter {
     fun execute() {
         println("MONOTONIC STACK OPTIONS:")
         println("1. Next Greater Element I")
-//        println("2. Daily Temperatures")
+        println("2. Daily Temperatures")
 //        println("3. Online Stock Span")
 //        println("4. 132 Pattern")
 //        println("5. Number of Visible People in a Queue")
