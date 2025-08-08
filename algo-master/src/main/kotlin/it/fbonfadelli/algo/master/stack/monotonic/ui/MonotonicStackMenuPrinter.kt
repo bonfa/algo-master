@@ -4,6 +4,7 @@ import it.fbonfadelli.algo.master.Common
 import it.fbonfadelli.algo.master.stack.generic.exercises.RemoveAllAdjacentDuplicatesInString
 import it.fbonfadelli.algo.master.stack.generic.exercises.RemovingStarsFromAString
 import it.fbonfadelli.algo.master.stack.generic.exercises.ValidParentheses
+import it.fbonfadelli.algo.master.stack.monotonic.exercises.DailyTemperatures
 import it.fbonfadelli.algo.master.stack.monotonic.exercises.NextGreaterElementI
 
 object MonotonicStackMenuPrinter {
@@ -25,6 +26,7 @@ object MonotonicStackMenuPrinter {
 
         when (input) {
             "1" -> NextGreaterElementI.main()
+            "2" -> DailyTemperatures.main()
 
             Common.Commands.EXIT -> Common.Actions.sayGoodByeAndExit()
             Common.Commands.BACK -> Common.Actions.goBackToMainMenu()
