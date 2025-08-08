@@ -9,7 +9,7 @@
 
 ## Attempt 1
 * Next Greater Element I (SOLVED_SUB_OPTIMAL)
-* Daily Temperatures
+* Daily Temperatures (SOLVED_PERFECTLY -> but I had seen the video of algo master which contains this example some time before)
 * Online Stock Span
 * 132 Pattern
 * Number of Visible People in a Queue
