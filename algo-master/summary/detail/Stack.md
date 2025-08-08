@@ -16,7 +16,7 @@
 * Remove Duplicate Letters (NOT_SOLVED)
 * Removing Stars From a String (SOLVED_PERFECTLY)
 * Evaluate Reverse Polish Notation (NOT_SOLVED)
-* Basic Calculator II
+* Basic Calculator II (NOT_SOLVED)
 * Longest Valid Parentheses
 
 # Revision List
