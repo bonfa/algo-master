@@ -17,7 +17,7 @@
 * Removing Stars From a String (SOLVED_PERFECTLY)
 * Evaluate Reverse Polish Notation (NOT_SOLVED)
 * Basic Calculator II (NOT_SOLVED)
-* Longest Valid Parentheses
+* Longest Valid Parentheses (NOT_SOLVED)
 
 # Revision List
 ## After Attempt 1
