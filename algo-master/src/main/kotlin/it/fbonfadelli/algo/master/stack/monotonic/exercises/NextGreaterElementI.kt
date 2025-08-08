@@ -1,5 +1,7 @@
 package it.fbonfadelli.algo.master.stack.monotonic.exercises
 
+import it.fbonfadelli.algo.master.utils.printable
+
 class NextGreaterElementI {
 
     companion object {
@@ -20,7 +22,7 @@ class NextGreaterElementI {
             println("CASE ${index+1}:")
             println("Input: " + "s='${input}'")
             val output = nextGreaterElementI.execute(input.nums1, input.nums2)
-            println("Output: $output")
+            println("Output: ${output.printable()}")
             println()
         }
     }
