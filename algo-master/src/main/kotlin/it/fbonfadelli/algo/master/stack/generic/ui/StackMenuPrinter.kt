@@ -1,14 +1,14 @@
-package it.fbonfadelli.algo.master.stack.ui
+package it.fbonfadelli.algo.master.stack.generic.ui
 
 import it.fbonfadelli.algo.master.Common
-import it.fbonfadelli.algo.master.stack.exercises.RemoveAllAdjacentDuplicatesInString
-import it.fbonfadelli.algo.master.stack.exercises.RemovingStarsFromAString
-import it.fbonfadelli.algo.master.stack.exercises.ValidParentheses
+import it.fbonfadelli.algo.master.stack.generic.exercises.RemoveAllAdjacentDuplicatesInString
+import it.fbonfadelli.algo.master.stack.generic.exercises.RemovingStarsFromAString
+import it.fbonfadelli.algo.master.stack.generic.exercises.ValidParentheses
 
 object StackMenuPrinter {
 
     fun execute() {
-        println("SLIDING WINDOW FIXED SIZE OPTIONS:")
+        println("STACK OPTIONS:")
         println("1. Valid Parentheses")
         println("2. Remove All Adjacent Duplicates In String")
 //        println("3. Min Stack")

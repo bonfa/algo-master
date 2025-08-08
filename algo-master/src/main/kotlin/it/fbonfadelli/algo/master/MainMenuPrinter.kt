@@ -12,7 +12,7 @@ import it.fbonfadelli.algo.master.matrix.ui.MatrixMenuPrinter
 import it.fbonfadelli.algo.master.prefix.sum.ui.PrefixSumMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.dynamic.size.ui.SlidingWindowDynamicSizeMenuPrinter
 import it.fbonfadelli.algo.master.sliding.window.fixed.size.ui.SlidingWindowFixedSizeMenuPrinter
-import it.fbonfadelli.algo.master.stack.ui.StackMenuPrinter
+import it.fbonfadelli.algo.master.stack.generic.ui.StackMenuPrinter
 import it.fbonfadelli.algo.master.strings.ui.StringMenuPrinter
 import it.fbonfadelli.algo.master.two.pointers.ui.TwoPointersMenuPrinter
 

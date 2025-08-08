@@ -1,4 +1,6 @@
-package it.fbonfadelli.algo.master.stack.exercises
+package it.fbonfadelli.algo.master.stack.generic.exercises
+
+import kotlin.text.iterator
 
 class RemoveAllAdjacentDuplicatesInString {
 

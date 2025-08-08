@@ -1,4 +1,4 @@
-package it.fbonfadelli.algo.master.stack.exercises
+package it.fbonfadelli.algo.master.stack.generic.exercises
 
 class RemovingStarsFromAString {
 
